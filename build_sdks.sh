@@ -301,7 +301,7 @@ cd ../../../../../..
 cp sa-flash-sdk/bin/SuperAwesome_Flash.swc sa-sdk-build-repo/flash_build/SuperAwesome_Flash-$flash_sdk_version.swc
 
 # ##############################################################################
-# Commit to Git
+# Commit this repo to Git
 # ##############################################################################
 
 cd sa-sdk-build-repo
@@ -311,3 +311,47 @@ git add --all
 commitMessage="update ios_sdk="$ios_sdk_version" android_sdk="$android_sdk_version" air_sdk="$air_sdk_version" flash_sdk="$flash_sdk_version
 git commit -am "$commitMessage"
 git push origin master
+
+# ##############################################################################
+# Update documentation
+# ##############################################################################
+
+cd ../
+cd sa-adobeair-sdk-docs
+git status
+git add -all
+git commit -am "update docs"
+git push origin master
+cd ../
+cd sa-flash-sdk-docs
+git status
+git add -all
+git commit -am "update docs"
+git push origin master
+cd ../
+cd sa-mobile-sdk-ios-docs
+git status
+git add -all
+git commit -am "update docs"
+git push origin master
+cd ../
+cd sa-mobile-sdk-android-docs
+git status
+git add -all
+git commit -am "update docs"
+git push origin master
+cd ../
+cd sa-unity-sdk-docs
+git status
+git add -all
+git commit -am "update docs"
+git push origin master
+
+cd ../
+cd sa-dev-site
+./add_external_documentation.sh
+git status
+git commit -am "update docs"
+git push origin master
+git push heroku-production master
+cd ../
