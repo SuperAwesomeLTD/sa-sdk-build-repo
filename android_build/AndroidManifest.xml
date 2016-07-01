@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tv.superawesome.sdk">
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<application>
+<activity android:name="tv.superawesome.sdk.views.SAFullscreenVideoAd" android:label="SAFullscreenVideoAd" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+<activity android:name="tv.superawesome.sdk.views.SAInterstitialAd" android:label="SAInterstitialAd" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:configChanges="keyboardHidden|orientation|screenSize"/>
+<service android:name="tv.superawesome.lib.sautils.SAAsyncTask" android:exported="false"/>
+</application>
+</manifest>

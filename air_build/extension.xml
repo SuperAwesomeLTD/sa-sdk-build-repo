@@ -1,0 +1,15 @@
+<extension xmlns="http://ns.adobe.com/air/extension/21.0">
+<id>tv.superawesome.plugins.air</id>
+<versionNumber>1.0.0</versionNumber>
+<platforms>
+<platform name="Android-ARM">
+<applicationDeployment> 
+<nativeLibrary>saair.jar</nativeLibrary>
+<initializer>tv.superawesome.plugins.air.SAAIRExtension</initializer>
+</applicationDeployment>
+</platform>
+<platform name="default">
+<applicationDeployment/>
+</platform>
+</platforms>
+</extension>
