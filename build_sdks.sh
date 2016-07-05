@@ -149,9 +149,9 @@ echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $andr
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAFullscreenVideoAd$SAFullscreenVideoAdActivity\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd$SAInterstitialAdActivity\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<service android:name=\"tv.superawesome.lib.sautils.SAAsyncTask$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAFullscreenVideoAd\$SAFullscreenVideoAdActivity\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\$SAInterstitialAdActivity\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<service android:name=\"tv.superawesome.lib.sautils.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 
@@ -326,32 +326,32 @@ cd ../
 cd sa-flash-sdk-docs
 git status
 git add --all
-git commit -am "update docs"
+git commit -am 'update docs'
 git push origin master
 cd ../
 cd sa-mobile-sdk-ios-docs
 git status
 git add --all
-git commit -am "update docs"
+git commit -am 'update docs'
 git push origin master
 cd ../
 cd sa-mobile-sdk-android-docs
 git status
 git add --all
-git commit -am "update docs"
+git commit -am 'update docs'
 git push origin master
 cd ../
 cd sa-unity-sdk-docs
 git status
 git add --all
-git commit -am "update docs"
+git commit -am 'update docs'
 git push origin master
 
 cd ../
 cd sa-dev-site
 ./add_external_documentation.sh
 git status
-git commit -am "update docs"
+git commit -am 'update docs'
 git push origin master
 git push heroku-production master
 cd ../
