@@ -325,42 +325,42 @@ git push origin master
 # Update documentation
 # ##############################################################################
 
-cd ../
-cd sa-adobeair-sdk-docs
-git status
-git add --all
-git commit -am "update docs"
-git push origin master
-cd ../
-cd sa-flash-sdk-docs
-git status
-git add --all
-git commit -am 'update docs'
-git push origin master
-cd ../
-cd sa-mobile-sdk-ios-docs
-git status
-git add --all
-git commit -am 'update docs'
-git push origin master
-cd ../
-cd sa-mobile-sdk-android-docs
-git status
-git add --all
-git commit -am 'update docs'
-git push origin master
-cd ../
-cd sa-unity-sdk-docs
-git status
-git add --all
-git commit -am 'update docs'
-git push origin master
-
-cd ../
-cd sa-dev-site
-./add_external_documentation.sh
-git status
-git commit -am 'update docs'
-git push origin master
-git push heroku-production master
-cd ../
+# cd ../
+# cd sa-adobeair-sdk-docs
+# git status
+# git add --all
+# git commit -am "update docs"
+# git push origin master
+# cd ../
+# cd sa-flash-sdk-docs
+# git status
+# git add --all
+# git commit -am 'update docs'
+# git push origin master
+# cd ../
+# cd sa-mobile-sdk-ios-docs
+# git status
+# git add --all
+# git commit -am 'update docs'
+# git push origin master
+# cd ../
+# cd sa-mobile-sdk-android-docs
+# git status
+# git add --all
+# git commit -am 'update docs'
+# git push origin master
+# cd ../
+# cd sa-unity-sdk-docs
+# git status
+# git add --all
+# git commit -am 'update docs'
+# git push origin master
+#
+# cd ../
+# cd sa-dev-site
+# ./add_external_documentation.sh
+# git status
+# git commit -am 'update docs'
+# git push origin master
+# git push heroku-production master
+# cd ../
