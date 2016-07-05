@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 ios_sdk_version="4.2.1"
-android_sdk_version="4.0.0"
+android_sdk_version="4.0.1"
 air_sdk_version="3.2.1"
 flash_sdk_version="3.2.4"
 
@@ -45,6 +45,7 @@ cp sa-mobile-lib-android-utils/sautils/build/outputs/aar/sautils-release.aar sa-
 cp sa-mobile-lib-android-vastparser/savastparser/build/outputs/aar/savastparser-release.aar sa-sdk-build-repo/android_build/savastparser-release.zip
 cp sa-mobile-lib-android-videoplayer/savideoplayer/build/outputs/aar/savideoplayer-release.aar sa-sdk-build-repo/android_build/savideoplayer-release.zip
 cp sa-mobile-lib-android-webplayer/sawebplayer/build/outputs/aar/sawebplayer-release.aar sa-sdk-build-repo/android_build/sawebplayer-release.zip
+cp sa-mobile-lib-android-network/sanetwork/build/outputs/aar/sanetwork-release.aar sa-sdk-build-repo/android_build/sanetwork-release.zip
 cp sa-mobile-sdk-android/superawesomesdk/sa-sdk/build/outputs/aar/sa-sdk-release.aar sa-sdk-build-repo/android_build/sa-sdk-release.zip
 cp sa-mobile-sdk-android/demo/saair/build/outputs/aar/saair-release.aar sa-sdk-build-repo/android_build/saair-release.zip
 cp sa-mobile-sdk-android/demo/saunity/build/outputs/aar/saunity-release.aar sa-sdk-build-repo/android_build/saunity-release.zip
@@ -81,6 +82,12 @@ unzip sajsonparser-release.zip -d sa-mobile-lib-android-jsonparser/
 cp sa-mobile-lib-android-jsonparser/classes.jar sajsonparser.jar
 rm -rf sa-mobile-lib-android-jsonparser
 rm sajsonparser-release.zip
+
+mkdir sa-mobile-lib-android-network
+unzip sanetwork-release.zip -d sa-mobile-lib-android-network/
+cp sa-mobile-lib-android-network/classes.jar sanetwork.jar
+rm -rf sa-mobile-lib-android-network
+rm sanetwork-release.zip
 
 mkdir sa-mobile-lib-android-utils
 unzip sautils-release.zip -d sa-mobile-lib-android-utils/
@@ -151,7 +158,7 @@ echo "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\
 echo "<application>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAFullscreenVideoAd\$SAFullscreenVideoAdActivity\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\$SAInterstitialAdActivity\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<service android:name=\"tv.superawesome.lib.sautils.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
+echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 
@@ -171,6 +178,7 @@ cp android_build/sautils.jar air_build/android
 cp android_build/savideoplayer.jar air_build/android
 cp android_build/sawebplayer.jar air_build/android
 cp android_build/saadloader.jar air_build/android
+cp android_build/sanetwork.jar air_build/android
 cp android_build/sa-sdk-$android_sdk_version.jar air_build/android
 cp android_build/saair.jar air_build/android
 cp android_build/sa-sdk-res.zip air_build/android
@@ -225,6 +233,7 @@ echo "<packagedDependency>savastparser.jar</packagedDependency>" >> $platformFil
 echo "<packagedDependency>savideoplayer.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>saadloader.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>sawebplayer.jar</packagedDependency>" >> $platformFile
+echo "<packagedDependency>sanetwork.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>sa-sdk-$android_sdk_version.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>play-services-ads-8.4.0.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>play-services-base-8.4.0.jar</packagedDependency>" >> $platformFile
@@ -290,6 +299,7 @@ cp sa-sdk-build-repo/android_build/sa-sdk-$android_sdk_version.jar sa-unity-sdk/
 cp sa-sdk-build-repo/android_build/saadloader.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/saevents.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/sajsonparser.jar sa-unity-sdk/demo/Assets/Plugins/Android/
+cp sa-sdk-build-repo/android_build/sanetwork.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/samodelspace.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/saunity.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/sautils.jar sa-unity-sdk/demo/Assets/Plugins/Android/
