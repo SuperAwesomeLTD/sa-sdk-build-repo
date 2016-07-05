@@ -280,6 +280,10 @@ cp sa-sdk-build-repo/android_build/sa-sdk-res.zip sa-unity-sdk/demo/Assets/Plugi
 cd sa-unity-sdk/demo/Assets/Plugins/Android/res
 mkdir sa-sdk-res
 unzip sa-sdk-res.zip
+cp -r sa-sdk-res/drawable/ drawable/
+cp -r sa-sdk-res/layout/ layout/
+rm sa-sdk-res.zip
+rm -rf sa-sdk-res
 cd ../../../../../..
 cp sa-sdk-build-repo/android_build/$androidManifest sa-unity-sdk/demo/Assets/Plugins/Android/SuperAwesome_lib/
 cp sa-sdk-build-repo/android_build/sa-sdk-$android_sdk_version.jar sa-unity-sdk/demo/Assets/Plugins/Android/
