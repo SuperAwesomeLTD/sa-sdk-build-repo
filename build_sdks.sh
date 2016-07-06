@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-ios_sdk_version="4.2.4"
+ios_sdk_version="4.2.5"
 android_sdk_version="4.0.2"
 air_sdk_version="3.2.1"
 flash_sdk_version="3.2.4"
