@@ -1,9 +1,11 @@
 #!/bin/bash -ex
 
-ios_sdk_version="4.2.6"
-android_sdk_version="4.0.2"
-air_sdk_version="3.2.1"
-flash_sdk_version="3.2.4"
+sdk_version_ios="4.2.6"
+sdk_version_android="4.0.2"
+sdk_version_air="3.2.1"
+sdk_version_flash="3.2.4"
+sdk_version_unity="3.1.5"
+sdk_version_web="2.0.0"
 
 # ##############################################################################
 # Prepare
@@ -133,7 +135,7 @@ rm samopub-release.zip
 
 mkdir sa-sdk
 unzip sa-sdk-release.zip -d sa-sdk/
-cp sa-sdk/classes.jar sa-sdk-$android_sdk_version.jar
+cp sa-sdk/classes.jar sa-sdk-$sdk_version_android.jar
 rm -rf sa-sdk
 rm sa-sdk-release.zip
 
@@ -179,7 +181,7 @@ cp android_build/savideoplayer.jar air_build/android
 cp android_build/sawebplayer.jar air_build/android
 cp android_build/saadloader.jar air_build/android
 cp android_build/sanetwork.jar air_build/android
-cp android_build/sa-sdk-$android_sdk_version.jar air_build/android
+cp android_build/sa-sdk-$sdk_version_android.jar air_build/android
 cp android_build/saair.jar air_build/android
 cp android_build/sa-sdk-res.zip air_build/android
 cp presets/play-services-ads-8.4.0.jar air_build/android
@@ -234,7 +236,7 @@ echo "<packagedDependency>savideoplayer.jar</packagedDependency>" >> $platformFi
 echo "<packagedDependency>saadloader.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>sawebplayer.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>sanetwork.jar</packagedDependency>" >> $platformFile
-echo "<packagedDependency>sa-sdk-$android_sdk_version.jar</packagedDependency>" >> $platformFile
+echo "<packagedDependency>sa-sdk-$sdk_version_android.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>play-services-ads-8.4.0.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>play-services-base-8.4.0.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>play-services-basement-8.4.0.jar</packagedDependency>" >> $platformFile
@@ -247,7 +249,7 @@ echo "</packagedResource>" >> $platformFile
 echo "</packagedResources>" >> $platformFile
 echo "</platform>" >> $platformFile
 # build
-/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin/adt -package -target ane SAAIR-$air_sdk_version.ane extension.xml -swc SuperAwesome_AIR.swc -platform Android-ARM -C android . -platformoptions platform.xml -platform default -C default .
+/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin/adt -package -target ane SAAIR-$sdk_version_air.ane extension.xml -swc SuperAwesome_AIR.swc -platform Android-ARM -C android . -platformoptions platform.xml -platform default -C default .
 cd ../..
 
 # ##############################################################################
@@ -258,7 +260,7 @@ cd sa-mobile-sdk-ios-staticlib
 ./make.sh
 /usr/bin/xcodebuild -target UniversalLib -configuration Release
 cd ../
-cp sa-mobile-sdk-ios-staticlib/output/libSuperAwesomeSDK.zip sa-sdk-build-repo/ios_build/libSuperAwesomeSDK-$ios_sdk_version.zip
+cp sa-mobile-sdk-ios-staticlib/output/libSuperAwesomeSDK.zip sa-sdk-build-repo/ios_build/libSuperAwesomeSDK-$sdk_version_ios.zip
 
 # ##############################################################################
 # iOS - Framework
@@ -268,7 +270,7 @@ cd sa-mobile-sdk-ios-framework
 ./make.sh
 /usr/bin/xcodebuild -target "Build framework" -configuration Release
 cd ../
-cp sa-mobile-sdk-ios-framework/output/SuperAwesomeSDK.framework.zip sa-sdk-build-repo/ios_build/SuperAwesomeSDK-$ios_sdk_version.framework.zip
+cp sa-mobile-sdk-ios-framework/output/SuperAwesomeSDK.framework.zip sa-sdk-build-repo/ios_build/SuperAwesomeSDK-$sdk_version_ios.framework.zip
 
 # ##############################################################################
 # Unity
@@ -295,7 +297,7 @@ rm sa-sdk-res.zip
 rm -rf sa-sdk-res
 cd ../../../../../..
 cp sa-sdk-build-repo/android_build/$androidManifest sa-unity-sdk/demo/Assets/Plugins/Android/SuperAwesome_lib/
-cp sa-sdk-build-repo/android_build/sa-sdk-$android_sdk_version.jar sa-unity-sdk/demo/Assets/Plugins/Android/
+cp sa-sdk-build-repo/android_build/sa-sdk-$sdk_version_android.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/saadloader.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/saevents.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/sajsonparser.jar sa-unity-sdk/demo/Assets/Plugins/Android/
@@ -317,7 +319,7 @@ cd ../../../../../..
 # Flash
 # ##############################################################################
 
-cp sa-flash-sdk/bin/SuperAwesome_Flash.swc sa-sdk-build-repo/flash_build/SuperAwesome_Flash-$flash_sdk_version.swc
+cp sa-flash-sdk/bin/SuperAwesome_Flash.swc sa-sdk-build-repo/flash_build/SuperAwesome_Flash-$sdk_version_flash.swc
 
 # ##############################################################################
 # Commit this repo to Git
@@ -327,13 +329,35 @@ cd sa-sdk-build-repo
 ls -all
 git status
 git add --all
-commitMessage="update ios_sdk="$ios_sdk_version" android_sdk="$android_sdk_version" air_sdk="$air_sdk_version" flash_sdk="$flash_sdk_version
+commitMessage="update ios_sdk="$sdk_version_ios" android_sdk="$sdk_version_android" air_sdk="$sdk_version_air" flash_sdk="$sdk_version_flash
 git commit -am "$commitMessage"
 git push origin master
 
 # ##############################################################################
 # Update documentation
 # ##############################################################################
+
+cd ../
+ls
+
+# variables
+sdk_company="2016, SuperAwesome Ltd"
+sdk_theme_folder="themes"
+sdk_themeres_folder="themeres"
+sdk_theme="satheme"
+sdk_aa_domain="AwesomeAds"
+sdk_devsuspport="devsupport@superawesome.tv"
+sdk_iosmin="iOS 6.0+"
+sdk_androidmin="API 11: Android 3.0 (Honeycomb)"
+sdk_source="https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios"
+sdk_author="Gabriel Coman"
+
+sdk_project_ios="iOS SDK"
+sdk_project_android="Android SDK"
+sdk_project_air="Adobe AIR SDK"
+sdk_project_unity="Unity SDK"
+sdk_project_web="Web SDK"
+sdk_project_flash="Adobe Flash SDK"
 
 # cd ../
 # cd sa-adobeair-sdk-docs
