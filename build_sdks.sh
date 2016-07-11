@@ -359,20 +359,36 @@ doc_folders=(
     "sa-web-sdk-docs"
 )
 sdk_sources=(
-    "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios",
-    "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android",
-    "https://github.com/SuperAwesomeLTD/sa-adobeair-sdk",
-    "https://github.com/SuperAwesomeLTD/sa-flash-sdk",
-    "https://github.com/SuperAwesomeLTD/sa-unity-sdk",
+    "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios"
+    "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android"
+    "https://github.com/SuperAwesomeLTD/sa-adobeair-sdk"
+    "https://github.com/SuperAwesomeLTD/sa-flash-sdk"
+    "https://github.com/SuperAwesomeLTD/sa-unity-sdk"
     "https://github.com/SuperAwesomeLTD/sa-ads-server"
 )
 sdk_projects=(
-    "iOS SDK",
-    "Android SDK",
-    "Adobe AIR SDK",
-    "Flash SDK",
-    "Unity SDK",
+    "iOS SDK"
+    "Android SDK"
+    "Adobe AIR SDK"
+    "Flash SDK"
+    "Unity SDK"
     "Web SDK"
+)
+dest_folders=(
+    "sa-mobile-sdk-ios"
+    "sa-kws-android-sdk"
+    "sa-adobeair-sdk"
+    "sa-flash-sdk"
+    "sa-unity-sdk"
+    "sa-web-sdk"
+)
+versions_array=(
+    $sdk_version_ios
+    $sdk_version_android
+    $sdk_version_air
+    $sdk_version_flash
+    $sdk_version_unity
+    $sdk_version_web
 )
 
 for i in {0..5}
@@ -380,6 +396,8 @@ do
     doc_folder=${doc_folders[$i]}
     sdk_source=${sdk_sources[$i]}
     sdk_project=${sdk_projects[$i]}
+    dest_folder=${dest_folders[$i]}
+    c_version=${versions_array[$i]}
 
     # enter folder
     cd $doc_folder
@@ -431,13 +449,27 @@ do
     make -f Makefile html
     rm -rf rsource
 
-    # ls
-    # # commit
-    # git status
-    # git add . -A
-    # git commit -am "update docs"
-    # git push origin master
+    # do git stuff
+    cdate=$(($(date +'%s * 1000 + %-N / 1000000')))
+    echo "Updated to "$c_version" on "$cdate" "  >> "CHANGELOG"
+    git status
+    git add . --all
+    docCommitMessage="Update SDK docs to version "$c_version
+    git commit -am "$docCommitMessage"
+    git push origin master
+
+    # copy build
+    cp -rf build/* ../sa-dev-site/public/extdocs/$dest_folder/*
 
     # exit folder
     cd ../
 done
+
+# Upload final documentation
+cd sa-dev-site
+git status
+fullDocCommitMessage="Update SDK docs version"
+git commit -am "$fullDocCommitMessage"
+git push origin master
+git push heroku-production master
+cd ../
