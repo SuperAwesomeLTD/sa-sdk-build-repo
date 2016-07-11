@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-sdk_version_ios="4.2.6"
+sdk_version_ios="4.2.7"
 sdk_version_android="4.0.2"
 sdk_version_air="3.2.1"
 sdk_version_flash="3.2.4"
@@ -338,8 +338,7 @@ git push origin master
 # ##############################################################################
 
 cd ../
-ls
-
+#
 # variables
 sdk_company="2016, SuperAwesome Ltd"
 sdk_theme_folder="themes"
@@ -349,52 +348,96 @@ sdk_aa_domain="AwesomeAds"
 sdk_devsuspport="devsupport@superawesome.tv"
 sdk_iosmin="iOS 6.0+"
 sdk_androidmin="API 11: Android 3.0 (Honeycomb)"
-sdk_source="https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios"
 sdk_author="Gabriel Coman"
 
-sdk_project_ios="iOS SDK"
-sdk_project_android="Android SDK"
-sdk_project_air="Adobe AIR SDK"
-sdk_project_unity="Unity SDK"
-sdk_project_web="Web SDK"
-sdk_project_flash="Adobe Flash SDK"
+doc_folders=(
+    "sa-mobile-sdk-ios-docs"
+    "sa-mobile-sdk-android-docs"
+    "sa-adobeair-sdk-docs"
+    "sa-flash-sdk-docs"
+    "sa-unity-sdk-docs"
+    "sa-web-sdk-docs"
+)
+sdk_sources=(
+    "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios",
+    "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android",
+    "https://github.com/SuperAwesomeLTD/sa-adobeair-sdk",
+    "https://github.com/SuperAwesomeLTD/sa-flash-sdk",
+    "https://github.com/SuperAwesomeLTD/sa-unity-sdk",
+    "https://github.com/SuperAwesomeLTD/sa-ads-server"
+)
+sdk_projects=(
+    "iOS SDK",
+    "Android SDK",
+    "Adobe AIR SDK",
+    "Flash SDK",
+    "Unity SDK",
+    "Web SDK"
+)
 
-# cd ../
-# cd sa-adobeair-sdk-docs
-# git status
-# git add --all
-# git commit -am "update docs"
-# git push origin master
-# cd ../
-# cd sa-flash-sdk-docs
-# git status
-# git add --all
-# git commit -am 'update docs'
-# git push origin master
-# cd ../
-# cd sa-mobile-sdk-ios-docs
-# git status
-# git add --all
-# git commit -am 'update docs'
-# git push origin master
-# cd ../
-# cd sa-mobile-sdk-android-docs
-# git status
-# git add --all
-# git commit -am 'update docs'
-# git push origin master
-# cd ../
-# cd sa-unity-sdk-docs
-# git status
-# git add --all
-# git commit -am 'update docs'
-# git push origin master
-#
-# cd ../
-# cd sa-dev-site
-# ./add_external_documentation.sh
-# git status
-# git commit -am 'update docs'
-# git push origin master
-# git push heroku-production master
-# cd ../
+for i in {0..5}
+do
+    doc_folder=${doc_folders[$i]}
+    sdk_source=${sdk_sources[$i]}
+    sdk_project=${sdk_projects[$i]}
+
+    # enter folder
+    cd $doc_folder
+    cd source
+
+    # delete old theme
+    rm -rf $sdk_theme_folder
+    rm -rf $sdk_themeres_folder
+
+    # get and setup new theme
+    rm -rf sa-docs-sphinx-theme
+    git clone -b master https://github.com/SuperAwesomeLTD/sa-docs-sphinx-theme.git
+    mkdir $sdk_theme_folder
+    mkdir $sdk_theme_folder/$sdk_theme
+    mkdir $sdk_themeres_folder
+    cp -rf sa-docs-sphinx-theme/* $sdk_theme_folder/$sdk_theme/
+    cp sa-docs-sphinx-theme/static/img/* $sdk_themeres_folder/
+    rm -rf sa-docs-sphinx-theme
+    cd ../
+
+    # create temporary rsource folder
+    rm -rf rsource
+    mkdir rsource
+    cp -rf source/* rsource
+
+    # replace variables in rsource
+    cd rsource
+    sed -i sedbak "s|<sdk_company>|$sdk_company|g" *.*
+    sed -i sedbak "s|<sdk_theme_folder>|$sdk_theme_folder|g" *.*
+    sed -i sedbak "s|<sdk_themeres_folder>|$sdk_themeres_folder|g" *.*
+    sed -i sedbak "s|<sdk_theme>|$sdk_theme|g" *.*
+    sed -i sedbak "s|<sdk_aa_domain>|$sdk_aa_domain|g" *.*
+    sed -i sedbak "s|<sdk_devsuspport>|$sdk_devsuspport|g" *.*
+    sed -i sedbak "s|<sdk_iosmin>|$sdk_iosmin|g" *.*
+    sed -i sedbak "s|<sdk_androidmin>|$sdk_androidmin|g" *.*
+    sed -i sedbak "s|<sdk_project>|$sdk_project|g" *.*
+    sed -i sedbak "s|<sdk_version_ios>|$sdk_version_ios|g" *.*
+    sed -i sedbak "s|<sdk_version_android>|$sdk_version_android|g" *.*
+    sed -i sedbak "s|<sdk_version_unity>|$sdk_version_unity|g" *.*
+    sed -i sedbak "s|<sdk_version_air>|$sdk_version_air|g" *.*
+    sed -i sedbak "s|<sdk_version_flash>|$sdk_version_flash|g" *.*
+    sed -i sedbak "s|<sdk_version_web>|$sdk_version_web|g" *.*
+    sed -i sedbak "s|<sdk_source>|$sdk_source|g" *.*
+    sed -i sedbak "s|<sdk_author>|$sdk_author|g" *.*
+    find . -name "*.*sedbak" -print0 | xargs -0 rm
+    cd ../
+
+    # finally make the sphinx doc and cleanup
+    make -f Makefile html
+    rm -rf rsource
+
+    # ls
+    # # commit
+    # git status
+    # git add . -A
+    # git commit -am "update docs"
+    # git push origin master
+
+    # exit folder
+    cd ../
+done
