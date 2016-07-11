@@ -459,7 +459,12 @@ do
     git push origin master
 
     # copy build
-    cp -rf build/* ../sa-dev-site/public/extdocs/$dest_folder/*
+    if [ -d ../sa-dev-site/public/extdocs/$dest_folder/ ]
+    then
+        rm -rf ../sa-dev-site/public/extdocs/$dest_folder/
+    fi
+    mkdir ../sa-dev-site/public/extdocs/$dest_folder/
+    cp -rf build/ ../sa-dev-site/public/extdocs/$dest_folder/
 
     # exit folder
     cd ../
