@@ -376,7 +376,7 @@ sdk_projects=(
 )
 dest_folders=(
     "sa-mobile-sdk-ios"
-    "sa-kws-android-sdk"
+    "sa-mobile-sdk-android"
     "sa-adobeair-sdk"
     "sa-flash-sdk"
     "sa-unity-sdk"
