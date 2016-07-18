@@ -330,8 +330,9 @@ cd ../../../../../..
 cd /Applications/Unity4/Unity.app/Contents/MacOS
 ls -all
 sudo ./Unity -batchmode -projectPath /Users/gabriel.coman/Workspace/sa-unity-sdk/demo -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "SuperAwesome-$sdk_version_unity.unitypackage" -quit
-cd 
+cd
 cd Workspace
+mv sa-unity-sdk/demo/SuperAwesome-$sdk_version_unity.unitypackage sa-sdk-build-repo/unity_build/SuperAwesome-$sdk_version_unity.unitypackage
 
 # ##############################################################################
 # Flash
