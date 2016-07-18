@@ -6,10 +6,11 @@
 <packagedDependency>samodelspace.jar</packagedDependency>
 <packagedDependency>savastparser.jar</packagedDependency>
 <packagedDependency>savideoplayer.jar</packagedDependency>
+<packagedDependency>sasession.jar</packagedDependency>
 <packagedDependency>saadloader.jar</packagedDependency>
 <packagedDependency>sawebplayer.jar</packagedDependency>
 <packagedDependency>sanetwork.jar</packagedDependency>
-<packagedDependency>sa-sdk-4.0.7.jar</packagedDependency>
+<packagedDependency>sa-sdk-4.0.8.jar</packagedDependency>
 <packagedDependency>play-services-ads-8.4.0.jar</packagedDependency>
 <packagedDependency>play-services-base-8.4.0.jar</packagedDependency>
 <packagedDependency>play-services-basement-8.4.0.jar</packagedDependency>

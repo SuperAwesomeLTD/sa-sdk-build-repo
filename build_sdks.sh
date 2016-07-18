@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 sdk_version_ios="4.3.0"
-sdk_version_android="4.0.7"
+sdk_version_android="4.0.8"
 sdk_version_air="3.2.2"
 sdk_version_flash="3.2.5"
 sdk_version_unity="3.1.5"
@@ -45,6 +45,7 @@ cp sa-mobile-lib-android-events/samoatevents/build/outputs/aar/samoatevents-rele
 cp sa-mobile-lib-android-jsonparser/sajsonparser/build/outputs/aar/sajsonparser-release.aar sa-sdk-build-repo/android_build/sajsonparser-release.zip
 cp sa-mobile-lib-android-utils/sautils/build/outputs/aar/sautils-release.aar sa-sdk-build-repo/android_build/sautils-release.zip
 cp sa-mobile-lib-android-vastparser/savastparser/build/outputs/aar/savastparser-release.aar sa-sdk-build-repo/android_build/savastparser-release.zip
+cp sa-mobile-lib-android-session/sasession/build/outputs/aar/sasession-release.aar sa-sdk-build-repo/android_build/sasession-release.zip
 cp sa-mobile-lib-android-videoplayer/savideoplayer/build/outputs/aar/savideoplayer-release.aar sa-sdk-build-repo/android_build/savideoplayer-release.zip
 cp sa-mobile-lib-android-webplayer/sawebplayer/build/outputs/aar/sawebplayer-release.aar sa-sdk-build-repo/android_build/sawebplayer-release.zip
 cp sa-mobile-lib-android-network/sanetwork/build/outputs/aar/sanetwork-release.aar sa-sdk-build-repo/android_build/sanetwork-release.zip
@@ -78,6 +79,12 @@ unzip samoatevents-release.zip -d sa-mobile-lib-android-events/
 cp sa-mobile-lib-android-events/classes.jar samoatevents.jar
 rm -rf sa-mobile-lib-android-events
 rm samoatevents-release.zip
+
+mkdir sa-mobile-lib-android-sasession
+unzip sasession-release.zip -d sa-mobile-lib-android-sasession/
+cp sa-mobile-lib-android-sasession/classes.jar sasession.jar
+rm -rf sa-mobile-lib-android-sasession
+rm sasession-release.zip
 
 mkdir sa-mobile-lib-android-jsonparser
 unzip sajsonparser-release.zip -d sa-mobile-lib-android-jsonparser/
@@ -156,11 +163,13 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > $androidManifest
 echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"tv.superawesome.sdk\">" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
-echo "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAFullscreenVideoAd\$SAFullscreenVideoAdActivity\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\$SAInterstitialAdActivity\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
+echo "<receiver android:name=\"tv.superawesome.lib.saevents.SACPI\" android:exported=\"true\">" >> $androidManifest
+echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
+echo "</receiver>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 
@@ -177,6 +186,7 @@ cp android_build/sajsonparser.jar air_build/android
 cp android_build/saevents.jar air_build/android
 cp android_build/savastparser.jar air_build/android
 cp android_build/sautils.jar air_build/android
+cp android_build/sasession.jar air_build/android
 cp android_build/savideoplayer.jar air_build/android
 cp android_build/sawebplayer.jar air_build/android
 cp android_build/saadloader.jar air_build/android
@@ -233,6 +243,7 @@ echo "<packagedDependency>sajsonparser.jar</packagedDependency>" >> $platformFil
 echo "<packagedDependency>samodelspace.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>savastparser.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>savideoplayer.jar</packagedDependency>" >> $platformFile
+echo "<packagedDependency>sasession.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>saadloader.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>sawebplayer.jar</packagedDependency>" >> $platformFile
 echo "<packagedDependency>sanetwork.jar</packagedDependency>" >> $platformFile
@@ -303,6 +314,7 @@ cp sa-sdk-build-repo/android_build/saevents.jar sa-unity-sdk/demo/Assets/Plugins
 cp sa-sdk-build-repo/android_build/sajsonparser.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/sanetwork.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/samodelspace.jar sa-unity-sdk/demo/Assets/Plugins/Android/
+cp sa-sdk-build-repo/android_build/sasession.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/saunity.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/sautils.jar sa-unity-sdk/demo/Assets/Plugins/Android/
 cp sa-sdk-build-repo/android_build/savastparser.jar sa-unity-sdk/demo/Assets/Plugins/Android/
