@@ -327,6 +327,12 @@ echo "target=android-11" >> $projectProperties
 echo "android.library=true" >> $projectProperties
 cd ../../../../../..
 
+cd /Applications/Unity4/Unity.app/Contents/MacOS
+ls -all
+sudo ./Unity -batchmode -projectPath /Users/gabriel.coman/Workspace/sa-unity-sdk/demo -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "SuperAwesome-$sdk_version_unity.unitypackage" -quit
+cd 
+cd Workspace
+
 # ##############################################################################
 # Flash
 # ##############################################################################
