@@ -1,0 +1,71 @@
+#!/bin/bash -ex
+
+unity_dir="$workspace/sa-unity-sdk"
+unity_assets_dir="$unity_dir/demo/Assets"
+unity_plugins_dir="$unity_assets_dir/Plugins"
+unity_sa_dir="$unity_assets_dir/SuperAwesome"
+unity_android_dir="$unity_plugins_dir/Android"
+unity_ios_dir="$unity_plugins_dir/iOS"
+
+# ##############################################################################
+# 1) Prepare
+# ##############################################################################
+
+# start
+cd
+rm -rf $unity_plugins_dir
+mkdir $unity_plugins_dir
+mkdir $unity_android_dir
+mkdir $unity_ios_dir
+
+# ##############################################################################
+# 2) Copy iOS
+# ##############################################################################
+
+cp $ios_build_static/libSuperAwesomeSDKUnity.a $unity_ios_dir
+cp $ios_build_static/SAUnity.mm $unity_ios_dir
+cp -r $ios_build_static/include/SuperAwesome/* $unity_ios_dir
+
+# ##############################################################################
+# 3) Copy Android
+# ##############################################################################
+
+# create some dirs
+mkdir "$unity_android_dir/res"
+mkdir "$unity_android_dir/SuperAwesome_lib"
+
+# copy some files
+cp -r "$android_build/sa-sdk-res/" "$unity_android_dir/res"
+cp $android_build/AndroidManifest.xml $unity_android_dir/SuperAwesome_lib/
+unity_libs=(
+    "samodelspace"
+    "saadloader"
+    "saevents"
+    "sajsonparser"
+    "sautils"
+    "savastparser"
+    "sasession"
+    "savideoplayer"
+    "sawebplayer"
+    "sanetwork"
+    "sa-sdk-$sdk_version_android"
+    "saunity"
+)
+for i in {0..11}
+do cp $android_build/${unity_libs[$i]}.jar $unity_android_dir/
+done
+
+# create
+cd "$unity_android_dir/SuperAwesome_lib"
+projectProperties="project.properties"
+echo "# Project target." > $projectProperties
+echo "target=android-11" >> $projectProperties
+echo "android.library=true" >> $projectProperties
+
+cd
+
+# ##############################################################################
+# 4) Build product
+# ##############################################################################
+
+/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_build/SuperAwesome-$sdk_version_unity.unitypackage" -quit

@@ -1,0 +1,84 @@
+#!/bin/bash -ex
+
+# SDK versions
+sdk_version_ios="4.3.0"
+sdk_version_android="4.0.8"
+sdk_version_air="3.2.2"
+sdk_version_flash="3.2.5"
+sdk_version_unity="3.1.6"
+sdk_version_web="2.0.0"
+
+# other variables
+homey="/Users/gabriel.coman"
+workspace="$homey/Workspace"
+build_repo="$workspace/sa-sdk-build-repo"
+android_build="$build_repo/android_build"
+flash_build="$build_repo/flash_build"
+air_build="$build_repo/air_build"
+unity_build="$build_repo/unity_build"
+ios_build="$build_repo/ios_build"
+
+# start
+cd
+
+# rebuild Android build folder
+if [ -d $android_build ]
+then
+    rm -rf $android_build
+fi
+mkdir $android_build
+
+# rebuild AIR build folder
+if [ -d $air_build ]
+then
+    rm -rf $air_build
+fi
+mkdir $air_build
+
+# rebuild iOS build folder
+if [ -d $ios_build ]
+then
+    rm -rf $ios_build
+fi
+mkdir $ios_build
+
+# rebuild Flash build folder
+if [ -d $flash_build ]
+then
+    rm -rf $flash_build
+fi
+mkdir $flash_build
+
+# rebuild Unity build folder
+if [ -d $unity_build ]
+then
+    rm -rf $unity_build
+fi
+mkdir $unity_build
+
+# exit
+cd
+
+# start other scripts
+cd $build_repo
+. ./01android.sh
+cd $build_repo
+. ./02flash.sh
+cd $build_repo
+. ./03air.sh
+cd $build_repo
+. ./04ios-static.sh
+cd $build_repo
+. ./04ios-framework.sh
+cd $build_repo
+. ./04ios-static-unity.sh
+cd $build_repo
+. ./05unity.sh
+cd $build_repo
+. ./06docs.sh
+
+cd $build_repo
+git status
+git add --all
+git commit -am "update"
+git push origin master
