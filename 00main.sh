@@ -2,7 +2,7 @@
 
 # SDK versions
 sdk_version_ios="4.3.3"
-sdk_version_android="4.1.1"
+sdk_version_android="4.1.2"
 sdk_version_air="3.2.2"
 sdk_version_flash="3.2.5"
 sdk_version_unity="3.1.6"
