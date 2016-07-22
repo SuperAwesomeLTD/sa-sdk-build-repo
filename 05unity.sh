@@ -22,9 +22,8 @@ mkdir $unity_ios_dir
 # 2) Copy iOS
 # ##############################################################################
 
-cp $ios_build_static/libSuperAwesomeSDKUnity.a $unity_ios_dir
-cp $ios_build_static/SAUnity.mm $unity_ios_dir
-cp -r $ios_build_static/include/SuperAwesome/* $unity_ios_dir
+cp $ios_build_static_result/libSuperAwesomeSDKUnity.a $unity_ios_dir
+cp -r $ios_build_static_result/include/SuperAwesomeSDKUnity/* $unity_ios_dir
 
 # ##############################################################################
 # 3) Copy Android
@@ -35,7 +34,7 @@ mkdir "$unity_android_dir/res"
 mkdir "$unity_android_dir/SuperAwesome_lib"
 
 # copy some files
-cp -r "$android_build/sa-sdk-res/" "$unity_android_dir/res"
+cp -r "$android_build/superawesome-res/" "$unity_android_dir/res"
 cp $android_build/AndroidManifest.xml $unity_android_dir/SuperAwesome_lib/
 unity_libs=(
     "samodelspace"
@@ -48,7 +47,7 @@ unity_libs=(
     "savideoplayer"
     "sawebplayer"
     "sanetwork"
-    "sa-sdk-$sdk_version_android"
+    "superawesome-$sdk_version_android"
     "saunity"
 )
 for i in {0..11}
@@ -64,8 +63,8 @@ echo "android.library=true" >> $projectProperties
 
 cd
 
-# ##############################################################################
+##############################################################################
 # 4) Build product
-# ##############################################################################
+##############################################################################
 
-/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_build/SuperAwesome-$sdk_version_unity.unitypackage" -quit
+/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_build/SuperAwesomeSDK-$sdk_version_unity.unitypackage" -quit

@@ -1,7 +1,18 @@
 #!/bin/bash -ex
 
+# ios builds
+static_project="SuperAwesomeSDK"
 ios_build_static="$ios_build/static"
+ios_build_static_src="$ios_build_static/src"
 mkdir $ios_build_static
+mkdir $ios_build_static_src
+
+ios_build_static_result="$ios_build/lib$static_project"
+ios_build_static_result1="$ios_build_static_result/include"
+ios_build_static_result2="$ios_build_static_result1/$static_project"
+mkdir $ios_build_static_result
+mkdir $ios_build_static_result1
+mkdir $ios_build_static_result2
 
 # ##############################################################################
 # 1) Start copying files for the build
@@ -24,72 +35,81 @@ source_folders=(
     "$workspace/sa-mobile-sdk-ios"
 )
 
-static_lib_folder="$workspace/sa-mobile-sdk-ios-staticlib"
-destination_1="$static_lib_folder/SuperAwesomeSDK/Classes"
-rm -rf $destination_1
-mkdir $destination_1
-
 for i in {0..10}
 do
-    find "${source_folders[$i]}/Pod/Classes/" -iname '*.h' -exec cp \{\} $destination_1/ \;
-    find "${source_folders[$i]}/Pod/Classes/" -iname '*.m' -exec cp \{\} $destination_1/ \;
+    # headers & source for compiling & building
+    find "${source_folders[$i]}/Pod/Classes/" -iname '*.h' -exec cp \{\} $ios_build_static_src/ \;
+    find "${source_folders[$i]}/Pod/Classes/" -iname '*.m' -exec cp \{\} $ios_build_static_src/ \;
+
+    # headers for final build packaging
+    find "${source_folders[$i]}/Pod/Classes/" -iname '*.h' -exec cp \{\} $ios_build_static_result2/ \;
 done
 
 # ##############################################################################
-# 2) Write the header
+# 2) Prepare the CMake project
 # ##############################################################################
 
-# enter
-cd
-cd "$static_lib_folder/SuperAwesomeSDK"
+cd $ios_build_static
 
-sourcefile=SuperAwesomeSDK.h
+# create the first CMakeLists.txt file
+cmakelists="CMakeLists.txt"
+echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
+echo "project($static_project)" >> $cmakelists
+echo "set(SDKVER \"9.3\")" >> $cmakelists
+echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer\")" >> $cmakelists
+echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneSimulator\${SDKVER}.sdk\")" >> $cmakelists
+echo "if(EXISTS \${SDKROOT})" >> $cmakelists
+echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
+echo "else()" >> $cmakelists
+echo "message(\"Warning, iOS Base SDK path not found: \" ${SDKROOT})" >> $cmakelists
+echo "endif()" >> $cmakelists
+echo "set(CMAKE_OSX_ARCHITECTURES \"\$(ARCHS_STANDARD)\")" >> $cmakelists
+echo "set(CMAKE_XCODE_EFFECTIVE_PLATFORMS \"-iphoneos;-iphonesimulator\")" >> $cmakelists
+echo "include_directories(\${CMAKE_CURRENT_SOURCE_DIR})" >> $cmakelists
+echo "add_subdirectory( src )" >> $cmakelists
+
+# create the second CMakeLists.txt file
+cd src
+cmakelists2="CMakeLists.txt"
+echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
+echo "add_library( $static_project STATIC \${SRCS} )" >> $cmakelists2
+echo "target_compile_options($static_project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
+echo "target_compile_options($static_project PUBLIC \"-fmodules\")" >> $cmakelists2
+cd ..
+
+# create the main library header
+sourcefile=$ios_build_static_result2/$static_project.h
 echo "#import <UIKit/UIKit.h>" > $sourcefile
-files=($(cd $destination_1/ && ls *.h))
+files=($(cd $ios_build_static_src/ && ls *.h))
 for item in ${files[*]}
 do echo "#import \"$item\"" >> $sourcefile
 done
 
-# exit
-cd
-
 # ##############################################################################
-# 3) Build
+# 3) Use CMake to create the project
 # ##############################################################################
 
-# start
-cd
-cd $static_lib_folder
-
-# build defines
-xbuildir="$static_lib_folder/build"
-xconfig="Release"
-xproj="SuperAwesomeSDK"
-xtarget="SuperAwesomeSDK"
-
-# perform operation
-/usr/bin/xcodebuild -target $xtarget ONLY_ACTIVE_ARCH=NO -configuration $xconfig -sdk iphoneos
-/usr/bin/xcodebuild -target $xtarget ONLY_ACTIVE_ARCH=NO -configuration $xconfig -sdk iphonesimulator
-lipo -create "$xbuildir/$xconfig-iphoneos/lib$xproj.a" "$xbuildir/$xconfig-iphonesimulator/lib$xproj.a" -output "$ios_build_static/lib$xproj.a"
-
-# exit
-cd
+cd $ios_build_static
+/Applications/CMake.app/Contents/bin/cmake -G Xcode .
 
 # ##############################################################################
-# 4) Package
+# 4) Build & Lipo
 # ##############################################################################
 
-# start
+/usr/bin/xcodebuild -target $static_project ONLY_ACTIVE_ARCH=NO -configuration Release -sdk iphonesimulator
+/usr/bin/xcodebuild -target $static_project ONLY_ACTIVE_ARCH=NO -configuration Release -sdk iphoneos
+
+# do a lipo for universal binaries
 cd
+lipo -create "$ios_build_static_src/Release-iphoneos/lib$static_project.a" "$ios_build_static_src/Release-iphonesimulator/lib$static_project.a" -output "$ios_build/lib$static_project/lib$static_project.a"
 
-mkdir $ios_build_static/include
-mkdir $ios_build_static/include/SuperAwesome
-find "$static_lib_folder/SuperAwesomeSDK/Classes/" -iname '*.h' -exec cp \{\} $ios_build_static/include/SuperAwesome \;
-cp $static_lib_folder/SuperAwesomeSDK/$sourcefile $ios_build_static/include/SuperAwesome
-
+# zip it
 cd $ios_build
-zip -r "lib$xproj-$sdk_version_ios.zip" "static"
+zip -r "$static_project-$sdk_version_ios.lib.zip" "lib$static_project"
+
+# clear
 rm -rf static
+rm -rf lib$static_project
 
 # exit
 cd

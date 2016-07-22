@@ -19,7 +19,7 @@ source_folders=(
     "$workspace/sa-mobile-lib-android-videoplayer/savideoplayer"
     "$workspace/sa-mobile-lib-android-webplayer/sawebplayer"
     "$workspace/sa-mobile-lib-android-network/sanetwork"
-    "$workspace/sa-mobile-sdk-android/superawesomesdk/sa-sdk"
+    "$workspace/sa-mobile-sdk-android/demo/superawesome-base"
     "$workspace/sa-mobile-sdk-android/demo/saair"
     "$workspace/sa-mobile-sdk-android/demo/saunity"
     "$workspace/sa-mobile-sdk-android/demo/samopub"
@@ -36,7 +36,7 @@ source_libraries=(
     "savideoplayer"
     "sawebplayer"
     "sanetwork"
-    "sa-sdk"
+    "superawesome-base"
     "saair"
     "saunity"
     "samopub"
@@ -45,7 +45,7 @@ source_libraries=(
 for i in {0..14}
 do
     # create different targets
-    source_aar="${source_libraries[$i]}-release.aar"
+    source_aar="${source_libraries[$i]}-debug.aar"
     dest_zip="${source_libraries[$i]}-release.zip"
     tmp_folder="${source_libraries[$i]}-release"
     dest_jar="${source_libraries[$i]}.jar"
@@ -83,7 +83,7 @@ cd
 cd
 
 cd $android_build
-mv sa-sdk.jar sa-sdk-$sdk_version_android.jar
+mv superawesome-base.jar superawesome-$sdk_version_android.jar
 
 # exit
 cd
@@ -107,9 +107,9 @@ cd
 # start
 cd
 
-source_drawables="$workspace/sa-mobile-sdk-android/superawesomesdk/sa-sdk/src/main/res/drawable"
-source_layouts="$workspace/sa-mobile-sdk-android/superawesomesdk/sa-sdk/src/main/res/layout"
-dest_res="$android_build/sa-sdk-res"
+source_drawables="$workspace/sa-mobile-sdk-android/demo/superawesome-base/src/main/res/drawable"
+source_layouts="$workspace/sa-mobile-sdk-android/demo/superawesome-base/src/main/res/layout"
+dest_res="$android_build/superawesome-res"
 dest_drawables="$dest_res/drawable"
 dest_layouts="$dest_res/layout"
 
@@ -119,7 +119,7 @@ mkdir $dest_layouts
 cp -r "$source_drawables/" "$dest_drawables/"
 cp -r "$source_layouts/" "$dest_layouts/"
 cd $android_build
-zip -r sa-sdk-res.zip sa-sdk-res
+zip -r superawesome-res.zip superawesome-res
 
 # exit
 cd

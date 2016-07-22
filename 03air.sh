@@ -22,7 +22,7 @@ air_sources=(
     "sawebplayer.jar"
     "saadloader.jar"
     "sanetwork.jar"
-    "sa-sdk-$sdk_version_android.jar"
+    "superawesome-$sdk_version_android.jar"
     "saair.jar"
 )
 
@@ -56,8 +56,8 @@ mkdir res
 mkdir res/drawable
 mkdir res/layout
 cd
-cp -r "$android_build/sa-sdk-res/layout/" "$air_build/android/res/layout/"
-cp -r "$android_build/sa-sdk-res/drawable/" "$air_build/android/res/drawable/"
+cp -r "$android_build/superawesome-res/layout/" "$air_build/android/res/layout/"
+cp -r "$android_build/superawesome-res/drawable/" "$air_build/android/res/drawable/"
 
 # exit
 cd
@@ -149,7 +149,7 @@ cd
 cd
 cd $air_build
 
-/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin/adt -package -target ane SAAIR-$sdk_version_air.ane extension.xml -swc SuperAwesome_AIR.swc -platform Android-ARM -C android . -platformoptions platform.xml -platform default -C default .
+/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin/adt -package -target ane SuperAwesomeSDK-$sdk_version_air.ane extension.xml -swc SuperAwesome_AIR.swc -platform Android-ARM -C android . -platformoptions platform.xml -platform default -C default .
 
 # exit
 cd
