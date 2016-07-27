@@ -53,7 +53,7 @@ dest_folders=(
     "sa-flash-sdk"
     "sa-unity-sdk"
     "sa-web-sdk"
-    "sa-kws-sdk"
+    "sa-kws"
     "sa-kws-ios-sdk"
     "sa-kws-android-sdk"
 )
