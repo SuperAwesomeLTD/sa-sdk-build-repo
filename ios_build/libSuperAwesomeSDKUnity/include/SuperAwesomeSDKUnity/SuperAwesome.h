@@ -43,7 +43,7 @@ typedef enum SAConfiguration {
 @interface SuperAwesome : NSObject
 
 // singleton instance (instead of init)
-+ (SuperAwesome *)getInstance;
++ (instancetype)getInstance;
 
 // current SDK version
 - (NSString*) getSdkVersion;

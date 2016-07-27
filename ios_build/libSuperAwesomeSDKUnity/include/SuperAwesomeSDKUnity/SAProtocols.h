@@ -111,6 +111,9 @@
 // return an Ad
 - (SAAd*) getAd;
 
+// show padlock
+- (BOOL) shouldShowPadlock;
+
 // play the ad
 - (void) play;
 

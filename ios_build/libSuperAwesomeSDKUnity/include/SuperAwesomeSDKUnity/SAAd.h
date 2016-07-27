@@ -50,6 +50,8 @@
 @property (nonatomic, assign) BOOL isFallback;
 @property (nonatomic, assign) BOOL isFill;
 @property (nonatomic, assign) BOOL isHouse;
+@property (nonatomic, assign) BOOL safeAdApproved;
+@property (nonatomic, assign) BOOL showPadlock;
 
 // pointer to the creative data associated with the ad
 @property (nonatomic, strong) SACreative *creative;
