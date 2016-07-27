@@ -7,6 +7,7 @@ sdk_theme_folder="themes"
 sdk_themeres_folder="themeres"
 sdk_theme="satheme"
 sdk_aa_domain="AwesomeAds"
+sdk_kws_domain="KWS"
 sdk_devsuspport="devsupport@superawesome.tv"
 sdk_iosmin="iOS 6.0+"
 sdk_androidmin="API 11: Android 3.0 (Honeycomb)"
@@ -19,6 +20,9 @@ doc_folders=(
     "$workspace/sa-flash-sdk-docs"
     "$workspace/sa-unity-sdk-docs"
     "$workspace/sa-web-sdk-docs"
+    "$workspace/sa-kws-docs"
+    "$workspace/sa-kws-ios-sdk-docs"
+    "$workspace/sa-kws-android-sdk-docs"
 )
 sdk_sources=(
     "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios"
@@ -27,6 +31,9 @@ sdk_sources=(
     "https://github.com/SuperAwesomeLTD/sa-flash-sdk"
     "https://github.com/SuperAwesomeLTD/sa-unity-sdk"
     "https://github.com/SuperAwesomeLTD/sa-ads-server"
+    "https://github.com/SuperAwesomeLTD/sa-kws-api"
+    "https://github.com/SuperAwesomeLTD/sa-kws-ios-sdk-objc"
+    "https://github.com/SuperAwesomeLTD/sa-kws-android-sdk"
 )
 sdk_projects=(
     "iOS SDK"
@@ -35,6 +42,9 @@ sdk_projects=(
     "Flash SDK"
     "Unity SDK"
     "Web SDK"
+    "Web SDK"
+    "iOS SDK"
+    "Android SDK"
 )
 dest_folders=(
     "sa-mobile-sdk-ios"
@@ -43,6 +53,9 @@ dest_folders=(
     "sa-flash-sdk"
     "sa-unity-sdk"
     "sa-web-sdk"
+    "sa-kws-sdk"
+    "sa-kws-ios-sdk"
+    "sa-kws-android-sdk"
 )
 versions_array=(
     $sdk_version_ios
@@ -51,9 +64,12 @@ versions_array=(
     $sdk_version_flash
     $sdk_version_unity
     $sdk_version_web
+    $sdk_kws_version_web
+    $sdk_kws_version_ios
+    $sdk_kws_version_android
 )
 
-for i in {0..5}
+for i in {0..8}
 do
     doc_folder=${doc_folders[$i]}
     sdk_source=${sdk_sources[$i]}
@@ -92,6 +108,7 @@ do
     sed -i sedbak "s|<sdk_themeres_folder>|$sdk_themeres_folder|g" *.*
     sed -i sedbak "s|<sdk_theme>|$sdk_theme|g" *.*
     sed -i sedbak "s|<sdk_aa_domain>|$sdk_aa_domain|g" *.*
+    sed -i sedbak "s|<sdk_kws_domain>|$sdk_kws_domain|g" *.*
     sed -i sedbak "s|<sdk_devsuspport>|$sdk_devsuspport|g" *.*
     sed -i sedbak "s|<sdk_iosmin>|$sdk_iosmin|g" *.*
     sed -i sedbak "s|<sdk_androidmin>|$sdk_androidmin|g" *.*
@@ -102,6 +119,9 @@ do
     sed -i sedbak "s|<sdk_version_air>|$sdk_version_air|g" *.*
     sed -i sedbak "s|<sdk_version_flash>|$sdk_version_flash|g" *.*
     sed -i sedbak "s|<sdk_version_web>|$sdk_version_web|g" *.*
+    sed -i sedbak "s|<sdk_version_kws>|$sdk_version_kws|g" *.*
+    sed -i sedbak "s|<sdk_version_kws_ios>|$sdk_version_kws_ios|g" *.*
+    sed -i sedbak "s|<sdk_version_kws_android>|$sdk_version_kws_android|g" *.*
     sed -i sedbak "s|<sdk_source>|$sdk_source|g" *.*
     sed -i sedbak "s|<sdk_author>|$sdk_author|g" *.*
     find . -name "*.*sedbak" -print0 | xargs -0 rm
@@ -127,6 +147,7 @@ do
     fi
     mkdir ../sa-dev-site/public/extdocs/$dest_folder/
     cp -rf build/ ../sa-dev-site/public/extdocs/$dest_folder/
+    rm -rf ../sa-dev-site/public/extdocs/$dest_folder-docs/
 
     # exit folder
     cd ../
@@ -136,6 +157,7 @@ done
 cd sa-dev-site
 git status
 fullDocCommitMessage="Update SDK docs version"
+git add public/extdocs/
 git commit -am "$fullDocCommitMessage"
 git push origin master
 git push heroku-production master
