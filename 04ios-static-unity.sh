@@ -96,6 +96,7 @@ echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $static_project STATIC \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($static_project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($static_project PUBLIC \"-fmodules\")" >> $cmakelists2
+echo "target_compile_options($static_project PUBLIC \"-fembed-bitcode\")" >> $cmakelists2
 cd
 
 # create the main library header
