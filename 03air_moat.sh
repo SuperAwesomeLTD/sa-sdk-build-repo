@@ -23,9 +23,9 @@ air_sources=(
     "saadloader.jar"
     "sanetwork.jar"
     "superawesome-$sdk_version_android.jar"
-    "saair.jar"
     "samoatevents.jar"
     "moatlib.jar"
+    "saair.jar"
 )
 
 for i in {0..13}
@@ -126,7 +126,7 @@ cd $air_moat_build
 platformFile="platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $platformFile
 echo "<packagedDependencies>" >> $platformFile
-for i in {0..13}
+for i in {0..12}
 do echo "<packagedDependency>${air_sources[$i]}</packagedDependency>" >> $platformFile
 done
 for i in {0..2}

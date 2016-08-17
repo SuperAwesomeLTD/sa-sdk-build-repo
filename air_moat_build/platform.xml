@@ -11,7 +11,6 @@
 <packagedDependency>saadloader.jar</packagedDependency>
 <packagedDependency>sanetwork.jar</packagedDependency>
 <packagedDependency>superawesome-4.1.10.jar</packagedDependency>
-<packagedDependency>saair.jar</packagedDependency>
 <packagedDependency>samoatevents.jar</packagedDependency>
 <packagedDependency>moatlib.jar</packagedDependency>
 <packagedDependency>play-services-ads-8.4.0.jar</packagedDependency>
