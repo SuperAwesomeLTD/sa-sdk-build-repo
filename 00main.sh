@@ -4,7 +4,7 @@
 sdk_version_ios="4.3.10"
 sdk_version_android="4.1.10"
 sdk_version_air="3.2.3"
-sdk_version_flash="3.2.7"
+sdk_version_flash="3.2.8"
 sdk_version_unity="3.1.7"
 sdk_version_web="2.0.0"
 sdk_version_kws="1.1.0"
@@ -27,33 +27,33 @@ package_file="$build_repo/package"
 # start
 cd
 
-# rebuild Android build folder
-if [ -d $android_build ]
-then
-    rm -rf $android_build
-fi
-mkdir $android_build
-
-# rebuild AIR build folder
-if [ -d $air_build ]
-then
-    rm -rf $air_build
-fi
-mkdir $air_build
-
-# rebuild AIR build folder
-if [ -d $air_moat_build ]
-then
-    rm -rf $air_moat_build
-fi
-mkdir $air_moat_build
-
-# rebuild iOS build folder
-if [ -d $ios_build ]
-then
-    rm -rf $ios_build
-fi
-mkdir $ios_build
+# # rebuild Android build folder
+# if [ -d $android_build ]
+# then
+#     rm -rf $android_build
+# fi
+# mkdir $android_build
+#
+# # rebuild AIR build folder
+# if [ -d $air_build ]
+# then
+#     rm -rf $air_build
+# fi
+# mkdir $air_build
+#
+# # rebuild AIR build folder
+# if [ -d $air_moat_build ]
+# then
+#     rm -rf $air_moat_build
+# fi
+# mkdir $air_moat_build
+#
+# # rebuild iOS build folder
+# if [ -d $ios_build ]
+# then
+#     rm -rf $ios_build
+# fi
+# mkdir $ios_build
 
 # rebuild Flash build folder
 if [ -d $flash_build ]
@@ -62,51 +62,51 @@ then
 fi
 mkdir $flash_build
 
-# rebuild Unity build folder
-if [ -d $unity_build ]
-then
-    rm -rf $unity_build
-fi
-mkdir $unity_build
-
-# rebuild Unity MOAT build folder
-if [ -d $unity_moat_build ]
-then
-    rm -rf $unity_moat_build
-fi
-mkdir $unity_moat_build
-
-# rebuild final package folder
-if [ -d $package_file ]
-then
-    rm -rf $package_file
-fi
-mkdir $package_file
+# # rebuild Unity build folder
+# if [ -d $unity_build ]
+# then
+#     rm -rf $unity_build
+# fi
+# mkdir $unity_build
+#
+# # rebuild Unity MOAT build folder
+# if [ -d $unity_moat_build ]
+# then
+#     rm -rf $unity_moat_build
+# fi
+# mkdir $unity_moat_build
+#
+# # rebuild final package folder
+# if [ -d $package_file ]
+# then
+#     rm -rf $package_file
+# fi
+# mkdir $package_file
 
 # exit
 cd
 
 # start other scripts
-cd $build_repo
-. ./01android_prebuild.sh
-cd $build_repo
-. ./01android.sh
+# cd $build_repo
+# . ./01android_prebuild.sh
+# cd $build_repo
+# . ./01android.sh
 cd $build_repo
 . ./02flash.sh
-cd $build_repo
-. ./03air.sh
-cd $build_repo
-. ./03air_moat.sh
-cd $build_repo
-. ./04ios-static.sh
-cd $build_repo
-. ./04ios-framework.sh
-cd $build_repo
-. ./04ios-static-unity.sh
-cd $build_repo
-. ./05unity.sh
-cd $build_repo
-. ./05unity_moat.sh
+# cd $build_repo
+# . ./03air.sh
+# cd $build_repo
+# . ./03air_moat.sh
+# cd $build_repo
+# . ./04ios-static.sh
+# cd $build_repo
+# . ./04ios-framework.sh
+# cd $build_repo
+# . ./04ios-static-unity.sh
+# cd $build_repo
+# . ./05unity.sh
+# cd $build_repo
+# . ./05unity_moat.sh
 cd $build_repo
 . ./06package.sh
 cd $build_repo
