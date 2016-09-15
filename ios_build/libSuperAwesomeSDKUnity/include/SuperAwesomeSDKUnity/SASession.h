@@ -8,26 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, SAConfiguration) {
+    PRODUCTION = 0,
+    STAGING = 1
+};
+
 @interface SASession : NSObject
 
-// singleton instance (instead of init)
-+ (instancetype) getInstance;
-
 // setters
-- (void) setConfiguration:(NSInteger) configuration;
+// config
+- (void) setConfiguration:(SAConfiguration) configuration;
 - (void) setConfigurationProduction;
 - (void) setConfigurationStaging;
-- (void) setTestEnabled;
-- (void) setTestDisabled;
-- (void) setTest:(BOOL) testEnabled;
+// test mode
+- (void) enableTestMode;
+- (void) disableTestMode;
+- (void) setTestMode:(BOOL) testEnabled;
+// others
 - (void) setDauId:(NSInteger)dauId;
 - (void) setVersion:(NSString *)version;
 
 // getters
 - (NSString*) getBaseUrl;
-- (BOOL) isTestEnabled;
+- (BOOL)      getTestMode;
 - (NSInteger) getDauId;
 - (NSString*) getVersion;
-- (NSInteger) getConfiguration;
+- (SAConfiguration) getConfiguration;
 
 @end

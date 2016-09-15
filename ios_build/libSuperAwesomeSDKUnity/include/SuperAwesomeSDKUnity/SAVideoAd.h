@@ -2,31 +2,36 @@
 //  SAVideoAd2.h
 //  Pods
 //
-//  Created by Gabriel Coman on 13/02/2016.
+//  Created by Gabriel Coman on 01/09/2016.
 //
 //
 
 #import <UIKit/UIKit.h>
+#import "SACallback.h"
 
-// useful imports
-#import "SAProtocols.h"
-#import "SAVideoPlayer.h"
-#import "SAVASTManager.h"
+@interface SAVideoAd : UIViewController
 
+// static "action" methods
++ (void) load:(NSInteger) placementId;
++ (void) play:(NSInteger) placementId fromVC:(UIViewController*)parent;
++ (BOOL) hasAdAvailable: (NSInteger) placementId;
 
-// forward declarations
-@class SAParentalGate;
-@class SAAd;
-
-@interface SAVideoAd : UIView <SAViewProtocol>
-
-@property (nonatomic, weak) id<SAAdProtocol> adDelegate;
-@property (nonatomic, weak) id<SAParentalGateProtocol> parentalGateDelegate;
-@property (nonatomic, weak) id<SAVideoAdProtocol> videoDelegate;
-@property (nonatomic, assign) BOOL isParentalGateEnabled;
-@property (nonatomic, assign) BOOL shouldShowSmallClickButton;
-
-- (void) pause;
-- (void) resume;
+// static "state" methods
++ (void) setCallback:(sacallback)call;
++ (void) enableTestMode;
++ (void) disableTestMode;
++ (void) enableParentalGate;
++ (void) disableParentalGate;
++ (void) setConfigurationProduction;
++ (void) setConfigurationStaging;
++ (void) setOrientationAny;
++ (void) setOrientationPortrait;
++ (void) setOrientationLandscape;
++ (void) enableCloseButton;
++ (void) disableCloseButton;
++ (void) enableSmallClickButton;
++ (void) disableSmallClickButton;
++ (void) enableCloseAtEnd;
++ (void) disableCloseAtEnd;
 
 @end

@@ -45,7 +45,6 @@ unity_libs=(
     "samoatevents"
     "sajsonparser"
     "sautils"
-    "savastparser"
     "sasession"
     "savideoplayer"
     "sawebplayer"
@@ -54,7 +53,7 @@ unity_libs=(
     "saunity"
     "moatlib"
 )
-for i in {0..13}
+for i in {0..12}
 do cp $android_build/${unity_libs[$i]}.jar $unity_android_dir/
 done
 

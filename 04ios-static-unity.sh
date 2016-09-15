@@ -26,7 +26,6 @@ source_folders=(
     "$workspace/sa-mobile-lib-ios-utils"
     "$workspace/sa-mobile-lib-ios-events"
     "$workspace/sa-mobile-lib-ios-jsonparser"
-    "$workspace/sa-mobile-lib-ios-vastparser"
     "$workspace/sa-mobile-lib-ios-videoplayer"
     "$workspace/sa-mobile-lib-ios-webplayer"
     "$workspace/sa-mobile-lib-ios-adloader"
@@ -38,11 +37,7 @@ plugin_folders=(
     "$workspace/sa-mobile-sdk-ios/Pod/Plugin/Unity"
 )
 
-# noncompiled_plugin_folders=(
-#     "$workspace/sa-mobile-lib-ios-events/Pod/Plugin/Moat"
-# )
-
-for i in {0..10}
+for i in {0..9}
 do
     find "${source_folders[$i]}/Pod/Classes/" -iname '*.h' -exec cp \{\} $ios_build_static_src/ \;
     find "${source_folders[$i]}/Pod/Classes/" -iname '*.m' -exec cp \{\} $ios_build_static_src/ \;
@@ -58,11 +53,6 @@ do
     find "${plugin_folders[$i]}" -iname '*.h' -exec cp \{\} $ios_build_static_result2/ \;
     find "${plugin_folders[$i]}" -iname '*.mm' -exec cp \{\} $ios_build_static_result2/ \;
 done
-# for i in {0..0}
-# do
-#     find "${noncompiled_plugin_folders[$i]}" -iname '*.h' -exec cp \{\} $ios_build_static_result2/ \;
-#     find "${noncompiled_plugin_folders[$i]}" -iname '*.m' -exec cp \{\} $ios_build_static_result2/ \;
-# done
 
 cp -r $workspace/sa-mobile-lib-ios-events/Pod/Frameworks/SUPMoatMobileAppKit.framework $ios_build_static_src/
 

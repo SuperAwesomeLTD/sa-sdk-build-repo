@@ -10,12 +10,11 @@ lib_folders_to_build=(
     "sa-mobile-lib-android-network"
     "sa-mobile-lib-android-session"
     "sa-mobile-lib-android-utils"
-    "sa-mobile-lib-android-vastparser"
     "sa-mobile-lib-android-videoplayer"
     "sa-mobile-lib-android-webplayer"
     "sa-mobile-sdk-android/demo"
 )
-for i in {0..10}
+for i in {0..9}
 do
     cd ${lib_folders_to_build[$i]}
     ./gradlew clean

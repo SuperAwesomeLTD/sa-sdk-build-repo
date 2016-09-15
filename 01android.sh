@@ -14,7 +14,6 @@ source_folders=(
     "$workspace/sa-mobile-lib-android-events/samoatevents"
     "$workspace/sa-mobile-lib-android-jsonparser/sajsonparser"
     "$workspace/sa-mobile-lib-android-utils/sautils"
-    "$workspace/sa-mobile-lib-android-vastparser/savastparser"
     "$workspace/sa-mobile-lib-android-session/sasession"
     "$workspace/sa-mobile-lib-android-videoplayer/savideoplayer"
     "$workspace/sa-mobile-lib-android-webplayer/sawebplayer"
@@ -31,7 +30,6 @@ source_libraries=(
     "samoatevents"
     "sajsonparser"
     "sautils"
-    "savastparser"
     "sasession"
     "savideoplayer"
     "sawebplayer"
@@ -42,7 +40,7 @@ source_libraries=(
     "samopub"
 )
 
-for i in {0..14}
+for i in {0..13}
 do
     # create different targets
     source_aar="${source_libraries[$i]}-debug.aar"
@@ -143,10 +141,10 @@ echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" pac
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAFullscreenVideoAd\$SAFullscreenVideoAdActivity\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\$SAInterstitialAdActivity\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
-echo "<receiver android:name=\"tv.superawesome.lib.saevents.SACPI\" android:exported=\"true\">" >> $androidManifest
+echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"true\">" >> $androidManifest
 echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
 echo "</receiver>" >> $androidManifest
 echo "</application>" >> $androidManifest

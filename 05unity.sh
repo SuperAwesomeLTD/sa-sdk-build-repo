@@ -42,7 +42,6 @@ unity_libs=(
     "saevents"
     "sajsonparser"
     "sautils"
-    "savastparser"
     "sasession"
     "savideoplayer"
     "sawebplayer"
@@ -50,7 +49,7 @@ unity_libs=(
     "superawesome-$sdk_version_android"
     "saunity"
 )
-for i in {0..11}
+for i in {0..10}
 do cp $android_build/${unity_libs[$i]}.jar $unity_android_dir/
 done
 

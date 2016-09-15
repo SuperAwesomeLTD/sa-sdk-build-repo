@@ -15,7 +15,6 @@ air_sources=(
     "samodelspace.jar"
     "sajsonparser.jar"
     "saevents.jar"
-    "savastparser.jar"
     "sautils.jar"
     "sasession.jar"
     "savideoplayer.jar"
@@ -28,7 +27,7 @@ air_sources=(
     "saair.jar"
 )
 
-for i in {0..13}
+for i in {0..12}
 do cp "$android_build/${air_sources[$i]}" "$air_moat_build/android"
 done
 

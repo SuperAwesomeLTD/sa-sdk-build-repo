@@ -20,7 +20,6 @@ source_folders=(
     "$workspace/sa-mobile-lib-ios-utils"
     "$workspace/sa-mobile-lib-ios-events"
     "$workspace/sa-mobile-lib-ios-jsonparser"
-    "$workspace/sa-mobile-lib-ios-vastparser"
     "$workspace/sa-mobile-lib-ios-videoplayer"
     "$workspace/sa-mobile-lib-ios-webplayer"
     "$workspace/sa-mobile-lib-ios-adloader"
@@ -28,7 +27,7 @@ source_folders=(
     "$workspace/sa-mobile-sdk-ios"
 )
 
-for i in {0..10}
+for i in {0..9}
 do
     find "${source_folders[$i]}/Pod/Classes/" -iname '*.h' -exec cp \{\} $ios_build_framework_src/ \;
     find "${source_folders[$i]}/Pod/Classes/" -iname '*.m' -exec cp \{\} $ios_build_framework_src/ \;

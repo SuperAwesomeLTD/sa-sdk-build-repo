@@ -15,7 +15,6 @@ air_sources=(
     "samodelspace.jar"
     "sajsonparser.jar"
     "saevents.jar"
-    "savastparser.jar"
     "sautils.jar"
     "sasession.jar"
     "savideoplayer.jar"
@@ -26,7 +25,7 @@ air_sources=(
     "saair.jar"
 )
 
-for i in {0..11}
+for i in {0..10}
 do cp "$android_build/${air_sources[$i]}" "$air_build/android"
 done
 
@@ -124,7 +123,7 @@ cd $air_build
 platformFile="platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $platformFile
 echo "<packagedDependencies>" >> $platformFile
-for i in {0..10}
+for i in {0..9}
 do echo "<packagedDependency>${air_sources[$i]}</packagedDependency>" >> $platformFile
 done
 for i in {0..2}

@@ -8,20 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-// useful imports
-#import "SAProtocols.h"
-#import "SAWebPlayer.h"
-
-// forward declarations
-@class SAParentalGate;
 @class SAAd;
-@class SAWebPlayer;
+
+// useful imports
+#import "SACallback.h"
+#import "SASession.h"
 
 // class declaration for SABannerAd
-@interface SABannerAd : UIView <SAViewProtocol>
+@interface SABannerAd : UIView
 
-@property (nonatomic, weak) id<SAAdProtocol> adDelegate;
-@property (nonatomic, weak) id<SAParentalGateProtocol> parentalGateDelegate;
-@property (nonatomic, assign) IBInspectable BOOL isParentalGateEnabled;
+// "action" methods
+- (void) load:(NSInteger)placementId;
+- (void) play;
+- (BOOL) hasAdAvailable;
+- (void) close;
+- (void) resize:(CGRect)toframe;
+
+// public "state" setters
+- (void) setCallback:(sacallback)callback;
+- (void) enableParentalGate;
+- (void) disableParentalGate;
+- (void) enableTestMode;
+- (void) disableTestMode;
+- (void) setConfigurationProduction;
+- (void) setConfigurationStaging;
+- (void) setColorTransparent;
+- (void) setColorGray;
 
 @end

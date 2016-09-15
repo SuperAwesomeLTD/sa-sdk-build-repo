@@ -23,7 +23,6 @@ source_libraries_full=(
     "samoatevents.jar"
     "sajsonparser.jar"
     "sautils.jar"
-    "savastparser.jar"
     "sasession.jar"
     "savideoplayer.jar"
     "sawebplayer.jar"
@@ -32,7 +31,7 @@ source_libraries_full=(
     "moatlib.jar"
     "superawesome-res.zip"
 )
-for i in {0..13}
+for i in {0..12}
 do cp android_build/${source_libraries_full[$i]} package/android/
 done
 cd package
@@ -49,7 +48,6 @@ source_libraries_base=(
     "saevents.jar"
     "sajsonparser.jar"
     "sautils.jar"
-    "savastparser.jar"
     "sasession.jar"
     "savideoplayer.jar"
     "sawebplayer.jar"
@@ -57,7 +55,7 @@ source_libraries_base=(
     "superawesome-$sdk_version_android.jar"
     "superawesome-res.zip"
 )
-for i in {0..11}
+for i in {0..10}
 do cp android_build/${source_libraries_base[$i]} package/android/
 done
 cd package
