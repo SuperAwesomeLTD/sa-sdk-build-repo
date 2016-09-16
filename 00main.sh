@@ -1,9 +1,9 @@
 #!/bin/bash -ex
 
 # SDK versions
-sdk_version_ios="5.0.1"
-sdk_version_android="5.0.1"
-sdk_version_air="5.0.0"
+sdk_version_ios="5.0.2"
+sdk_version_android="5.0.2"
+sdk_version_air="5.0.1"
 sdk_version_flash="3.2.8"
 sdk_version_unity="5.0.0"
 sdk_version_web="2.0.0"
@@ -109,8 +109,8 @@ cd $build_repo
 . ./05unity_moat.sh
 cd $build_repo
 . ./06package.sh
-# cd $build_repo
-# . ./07docs.sh
+cd $build_repo
+. ./07docs.sh
 
 # update the current repo
 cd $build_repo
