@@ -125,7 +125,7 @@ cd $air_moat_build
 platformFile="platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $platformFile
 echo "<packagedDependencies>" >> $platformFile
-for i in {0..12}
+for i in {0..11}
 do echo "<packagedDependency>${air_sources[$i]}</packagedDependency>" >> $platformFile
 done
 for i in {0..2}
