@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # SDK versions
-sdk_version_ios="5.0.2"
+sdk_version_ios="5.0.3"
 sdk_version_android="5.0.3"
 sdk_version_air="5.0.1"
 sdk_version_flash="3.2.8"
