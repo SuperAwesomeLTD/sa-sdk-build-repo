@@ -29,20 +29,6 @@ for i in {0..10}
 do cp "$android_build/${air_sources[$i]}" "$air_build/android"
 done
 
-# # ##############################################################################
-# # 2) Copy services (Google)
-# # ##############################################################################
-#
-# air_services=(
-#     "play-services-ads-8.4.0.jar"
-#     "play-services-base-8.4.0.jar"
-#     "play-services-basement-8.4.0.jar"
-# )
-#
-# for i in {0..2}
-# do cp "$build_repo/presets/${air_services[$i]}" "$air_build/android"
-# done
-
 # ##############################################################################
 # 3) Copy resources
 # ##############################################################################
@@ -126,9 +112,6 @@ echo "<packagedDependencies>" >> $platformFile
 for i in {0..9}
 do echo "<packagedDependency>${air_sources[$i]}</packagedDependency>" >> $platformFile
 done
-# for i in {0..2}
-# do echo "<packagedDependency>${air_services[$i]}</packagedDependency>" >> $platformFile
-# done
 echo "</packagedDependencies>" >> $platformFile
 echo "<packagedResources>" >> $platformFile
 echo "<packagedResource>" >> $platformFile
