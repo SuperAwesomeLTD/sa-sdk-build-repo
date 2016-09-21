@@ -9,7 +9,7 @@
 <packagedDependency>sawebplayer.jar</packagedDependency>
 <packagedDependency>saadloader.jar</packagedDependency>
 <packagedDependency>sanetwork.jar</packagedDependency>
-<packagedDependency>superawesome-5.0.6.jar</packagedDependency>
+<packagedDependency>superawesome-5.0.7.jar</packagedDependency>
 <packagedDependency>samoatevents.jar</packagedDependency>
 <packagedDependency>moatlib.jar</packagedDependency>
 </packagedDependencies>
