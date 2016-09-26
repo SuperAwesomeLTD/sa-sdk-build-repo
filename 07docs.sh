@@ -14,15 +14,15 @@ sdk_androidmin="API 11: Android 3.0 (Honeycomb)"
 sdk_author="Gabriel Coman"
 
 doc_folders=(
-    "$workspace/sa-mobile-sdk-ios-docs"
-    "$workspace/sa-mobile-sdk-android-docs"
-    "$workspace/sa-adobeair-sdk-docs"
-    "$workspace/sa-flash-sdk-docs"
-    "$workspace/sa-unity-sdk-docs"
-    "$workspace/sa-web-sdk-docs"
-    "$workspace/sa-kws-docs"
-    "$workspace/sa-kws-ios-sdk-docs"
-    "$workspace/sa-kws-android-sdk-docs"
+    "../sa-mobile-sdk-ios-docs"
+    "../sa-mobile-sdk-android-docs"
+    "../sa-adobeair-sdk-docs"
+    "../sa-flash-sdk-docs"
+    "../sa-unity-sdk-docs"
+    "../sa-web-sdk-docs"
+    "../sa-kws-docs"
+    "../sa-kws-ios-sdk-docs"
+    "../sa-kws-android-sdk-docs"
 )
 sdk_sources=(
     "https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios"
@@ -77,80 +77,84 @@ do
     dest_folder=${dest_folders[$i]}
     c_version=${versions_array[$i]}
 
-    # enter folder
-    cd $doc_folder
-    cd source
+    if [ -d "$doc_folder" ]; then
+        # enter folder
+        cd $doc_folder
+        cd source
 
-    # delete old theme
-    rm -rf $sdk_theme_folder
-    rm -rf $sdk_themeres_folder
+        # delete old theme
+        rm -rf $sdk_theme_folder
+        rm -rf $sdk_themeres_folder
 
-    # get and setup new theme
-    rm -rf sa-docs-sphinx-theme
-    git clone -b master https://github.com/SuperAwesomeLTD/sa-docs-sphinx-theme.git
-    mkdir $sdk_theme_folder
-    mkdir $sdk_theme_folder/$sdk_theme
-    mkdir $sdk_themeres_folder
-    cp -rf sa-docs-sphinx-theme/* $sdk_theme_folder/$sdk_theme/
-    cp sa-docs-sphinx-theme/static/img/* $sdk_themeres_folder/
-    rm -rf sa-docs-sphinx-theme
-    cd ../
+        # get and setup new theme
+        rm -rf sa-docs-sphinx-theme
+        git clone -b master git@github.com:SuperAwesomeLTD/sa-docs-sphinx-theme.git
+        mkdir $sdk_theme_folder
+        mkdir $sdk_theme_folder/$sdk_theme
+        mkdir $sdk_themeres_folder
+        cp -rf sa-docs-sphinx-theme/* $sdk_theme_folder/$sdk_theme/
+        cp sa-docs-sphinx-theme/static/img/* $sdk_themeres_folder/
+        rm -rf sa-docs-sphinx-theme
+        cd ../
 
-    # create temporary rsource folder
-    rm -rf rsource
-    mkdir rsource
-    cp -rf source/* rsource
+        # create temporary rsource folder
+        rm -rf rsource
+        mkdir rsource
+        cp -rf source/* rsource
 
-    # replace variables in rsource
-    cd rsource
-    sed -i sedbak "s|<sdk_company>|$sdk_company|g" *.*
-    sed -i sedbak "s|<sdk_theme_folder>|$sdk_theme_folder|g" *.*
-    sed -i sedbak "s|<sdk_themeres_folder>|$sdk_themeres_folder|g" *.*
-    sed -i sedbak "s|<sdk_theme>|$sdk_theme|g" *.*
-    sed -i sedbak "s|<sdk_aa_domain>|$sdk_aa_domain|g" *.*
-    sed -i sedbak "s|<sdk_kws_domain>|$sdk_kws_domain|g" *.*
-    sed -i sedbak "s|<sdk_devsuspport>|$sdk_devsuspport|g" *.*
-    sed -i sedbak "s|<sdk_iosmin>|$sdk_iosmin|g" *.*
-    sed -i sedbak "s|<sdk_androidmin>|$sdk_androidmin|g" *.*
-    sed -i sedbak "s|<sdk_project>|$sdk_project|g" *.*
-    sed -i sedbak "s|<sdk_version_ios>|$sdk_version_ios|g" *.*
-    sed -i sedbak "s|<sdk_version_android>|$sdk_version_android|g" *.*
-    sed -i sedbak "s|<sdk_version_unity>|$sdk_version_unity|g" *.*
-    sed -i sedbak "s|<sdk_version_air>|$sdk_version_air|g" *.*
-    sed -i sedbak "s|<sdk_version_flash>|$sdk_version_flash|g" *.*
-    sed -i sedbak "s|<sdk_version_web>|$sdk_version_web|g" *.*
-    sed -i sedbak "s|<sdk_version_kws>|$sdk_version_kws|g" *.*
-    sed -i sedbak "s|<sdk_version_kws_ios>|$sdk_version_kws_ios|g" *.*
-    sed -i sedbak "s|<sdk_version_kws_android>|$sdk_version_kws_android|g" *.*
-    sed -i sedbak "s|<sdk_source>|$sdk_source|g" *.*
-    sed -i sedbak "s|<sdk_author>|$sdk_author|g" *.*
-    find . -name "*.*sedbak" -print0 | xargs -0 rm
-    cd ../
+        # replace variables in rsource
+        cd rsource
+        sed -i sedbak "|<sdk_company>|$sdk_company|g" *.*
+        sed -i sedbak "s|<sdk_theme_folder>|$sdk_theme_folder|g" *.*
+        sed -i sedbak "s|<sdk_themeres_folder>|$sdk_themeres_folder|g" *.*
+        sed -i sedbak "s|<sdk_theme>|$sdk_theme|g" *.*
+        sed -i sedbak "s|<sdk_aa_domain>|$sdk_aa_domain|g" *.*
+        sed -i sedbak "s|<sdk_kws_domain>|$sdk_kws_domain|g" *.*
+        sed -i sedbak "s|<sdk_devsuspport>|$sdk_devsuspport|g" *.*
+        sed -i sedbak "s|<sdk_iosmin>|$sdk_iosmin|g" *.*
+        sed -i sedbak "s|<sdk_androidmin>|$sdk_androidmin|g" *.*
+        sed -i sedbak "s|<sdk_project>|$sdk_project|g" *.*
+        sed -i sedbak "s|<sdk_version_ios>|$sdk_version_ios|g" *.*
+        sed -i sedbak "s|<sdk_version_android>|$sdk_version_android|g" *.*
+        sed -i sedbak "s|<sdk_version_unity>|$sdk_version_unity|g" *.*
+        sed -i sedbak "s|<sdk_version_air>|$sdk_version_air|g" *.*
+        sed -i sedbak "s|<sdk_version_flash>|$sdk_version_flash|g" *.*
+        sed -i sedbak "s|<sdk_version_web>|$sdk_version_web|g" *.*
+        sed -i sedbak "s|<sdk_version_kws>|$sdk_version_kws|g" *.*
+        sed -i sedbak "s|<sdk_version_kws_ios>|$sdk_version_kws_ios|g" *.*
+        sed -i sedbak "s|<sdk_version_kws_android>|$sdk_version_kws_android|g" *.*
+        sed -i sedbak "s|<sdk_source>|$sdk_source|g" *.*
+        sed -i sedbak "s|<sdk_author>|$sdk_author|g" *.*
+        find . -name "*.*sedbak" -print0 | xargs -0 rm
+        cd ../
 
-    # finally make the sphinx doc and cleanup
-    make -f Makefile html
-    rm -rf rsource
+        # finally make the sphinx doc and cleanup
+        make -f Makefile html
+        rm -rf rsource
 
-    # do git stuff
-    cdate=$(($(date +'%s * 1000 + %-N / 1000000')))
-    echo "Updated to "$c_version" on "$cdate" "  >> "CHANGELOG"
-    git status
-    git add . --all
-    docCommitMessage="Update SDK docs to version "$c_version
-    git commit -am "$docCommitMessage"
-    git push origin master
+        # do git stuff
+        cdate=$(($(date +'%s * 1000 + %-N / 1000000')))
+        echo "Updated to "$c_version" on "$cdate" "  >> "CHANGELOG"
+        git status
+        git add . --all
+        docCommitMessage="Update SDK docs to version "$c_version
+        git commit -am "$docCommitMessage"
+        git push origin master
 
-    # copy build
-    if [ -d ../sa-dev-site/public/extdocs/$dest_folder/ ]
-    then
-        rm -rf ../sa-dev-site/public/extdocs/$dest_folder/
+        # copy build
+        if [ -d ../sa-dev-site/public/extdocs/$dest_folder/ ]
+        then
+            rm -rf ../sa-dev-site/public/extdocs/$dest_folder/
+        fi
+        mkdir ../sa-dev-site/public/extdocs/$dest_folder/
+        cp -rf build/ ../sa-dev-site/public/extdocs/$dest_folder/
+        rm -rf ../sa-dev-site/public/extdocs/$dest_folder-docs/
+
+        # exit folder
+        cd ../
+    else
+        echo "Skipped " $doc_folder " is missing"
     fi
-    mkdir ../sa-dev-site/public/extdocs/$dest_folder/
-    cp -rf build/ ../sa-dev-site/public/extdocs/$dest_folder/
-    rm -rf ../sa-dev-site/public/extdocs/$dest_folder-docs/
-
-    # exit folder
-    cd ../
 done
 
 # Upload final documentation
