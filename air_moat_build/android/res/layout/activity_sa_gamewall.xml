@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="tv.superawesome.sdk.views.SAGameWall">
+
+    <RelativeLayout
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/padlock_image"
+            android:src="@drawable/watermark_67x25"
+            android:background="@android:color/transparent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="83dp"
+            android:maxHeight="31dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="App Wall"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/gamewall_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:width="30dp"
+            android:height="30dp"
+            android:background="@drawable/sa_close"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

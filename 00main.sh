@@ -109,8 +109,8 @@ cd $build_repo
 . ./05unity_moat.sh
 cd $build_repo
 . ./06package.sh
-cd $build_repo
-. ./07docs.sh
+# cd $build_repo
+# . ./07docs.sh
 
 # update the current repo
 cd $build_repo
