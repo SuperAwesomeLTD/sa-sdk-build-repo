@@ -27,8 +27,8 @@
             android:maxHeight="31dp"/>
 
         <TextView
+            android:id="@+id/GameWallTitle"
             android:layout_width="match_parent"
-            android:text="App Wall"
             android:textStyle="bold"
             android:textSize="28sp"
             android:gravity="center"

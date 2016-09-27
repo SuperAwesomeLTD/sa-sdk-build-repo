@@ -10,7 +10,6 @@
         android:layout_height="100dp" />
     <TextView
         android:id="@+id/GameWallAppName"
-        android:text="Game Name"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
