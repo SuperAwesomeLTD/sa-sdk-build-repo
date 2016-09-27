@@ -114,27 +114,27 @@ do
 
 		# replace variables in rsource
     cd rsource
-    sed -i sedbak "s|<sdk_company>|$sdk_company|g" *.*
-    sed -i sedbak "s|<sdk_theme_folder>|$sdk_theme_folder|g" *.*
-    sed -i sedbak "s|<sdk_themeres_folder>|$sdk_themeres_folder|g" *.*
-    sed -i sedbak "s|<sdk_theme>|$sdk_theme|g" *.*
-    sed -i sedbak "s|<sdk_aa_domain>|$sdk_aa_domain|g" *.*
-    sed -i sedbak "s|<sdk_kws_domain>|$sdk_kws_domain|g" *.*
-    sed -i sedbak "s|<sdk_devsuspport>|$sdk_devsuspport|g" *.*
-    sed -i sedbak "s|<sdk_iosmin>|$sdk_iosmin|g" *.*
-    sed -i sedbak "s|<sdk_androidmin>|$sdk_androidmin|g" *.*
-    sed -i sedbak "s|<sdk_project>|$sdk_project|g" *.*
-    sed -i sedbak "s|<sdk_version_ios>|$sdk_version_ios|g" *.*
-    sed -i sedbak "s|<sdk_version_android>|$sdk_version_android|g" *.*
-    sed -i sedbak "s|<sdk_version_unity>|$sdk_version_unity|g" *.*
-    sed -i sedbak "s|<sdk_version_air>|$sdk_version_air|g" *.*
-    sed -i sedbak "s|<sdk_version_flash>|$sdk_version_flash|g" *.*
-    sed -i sedbak "s|<sdk_version_web>|$sdk_version_web|g" *.*
-    sed -i sedbak "s|<sdk_version_kws>|$sdk_version_kws|g" *.*
-    sed -i sedbak "s|<sdk_version_kws_ios>|$sdk_version_kws_ios|g" *.*
-    sed -i sedbak "s|<sdk_version_kws_android>|$sdk_version_kws_android|g" *.*
-    sed -i sedbak "s|<sdk_source>|$sdk_source|g" *.*
-    sed -i sedbak "s|<sdk_author>|$sdk_author|g" *.*
+    sed -i.sedbak "s|<sdk_company>|$sdk_company|g" *.*
+    sed -i.sedbak "s|<sdk_theme_folder>|$sdk_theme_folder|g" *.*
+    sed -i.sedbak "s|<sdk_themeres_folder>|$sdk_themeres_folder|g" *.*
+    sed -i.sedbak "s|<sdk_theme>|$sdk_theme|g" *.*
+    sed -i.sedbak "s|<sdk_aa_domain>|$sdk_aa_domain|g" *.*
+    sed -i.sedbak "s|<sdk_kws_domain>|$sdk_kws_domain|g" *.*
+    sed -i.sedbak "s|<sdk_devsuspport>|$sdk_devsuspport|g" *.*
+    sed -i.sedbak "s|<sdk_iosmin>|$sdk_iosmin|g" *.*
+    sed -i.sedbak "s|<sdk_androidmin>|$sdk_androidmin|g" *.*
+    sed -i.sedbak "s|<sdk_project>|$sdk_project|g" *.*
+    sed -i.sedbak "s|<sdk_version_ios>|$sdk_version_ios|g" *.*
+    sed -i.sedbak "s|<sdk_version_android>|$sdk_version_android|g" *.*
+    sed -i.sedbak "s|<sdk_version_unity>|$sdk_version_unity|g" *.*
+    sed -i.sedbak "s|<sdk_version_air>|$sdk_version_air|g" *.*
+    sed -i.sedbak "s|<sdk_version_flash>|$sdk_version_flash|g" *.*
+    sed -i.sedbak "s|<sdk_version_web>|$sdk_version_web|g" *.*
+    sed -i.sedbak "s|<sdk_version_kws>|$sdk_version_kws|g" *.*
+    sed -i.sedbak "s|<sdk_version_kws_ios>|$sdk_version_kws_ios|g" *.*
+    sed -i.sedbak "s|<sdk_version_kws_android>|$sdk_version_kws_android|g" *.*
+    sed -i.sedbak "s|<sdk_source>|$sdk_source|g" *.*
+    sed -i.sedbak "s|<sdk_author>|$sdk_author|g" *.*
     find . -name "*.*sedbak" -print0 | xargs -0 rm
     cd ../
 
@@ -155,6 +155,9 @@ do
 		cd ../..
 
 done
+
+cd
+cd $workspace/
 
 # Upload final documentation
 cd sa-dev-site

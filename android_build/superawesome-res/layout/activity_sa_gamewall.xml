@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+    android:orientation="vertical"
     tools:context="tv.superawesome.sdk.views.SAGameWall">
 
     <RelativeLayout
@@ -47,5 +48,13 @@
             android:adjustViewBounds="true"/>
 
     </RelativeLayout>
+
+    <GridView
+        android:id="@+id/GameWallGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:columnWidth="100dp"/>
 
 </LinearLayout>
