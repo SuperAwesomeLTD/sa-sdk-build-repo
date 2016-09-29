@@ -13,6 +13,7 @@
 /// also works as public headers
 
 // import model header files
+#import "SAResponse.h"
 #import "SAAd.h"
 #import "SACreative.h"
 #import "SADetails.h"
@@ -23,6 +24,7 @@
 #import "SABannerAd.h"
 #import "SAInterstitialAd.h"
 #import "SAVideoAd.h"
+#import "SAGameWall.h"
 
 // load callback header
 #import "SACallback.h"
