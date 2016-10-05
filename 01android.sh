@@ -81,7 +81,7 @@ cd
 cd
 
 cd $android_build
-mv superawesome-base.jar superawesome-$sdk_version_android.jar
+mv superawesome-base.jar superawesome.jar
 
 # exit
 cd

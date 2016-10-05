@@ -1,15 +1,15 @@
 #!/bin/bash -ex
 
 # SDK versions
-sdk_version_ios="5.2.2"
-sdk_version_android="5.2.2"
-sdk_version_air="5.1.0"
+sdk_version_ios="5.2.3"
+sdk_version_android="5.2.4"
+sdk_version_unity="5.1.1"
+sdk_version_air="5.1.1"
 sdk_version_flash="3.2.8"
-sdk_version_unity="5.1.0"
+sdk_version_kws_ios="1.3.0"
+sdk_version_kws_android="1.2.3"
 sdk_version_web="2.0.0"
 sdk_version_kws="1.1.0"
-sdk_version_kws_ios="1.1.7"
-sdk_version_kws_android="1.2.2"
 
 # other variables
 homey="/Users/gabriel.coman"
@@ -76,12 +76,15 @@ then
 fi
 mkdir $unity_moat_build
 
-# rebuild final package folder
-if [ -d $package_file ]
-then
-    rm -rf $package_file
-fi
-mkdir $package_file
+cd $build_repo
+
+# create package folder
+mkdir -p package
+mkdir -p package/air
+mkdir -p package/unity
+mkdir -p package/flash
+mkdir -p package/ios
+mkdir -p package/android
 
 # exit
 cd
@@ -109,8 +112,6 @@ cd $build_repo
 . ./05unity_moat.sh
 cd $build_repo
 . ./06package.sh
-cd $build_repo
-. ./07docs.sh
 
 # update the current repo
 cd $build_repo

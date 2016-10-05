@@ -104,7 +104,7 @@ lipo -create "$ios_build_static_src/Release-iphoneos/lib$static_project.a" "$ios
 
 # zip it
 cd $ios_build
-zip -r "$static_project-$sdk_version_ios.lib.zip" "lib$static_project"
+zip -r "$static_project.lib.zip" "lib$static_project"
 
 # clear
 rm -rf static

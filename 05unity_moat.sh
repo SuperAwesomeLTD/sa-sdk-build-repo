@@ -49,7 +49,7 @@ unity_libs=(
     "savideoplayer"
     "sawebplayer"
     "sanetwork"
-    "superawesome-$sdk_version_android"
+    "superawesome"
     "saunity"
     "moatlib"
 )
@@ -70,4 +70,4 @@ cd
 # 4) Build product
 ##############################################################################
 
-/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_moat_build/SuperAwesomeSDK-Moat-$sdk_version_unity.unitypackage" -quit
+/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_moat_build/SuperAwesomeSDK-Moat.unitypackage" -quit

@@ -46,7 +46,7 @@ unity_libs=(
     "savideoplayer"
     "sawebplayer"
     "sanetwork"
-    "superawesome-$sdk_version_android"
+    "superawesome"
     "saunity"
 )
 for i in {0..10}
@@ -66,4 +66,4 @@ cd
 # 4) Build product
 ##############################################################################
 
-/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_build/SuperAwesomeSDK-$sdk_version_unity.unitypackage" -quit
+/Applications/Unity4/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "$unity_dir/demo" -exportPackage "Assets/Plugins" "Assets/SuperAwesome" "$unity_build/SuperAwesomeSDK.unitypackage" -quit

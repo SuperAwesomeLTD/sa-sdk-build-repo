@@ -21,7 +21,7 @@ air_sources=(
     "sawebplayer.jar"
     "saadloader.jar"
     "sanetwork.jar"
-    "superawesome-$sdk_version_android.jar"
+    "superawesome.jar"
     "saair.jar"
 )
 
@@ -131,7 +131,7 @@ cd
 cd
 cd $air_build
 
-/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin/adt -package -target ane SuperAwesomeSDK-$sdk_version_air.ane extension.xml -swc SuperAwesome_AIR.swc -platform Android-ARM -C android . -platformoptions platform.xml -platform default -C default .
+/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin/adt -package -target ane SuperAwesomeSDK.ane extension.xml -swc SuperAwesome_AIR.swc -platform Android-ARM -C android . -platformoptions platform.xml -platform default -C default .
 
 # exit
 cd
