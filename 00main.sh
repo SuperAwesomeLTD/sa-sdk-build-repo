@@ -2,9 +2,9 @@
 
 # SDK versions
 sdk_version_ios="5.2.3"
-sdk_version_android="5.2.4"
-sdk_version_unity="5.1.1"
-sdk_version_air="5.1.1"
+sdk_version_android="5.2.5"
+sdk_version_unity="5.1.2"
+sdk_version_air="5.1.2"
 sdk_version_flash="3.2.8"
 sdk_version_kws_ios="1.3.0"
 sdk_version_kws_android="1.2.3"
