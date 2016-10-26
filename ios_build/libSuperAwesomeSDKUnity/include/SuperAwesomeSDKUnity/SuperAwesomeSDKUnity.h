@@ -11,6 +11,7 @@
 #import "SABlackMask.h"
 #import "SACPI.h"
 #import "SACallback.h"
+#import "SACampaignType.h"
 #import "SACapper.h"
 #import "SACreative.h"
 #import "SACreativeFormat.h"

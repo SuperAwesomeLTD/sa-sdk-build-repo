@@ -12,6 +12,7 @@
 
 #import "SAJsonParser.h"
 #import "SAVASTAdType.h"
+#import "SACampaignType.h"
 
 // formward declarations
 @class SACreative;
@@ -25,12 +26,14 @@
 @property (nonatomic, assign) NSInteger lineItemId;
 @property (nonatomic, assign) NSInteger campaignId;
 @property (nonatomic, assign) NSInteger placementId;
+@property (nonatomic, assign) NSInteger campaignType;
 @property (nonatomic, assign) BOOL test;
 @property (nonatomic, assign) BOOL isFallback;
 @property (nonatomic, assign) BOOL isFill;
 @property (nonatomic, assign) BOOL isHouse;
 @property (nonatomic, assign) BOOL safeAdApproved;
 @property (nonatomic, assign) BOOL showPadlock;
+@property (nonatomic, strong) NSString *device;
 
 @property (nonatomic, assign) BOOL isVAST;
 @property (nonatomic, assign) SAVASTAdType vastType;
