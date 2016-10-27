@@ -13,9 +13,10 @@
 #import "SAJsonParser.h"
 #import "SAVASTAdType.h"
 #import "SACampaignType.h"
-
-// formward declarations
-@class SACreative;
+#import "SACreative.h"
+#import "SADetails.h"
+#import "SAMedia.h"
+#import "SATracking.h"
 
 @interface SAAd : SABaseObject <SASerializationProtocol, SADeserializationProtocol>
 
