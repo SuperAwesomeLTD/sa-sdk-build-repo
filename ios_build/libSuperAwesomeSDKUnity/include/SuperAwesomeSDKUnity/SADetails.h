@@ -28,7 +28,6 @@
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, strong) NSString *cdnUrl;
 @property (nonatomic, strong) NSString *vast;
-@property (nonatomic, strong) NSString *transcodedVideos;
 
 @property (nonatomic, strong) SAMedia *media;
 

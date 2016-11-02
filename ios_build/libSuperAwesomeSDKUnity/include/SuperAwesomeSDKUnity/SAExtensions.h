@@ -28,6 +28,7 @@
 
 - (nonnull NSArray*) filterBy:(nonnull NSString*) member withValue:(nonnull NSString*) value;
 - (nonnull NSArray*) filterBy:(nonnull NSString*) member withBool:(BOOL) value;
+- (nonnull NSArray*) filterBy:(nonnull NSString*) member withInt:(NSInteger) value;
 - (nonnull NSArray*) removeAllButFirstElement;
 
 @end
