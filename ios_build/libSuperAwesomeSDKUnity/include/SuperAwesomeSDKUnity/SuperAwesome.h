@@ -24,7 +24,7 @@
 #import "SABannerAd.h"
 #import "SAInterstitialAd.h"
 #import "SAVideoAd.h"
-#import "SAGameWall.h"
+#import "SAAppWall.h"
 
 // load callback header
 #import "SACallback.h"
