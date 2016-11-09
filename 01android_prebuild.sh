@@ -12,7 +12,7 @@ lib_folders_to_build=(
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
     "sa-mobile-lib-android-webplayer"
-    "sa-mobile-sdk-android/demo"
+    "sa-mobile-sdk-android"
 )
 for i in {0..9}
 do

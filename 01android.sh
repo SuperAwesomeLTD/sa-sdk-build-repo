@@ -18,10 +18,10 @@ source_folders=(
     "$workspace/sa-mobile-lib-android-videoplayer/savideoplayer"
     "$workspace/sa-mobile-lib-android-webplayer/sawebplayer"
     "$workspace/sa-mobile-lib-android-network/sanetwork"
-    "$workspace/sa-mobile-sdk-android/demo/superawesome-base"
-    "$workspace/sa-mobile-sdk-android/demo/saair"
-    "$workspace/sa-mobile-sdk-android/demo/saunity"
-    "$workspace/sa-mobile-sdk-android/demo/samopub"
+    "$workspace/sa-mobile-sdk-android/superawesome-base"
+    "$workspace/sa-mobile-sdk-android/saair"
+    "$workspace/sa-mobile-sdk-android/saunity"
+    "$workspace/sa-mobile-sdk-android/samopub"
 )
 source_libraries=(
     "samodelspace"
@@ -105,8 +105,8 @@ cd
 # start
 cd
 
-source_drawables="$workspace/sa-mobile-sdk-android/demo/superawesome-base/src/main/res/drawable"
-source_layouts="$workspace/sa-mobile-sdk-android/demo/superawesome-base/src/main/res/layout"
+source_drawables="$workspace/sa-mobile-sdk-android/superawesome-base/src/main/res/drawable"
+source_layouts="$workspace/sa-mobile-sdk-android/superawesome-base/src/main/res/layout"
 dest_res="$android_build/superawesome-res"
 dest_drawables="$dest_res/drawable"
 dest_layouts="$dest_res/layout"
