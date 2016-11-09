@@ -13,8 +13,9 @@ lib_folders_to_build=(
     "sa-mobile-lib-android-videoplayer"
     "sa-mobile-lib-android-webplayer"
     "sa-mobile-sdk-android"
+		"sa-kws-android-sdk"
 )
-for i in {0..9}
+for i in {0..10}
 do
     cd ${lib_folders_to_build[$i]}
     ./gradlew clean
