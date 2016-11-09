@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # ios builds
-framework_project="KWSSDK"
+framework_project="KidsWebServicesSDK"
 kws_ios_build_framework="$kws_ios_build/framework"
 kws_ios_build_framework_src="$kws_ios_build_framework/src"
 mkdir $kws_ios_build_framework

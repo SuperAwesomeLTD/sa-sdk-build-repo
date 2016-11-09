@@ -29,8 +29,8 @@ cp unity_build/SuperAwesomeSDK.unitypackage package/unity/$sdk_version_unity/Sup
 cp unity_moat_build/SuperAwesomeSDK-Moat.unitypackage package/unity/$sdk_version_unity/SuperAwesomeSDK-$sdk_version_unity.Unity.full.unitypackage
 cp ios_build/SuperAwesomeSDK.lib.zip package/ios/$sdk_version_ios/SuperAwesomeSDK-$sdk_version_ios.iOS.lib.zip
 cp ios_build/SuperAwesomeSDK.framework.zip package/ios/$sdk_version_ios/SuperAwesomeSDK-$sdk_version_ios.iOS.framework.zip
-cp kws_ios_build/KWSSDK.lib.zip package/kws_ios/$sdk_version_kws_ios/KidsWebServicesSSDK-$sdk_version_kws_ios.iOS.lib.zip
-cp kws_ios_build/KWSSDK.framework.zip package/kws_ios/$sdk_version_kws_ios/KidsWebServicesSDK-$sdk_version_kws_ios.iOS.framework.zip
+cp kws_ios_build/KidsWebServicesSDK.lib.zip package/kws_ios/$sdk_version_kws_ios/KidsWebServicesSSDK-$sdk_version_kws_ios.iOS.lib.zip
+cp kws_ios_build/KidsWebServicesSDK.framework.zip package/kws_ios/$sdk_version_kws_ios/KidsWebServicesSDK-$sdk_version_kws_ios.iOS.framework.zip
 
 cd
 

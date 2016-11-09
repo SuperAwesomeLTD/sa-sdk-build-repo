@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # ios builds
-static_project="KWSSDK"
+static_project="KidsWebServicesSDK"
 kws_ios_build_static="$kws_ios_build/static"
 kws_ios_build_static_src="$kws_ios_build_static/src"
 mkdir $kws_ios_build_static
