@@ -7,7 +7,7 @@ sdk_version_unity="5.1.3"
 sdk_version_air="5.1.2"
 sdk_version_flash="3.2.8"
 sdk_version_kws_ios="2.1.3"
-sdk_version_kws_android="2.1.3"
+sdk_version_kws_android="2.1.5"
 sdk_version_web="2.0.0"
 sdk_version_kws="1.1.0"
 
@@ -106,8 +106,8 @@ mkdir -p package/android
 cd
 
 # start other scripts
-# cd $build_repo
-# . ./01android_prebuild.sh
+cd $build_repo
+. ./01android_prebuild.sh
 cd $build_repo
 . ./01android.sh
 cd $build_repo
