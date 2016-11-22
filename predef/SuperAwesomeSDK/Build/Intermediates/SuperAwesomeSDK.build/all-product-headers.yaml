@@ -1,0 +1,288 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/Build/Products/Debug-iphoneos/SuperAwesomeSDK.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSArray+SAJson.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSArray+SAJson.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+SAJson.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SAJson.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+SafeHandling.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SafeHandling.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+HTML.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSString+HTML.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAActivityView.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAActivityView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAAd.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAAd.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAAdParser.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAAdParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAAppWall.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAAppWall.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAAppWallParser.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAAppWallParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "SABannerAd.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SABannerAd.h"
+        },
+        {
+          'type': 'file',
+          'name': "SABaseObject.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SABaseObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "SABlackMask.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SABlackMask.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACPI.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACPI.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACallback.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACallback.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACampaignType.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACampaignType.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACapper.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACapper.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACreative.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACreative.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACreativeFormat.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACreativeFormat.h"
+        },
+        {
+          'type': 'file',
+          'name': "SACronograph.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACronograph.h"
+        },
+        {
+          'type': 'file',
+          'name': "SADeserializationProtocol.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADeserializationProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "SADetails.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADetails.h"
+        },
+        {
+          'type': 'file',
+          'name': "SADownloadItem.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "SADownloadQueue.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAEvents.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAEvents.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAExtensions.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAExtensions.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAFileDownloader.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAFileDownloader.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAHTMLParser.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAHTMLParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAImageUtils.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAImageUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAInterstitialAd.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAInterstitialAd.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAJsonParser.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAJsonParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "SALoader.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SALoader.h"
+        },
+        {
+          'type': 'file',
+          'name': "SALogger.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SALogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAMedia.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAMedia.h"
+        },
+        {
+          'type': 'file',
+          'name': "SANetwork.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SANetwork.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAOrientation.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAOrientation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAParentalGate.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAParentalGate.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAPopup.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAPopup.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAResponse.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "SASerializationProtocol.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SASerializationProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "SASession.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SASession.h"
+        },
+        {
+          'type': 'file',
+          'name': "SASystemVersion.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SASystemVersion.h"
+        },
+        {
+          'type': 'file',
+          'name': "SATracking.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SATracking.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAURLClicker.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAURLClicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAUtils.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAVASTAdType.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAVASTAdType.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAVASTParser.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAVASTParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAVideoAd.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAVideoAd.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAVideoPlayer.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAVideoPlayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAWebPlayer.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAWebPlayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "SAXMLParser.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAXMLParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "SuperAwesome.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SuperAwesome.h"
+        },
+        {
+          'type': 'file',
+          'name': "SuperAwesomeSDK-Swift.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/Build/Products/Debug-iphoneos/SuperAwesomeSDK.framework/Headers/SuperAwesomeSDK-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SuperAwesomeSDK.h",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SuperAwesomeSDK.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/Build/Products/Debug-iphoneos/SuperAwesomeSDK.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/Build/Intermediates/SuperAwesomeSDK.build/Debug-iphoneos/SuperAwesomeSDK.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

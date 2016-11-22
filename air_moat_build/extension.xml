@@ -8,6 +8,12 @@
 <initializer>tv.superawesome.plugins.air.SAAIRExtension</initializer>
 </applicationDeployment>
 </platform>
+<platform name="iPhone-ARM">
+<applicationDeployment>
+<nativeLibrary>libSuperAwesomeSDKAIR.a</nativeLibrary>
+<initializer>SAExtensionInitializer</initializer>
+</applicationDeployment>
+</platform>
 <platform name="default">
 <applicationDeployment/>
 </platform>

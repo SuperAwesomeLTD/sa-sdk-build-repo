@@ -1,10 +1,10 @@
 #!/bin/bash -ex
 
 # SDK versions
-sdk_version_ios="5.3.2"
-sdk_version_android="5.3.2"
-sdk_version_unity="5.1.3"
-sdk_version_air="5.1.2"
+sdk_version_ios="5.3.3"
+sdk_version_android="5.3.3"
+sdk_version_unity="5.1.4"
+sdk_version_air="5.1.3"
 sdk_version_flash="3.2.8"
 sdk_version_kws_ios="2.1.3"
 sdk_version_kws_android="2.1.5"
@@ -113,15 +113,17 @@ cd $build_repo
 cd $build_repo
 . ./02flash.sh
 cd $build_repo
-. ./03air.sh
-cd $build_repo
-. ./03air_moat.sh
-cd $build_repo
 . ./04ios-static.sh
 cd $build_repo
 . ./04ios-framework.sh
 cd $build_repo
 . ./04ios-static-unity.sh
+cd $build_repo
+. ./04ios-static-air.sh
+cd $build_repo
+. ./03air.sh
+cd $build_repo
+. ./03air_moat.sh
 cd $build_repo
 . ./05unity.sh
 cd $build_repo

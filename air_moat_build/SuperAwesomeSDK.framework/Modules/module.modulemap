@@ -1,0 +1,6 @@
+framework module SuperAwesomeSDK {
+  umbrella header "SuperAwesomeSDK.h"
+
+  export *
+  module * { export * }
+}
