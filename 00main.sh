@@ -1,10 +1,10 @@
 #!/bin/bash -ex
 
 # SDK versions
-sdk_version_ios="5.3.4"
-sdk_version_android="5.3.4"
-sdk_version_unity="5.1.5"
-sdk_version_air="5.1.4"
+sdk_version_ios="5.3.8"
+sdk_version_android="5.3.7"
+sdk_version_unity="5.1.6"
+sdk_version_air="5.1.5"
 sdk_version_flash="3.2.8"
 sdk_version_kws_ios="2.1.4"
 sdk_version_kws_android="2.1.5"
