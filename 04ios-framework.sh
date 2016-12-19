@@ -33,7 +33,7 @@ source_folders=(
 for i in {0..9}
 do
     find "${source_folders[$i]}/Pod/Classes/" -iname '*.h' -exec cp \{\} $ios_build_framework_src \;
-    find "${source_folders[$i]}/Pod/Classes/" -iname '*.m' -exec cp \{\} $ios_build_framework_src \;
+		find "${source_folders[$i]}/Pod/Classes/" -iname '*.m' -exec cp \{\} $ios_build_framework_src \;
 done
 
 # end
@@ -67,8 +67,8 @@ lipo -create -output "$ios_build/$framework_project.framework/$framework_project
 cd
 cd $ios_build
 zip -r "$framework_project.framework.zip" $framework_project.framework
-rm -rf $framework_project.framework
-rm -rf framework
+# rm -rf $framework_project.framework
+# rm -rf framework
 
 # exit
 cd
