@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.m \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.h
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.m \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.h

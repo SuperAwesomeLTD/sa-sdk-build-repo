@@ -8,12 +8,142 @@
 
 /* Begin PBXBuildFile section */
 		1BD3DC9D1E08073300D749BB /* KidsWebServicesSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DC9B1E08073300D749BB /* KidsWebServicesSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD3DDCA1E080DFB00D749BB /* FirebaseGetToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD891E080DFB00D749BB /* FirebaseGetToken.h */; };
+		1BD3DDCB1E080DFB00D749BB /* KWS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD8A1E080DFB00D749BB /* KWS.h */; };
+		1BD3DDCC1E080DFB00D749BB /* KWSAccessToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD8B1E080DFB00D749BB /* KWSAccessToken.h */; };
+		1BD3DDCD1E080DFB00D749BB /* KWSAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD8C1E080DFB00D749BB /* KWSAddress.h */; };
+		1BD3DDCE1E080DFB00D749BB /* KWSAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD8D1E080DFB00D749BB /* KWSAppData.h */; };
+		1BD3DDCF1E080DFB00D749BB /* KWSAppDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD8E1E080DFB00D749BB /* KWSAppDataResponse.h */; };
+		1BD3DDD01E080DFB00D749BB /* KWSApplicationProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD8F1E080DFB00D749BB /* KWSApplicationProfile.h */; };
+		1BD3DDD11E080DFB00D749BB /* KWSAuthUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD901E080DFB00D749BB /* KWSAuthUser.h */; };
+		1BD3DDD21E080DFB00D749BB /* KWSAuthUserProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD911E080DFB00D749BB /* KWSAuthUserProcess.h */; };
+		1BD3DDD31E080DFB00D749BB /* KWSAux.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD921E080DFB00D749BB /* KWSAux.h */; };
+		1BD3DDD41E080DFB00D749BB /* KWSCheckAllowed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD931E080DFB00D749BB /* KWSCheckAllowed.h */; };
+		1BD3DDD51E080DFB00D749BB /* KWSCheckRegistered.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD941E080DFB00D749BB /* KWSCheckRegistered.h */; };
+		1BD3DDD61E080DFB00D749BB /* KWSCreateUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD951E080DFB00D749BB /* KWSCreateUser.h */; };
+		1BD3DDD71E080DFB00D749BB /* KWSCreateUserProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD961E080DFB00D749BB /* KWSCreateUserProcess.h */; };
+		1BD3DDD81E080DFB00D749BB /* KWSError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD971E080DFB00D749BB /* KWSError.h */; };
+		1BD3DDD91E080DFB00D749BB /* KWSEventStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD981E080DFB00D749BB /* KWSEventStatus.h */; };
+		1BD3DDDA1E080DFB00D749BB /* KWSGetAccessTokenAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD991E080DFB00D749BB /* KWSGetAccessTokenAuth.h */; };
+		1BD3DDDB1E080DFB00D749BB /* KWSGetAccessTokenCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD9A1E080DFB00D749BB /* KWSGetAccessTokenCreate.h */; };
+		1BD3DDDC1E080DFB00D749BB /* KWSGetAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD9B1E080DFB00D749BB /* KWSGetAppData.h */; };
+		1BD3DDDD1E080DFB00D749BB /* KWSGetLeaderboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD9C1E080DFB00D749BB /* KWSGetLeaderboard.h */; };
+		1BD3DDDE1E080DFB00D749BB /* KWSGetScore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD9D1E080DFB00D749BB /* KWSGetScore.h */; };
+		1BD3DDDF1E080DFB00D749BB /* KWSGetUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD9E1E080DFB00D749BB /* KWSGetUser.h */; };
+		1BD3DDE01E080DFB00D749BB /* KWSHasTriggeredEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DD9F1E080DFB00D749BB /* KWSHasTriggeredEvent.h */; };
+		1BD3DDE11E080DFB00D749BB /* KWSInvalid.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA01E080DFB00D749BB /* KWSInvalid.h */; };
+		1BD3DDE21E080DFB00D749BB /* KWSInviteUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA11E080DFB00D749BB /* KWSInviteUser.h */; };
+		1BD3DDE31E080DFB00D749BB /* KWSLeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA21E080DFB00D749BB /* KWSLeader.h */; };
+		1BD3DDE41E080DFB00D749BB /* KWSLeaderboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA31E080DFB00D749BB /* KWSLeaderboard.h */; };
+		1BD3DDE51E080DFB00D749BB /* KWSLoggedUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA41E080DFB00D749BB /* KWSLoggedUser.h */; };
+		1BD3DDE61E080DFB00D749BB /* KWSMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA51E080DFB00D749BB /* KWSMetadata.h */; };
+		1BD3DDE71E080DFB00D749BB /* KWSNotificationProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA61E080DFB00D749BB /* KWSNotificationProcess.h */; };
+		1BD3DDE81E080DFB00D749BB /* KWSParentEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA71E080DFB00D749BB /* KWSParentEmail.h */; };
+		1BD3DDE91E080DFB00D749BB /* KWSParentEmailError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA81E080DFB00D749BB /* KWSParentEmailError.h */; };
+		1BD3DDEA1E080DFB00D749BB /* KWSPermissions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDA91E080DFB00D749BB /* KWSPermissions.h */; };
+		1BD3DDEB1E080DFB00D749BB /* KWSPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDAA1E080DFB00D749BB /* KWSPoints.h */; };
+		1BD3DDEC1E080DFB00D749BB /* KWSRegisterToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDAB1E080DFB00D749BB /* KWSRegisterToken.h */; };
+		1BD3DDED1E080DFB00D749BB /* KWSRequestPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDAC1E080DFB00D749BB /* KWSRequestPermission.h */; };
+		1BD3DDEE1E080DFB00D749BB /* KWSScore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDAD1E080DFB00D749BB /* KWSScore.h */; };
+		1BD3DDEF1E080DFB00D749BB /* KWSService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDAE1E080DFB00D749BB /* KWSService.h */; };
+		1BD3DDF01E080DFB00D749BB /* KWSSetAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDAF1E080DFB00D749BB /* KWSSetAppData.h */; };
+		1BD3DDF11E080DFB00D749BB /* KWSTriggerEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB01E080DFB00D749BB /* KWSTriggerEvent.h */; };
+		1BD3DDF21E080DFB00D749BB /* KWSUnregisterToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB11E080DFB00D749BB /* KWSUnregisterToken.h */; };
+		1BD3DDF31E080DFB00D749BB /* KWSUpdateUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB21E080DFB00D749BB /* KWSUpdateUser.h */; };
+		1BD3DDF41E080DFB00D749BB /* KWSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB31E080DFB00D749BB /* KWSUser.h */; };
+		1BD3DDF51E080DFB00D749BB /* NSArray+SAJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB41E080DFB00D749BB /* NSArray+SAJson.h */; };
+		1BD3DDF61E080DFB00D749BB /* NSDictionary+SafeHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB51E080DFB00D749BB /* NSDictionary+SafeHandling.h */; };
+		1BD3DDF71E080DFB00D749BB /* NSDictionary+SAJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB61E080DFB00D749BB /* NSDictionary+SAJson.h */; };
+		1BD3DDF81E080DFB00D749BB /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB71E080DFB00D749BB /* NSString+HTML.h */; };
+		1BD3DDF91E080DFB00D749BB /* SAActivityView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB81E080DFB00D749BB /* SAActivityView.h */; };
+		1BD3DDFA1E080DFB00D749BB /* SAAux.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDB91E080DFB00D749BB /* SAAux.h */; };
+		1BD3DDFB1E080DFB00D749BB /* SABaseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDBA1E080DFB00D749BB /* SABaseObject.h */; };
+		1BD3DDFC1E080DFB00D749BB /* SADeserializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDBB1E080DFB00D749BB /* SADeserializationProtocol.h */; };
+		1BD3DDFD1E080DFB00D749BB /* SADownloadItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDBC1E080DFB00D749BB /* SADownloadItem.h */; };
+		1BD3DDFE1E080DFB00D749BB /* SADownloadQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDBD1E080DFB00D749BB /* SADownloadQueue.h */; };
+		1BD3DDFF1E080DFB00D749BB /* SAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDBE1E080DFB00D749BB /* SAExtensions.h */; };
+		1BD3DE001E080DFB00D749BB /* SAFileDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDBF1E080DFB00D749BB /* SAFileDownloader.h */; };
+		1BD3DE011E080DFB00D749BB /* SAImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC01E080DFB00D749BB /* SAImageUtils.h */; };
+		1BD3DE021E080DFB00D749BB /* SAJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC11E080DFB00D749BB /* SAJsonParser.h */; };
+		1BD3DE031E080DFB00D749BB /* SALogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC21E080DFB00D749BB /* SALogger.h */; };
+		1BD3DE041E080DFB00D749BB /* SANetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC31E080DFB00D749BB /* SANetwork.h */; };
+		1BD3DE051E080DFB00D749BB /* SAPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC41E080DFB00D749BB /* SAPopup.h */; };
+		1BD3DE061E080DFB00D749BB /* SARequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC51E080DFB00D749BB /* SARequest.h */; };
+		1BD3DE071E080DFB00D749BB /* SASerializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC61E080DFB00D749BB /* SASerializationProtocol.h */; };
+		1BD3DE081E080DFB00D749BB /* SASystemVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC71E080DFB00D749BB /* SASystemVersion.h */; };
+		1BD3DE091E080DFB00D749BB /* SAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC81E080DFB00D749BB /* SAUtils.h */; };
+		1BD3DE0A1E080DFB00D749BB /* SystemCheckAllowed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3DDC91E080DFB00D749BB /* SystemCheckAllowed.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BD3DC981E08073300D749BB /* KidsWebServicesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KidsWebServicesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD3DC9B1E08073300D749BB /* KidsWebServicesSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KidsWebServicesSDK.h; sourceTree = "<group>"; };
 		1BD3DC9C1E08073300D749BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD3DD891E080DFB00D749BB /* FirebaseGetToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseGetToken.h; sourceTree = "<group>"; };
+		1BD3DD8A1E080DFB00D749BB /* KWS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWS.h; sourceTree = "<group>"; };
+		1BD3DD8B1E080DFB00D749BB /* KWSAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAccessToken.h; sourceTree = "<group>"; };
+		1BD3DD8C1E080DFB00D749BB /* KWSAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAddress.h; sourceTree = "<group>"; };
+		1BD3DD8D1E080DFB00D749BB /* KWSAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAppData.h; sourceTree = "<group>"; };
+		1BD3DD8E1E080DFB00D749BB /* KWSAppDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAppDataResponse.h; sourceTree = "<group>"; };
+		1BD3DD8F1E080DFB00D749BB /* KWSApplicationProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSApplicationProfile.h; sourceTree = "<group>"; };
+		1BD3DD901E080DFB00D749BB /* KWSAuthUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAuthUser.h; sourceTree = "<group>"; };
+		1BD3DD911E080DFB00D749BB /* KWSAuthUserProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAuthUserProcess.h; sourceTree = "<group>"; };
+		1BD3DD921E080DFB00D749BB /* KWSAux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSAux.h; sourceTree = "<group>"; };
+		1BD3DD931E080DFB00D749BB /* KWSCheckAllowed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSCheckAllowed.h; sourceTree = "<group>"; };
+		1BD3DD941E080DFB00D749BB /* KWSCheckRegistered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSCheckRegistered.h; sourceTree = "<group>"; };
+		1BD3DD951E080DFB00D749BB /* KWSCreateUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSCreateUser.h; sourceTree = "<group>"; };
+		1BD3DD961E080DFB00D749BB /* KWSCreateUserProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSCreateUserProcess.h; sourceTree = "<group>"; };
+		1BD3DD971E080DFB00D749BB /* KWSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSError.h; sourceTree = "<group>"; };
+		1BD3DD981E080DFB00D749BB /* KWSEventStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSEventStatus.h; sourceTree = "<group>"; };
+		1BD3DD991E080DFB00D749BB /* KWSGetAccessTokenAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSGetAccessTokenAuth.h; sourceTree = "<group>"; };
+		1BD3DD9A1E080DFB00D749BB /* KWSGetAccessTokenCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSGetAccessTokenCreate.h; sourceTree = "<group>"; };
+		1BD3DD9B1E080DFB00D749BB /* KWSGetAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSGetAppData.h; sourceTree = "<group>"; };
+		1BD3DD9C1E080DFB00D749BB /* KWSGetLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSGetLeaderboard.h; sourceTree = "<group>"; };
+		1BD3DD9D1E080DFB00D749BB /* KWSGetScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSGetScore.h; sourceTree = "<group>"; };
+		1BD3DD9E1E080DFB00D749BB /* KWSGetUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSGetUser.h; sourceTree = "<group>"; };
+		1BD3DD9F1E080DFB00D749BB /* KWSHasTriggeredEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSHasTriggeredEvent.h; sourceTree = "<group>"; };
+		1BD3DDA01E080DFB00D749BB /* KWSInvalid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSInvalid.h; sourceTree = "<group>"; };
+		1BD3DDA11E080DFB00D749BB /* KWSInviteUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSInviteUser.h; sourceTree = "<group>"; };
+		1BD3DDA21E080DFB00D749BB /* KWSLeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSLeader.h; sourceTree = "<group>"; };
+		1BD3DDA31E080DFB00D749BB /* KWSLeaderboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSLeaderboard.h; sourceTree = "<group>"; };
+		1BD3DDA41E080DFB00D749BB /* KWSLoggedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSLoggedUser.h; sourceTree = "<group>"; };
+		1BD3DDA51E080DFB00D749BB /* KWSMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSMetadata.h; sourceTree = "<group>"; };
+		1BD3DDA61E080DFB00D749BB /* KWSNotificationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSNotificationProcess.h; sourceTree = "<group>"; };
+		1BD3DDA71E080DFB00D749BB /* KWSParentEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSParentEmail.h; sourceTree = "<group>"; };
+		1BD3DDA81E080DFB00D749BB /* KWSParentEmailError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSParentEmailError.h; sourceTree = "<group>"; };
+		1BD3DDA91E080DFB00D749BB /* KWSPermissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSPermissions.h; sourceTree = "<group>"; };
+		1BD3DDAA1E080DFB00D749BB /* KWSPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSPoints.h; sourceTree = "<group>"; };
+		1BD3DDAB1E080DFB00D749BB /* KWSRegisterToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSRegisterToken.h; sourceTree = "<group>"; };
+		1BD3DDAC1E080DFB00D749BB /* KWSRequestPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSRequestPermission.h; sourceTree = "<group>"; };
+		1BD3DDAD1E080DFB00D749BB /* KWSScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSScore.h; sourceTree = "<group>"; };
+		1BD3DDAE1E080DFB00D749BB /* KWSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSService.h; sourceTree = "<group>"; };
+		1BD3DDAF1E080DFB00D749BB /* KWSSetAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSSetAppData.h; sourceTree = "<group>"; };
+		1BD3DDB01E080DFB00D749BB /* KWSTriggerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSTriggerEvent.h; sourceTree = "<group>"; };
+		1BD3DDB11E080DFB00D749BB /* KWSUnregisterToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSUnregisterToken.h; sourceTree = "<group>"; };
+		1BD3DDB21E080DFB00D749BB /* KWSUpdateUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSUpdateUser.h; sourceTree = "<group>"; };
+		1BD3DDB31E080DFB00D749BB /* KWSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSUser.h; sourceTree = "<group>"; };
+		1BD3DDB41E080DFB00D749BB /* NSArray+SAJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SAJson.h"; sourceTree = "<group>"; };
+		1BD3DDB51E080DFB00D749BB /* NSDictionary+SafeHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeHandling.h"; sourceTree = "<group>"; };
+		1BD3DDB61E080DFB00D749BB /* NSDictionary+SAJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SAJson.h"; sourceTree = "<group>"; };
+		1BD3DDB71E080DFB00D749BB /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		1BD3DDB81E080DFB00D749BB /* SAActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAActivityView.h; sourceTree = "<group>"; };
+		1BD3DDB91E080DFB00D749BB /* SAAux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAAux.h; sourceTree = "<group>"; };
+		1BD3DDBA1E080DFB00D749BB /* SABaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SABaseObject.h; sourceTree = "<group>"; };
+		1BD3DDBB1E080DFB00D749BB /* SADeserializationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SADeserializationProtocol.h; sourceTree = "<group>"; };
+		1BD3DDBC1E080DFB00D749BB /* SADownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SADownloadItem.h; sourceTree = "<group>"; };
+		1BD3DDBD1E080DFB00D749BB /* SADownloadQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SADownloadQueue.h; sourceTree = "<group>"; };
+		1BD3DDBE1E080DFB00D749BB /* SAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAExtensions.h; sourceTree = "<group>"; };
+		1BD3DDBF1E080DFB00D749BB /* SAFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFileDownloader.h; sourceTree = "<group>"; };
+		1BD3DDC01E080DFB00D749BB /* SAImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAImageUtils.h; sourceTree = "<group>"; };
+		1BD3DDC11E080DFB00D749BB /* SAJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAJsonParser.h; sourceTree = "<group>"; };
+		1BD3DDC21E080DFB00D749BB /* SALogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SALogger.h; sourceTree = "<group>"; };
+		1BD3DDC31E080DFB00D749BB /* SANetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SANetwork.h; sourceTree = "<group>"; };
+		1BD3DDC41E080DFB00D749BB /* SAPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPopup.h; sourceTree = "<group>"; };
+		1BD3DDC51E080DFB00D749BB /* SARequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARequest.h; sourceTree = "<group>"; };
+		1BD3DDC61E080DFB00D749BB /* SASerializationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASerializationProtocol.h; sourceTree = "<group>"; };
+		1BD3DDC71E080DFB00D749BB /* SASystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASystemVersion.h; sourceTree = "<group>"; };
+		1BD3DDC81E080DFB00D749BB /* SAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAUtils.h; sourceTree = "<group>"; };
+		1BD3DDC91E080DFB00D749BB /* SystemCheckAllowed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemCheckAllowed.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +176,71 @@
 		1BD3DC9A1E08073300D749BB /* KidsWebServicesSDK */ = {
 			isa = PBXGroup;
 			children = (
+				1BD3DD891E080DFB00D749BB /* FirebaseGetToken.h */,
+				1BD3DD8A1E080DFB00D749BB /* KWS.h */,
+				1BD3DD8B1E080DFB00D749BB /* KWSAccessToken.h */,
+				1BD3DD8C1E080DFB00D749BB /* KWSAddress.h */,
+				1BD3DD8D1E080DFB00D749BB /* KWSAppData.h */,
+				1BD3DD8E1E080DFB00D749BB /* KWSAppDataResponse.h */,
+				1BD3DD8F1E080DFB00D749BB /* KWSApplicationProfile.h */,
+				1BD3DD901E080DFB00D749BB /* KWSAuthUser.h */,
+				1BD3DD911E080DFB00D749BB /* KWSAuthUserProcess.h */,
+				1BD3DD921E080DFB00D749BB /* KWSAux.h */,
+				1BD3DD931E080DFB00D749BB /* KWSCheckAllowed.h */,
+				1BD3DD941E080DFB00D749BB /* KWSCheckRegistered.h */,
+				1BD3DD951E080DFB00D749BB /* KWSCreateUser.h */,
+				1BD3DD961E080DFB00D749BB /* KWSCreateUserProcess.h */,
+				1BD3DD971E080DFB00D749BB /* KWSError.h */,
+				1BD3DD981E080DFB00D749BB /* KWSEventStatus.h */,
+				1BD3DD991E080DFB00D749BB /* KWSGetAccessTokenAuth.h */,
+				1BD3DD9A1E080DFB00D749BB /* KWSGetAccessTokenCreate.h */,
+				1BD3DD9B1E080DFB00D749BB /* KWSGetAppData.h */,
+				1BD3DD9C1E080DFB00D749BB /* KWSGetLeaderboard.h */,
+				1BD3DD9D1E080DFB00D749BB /* KWSGetScore.h */,
+				1BD3DD9E1E080DFB00D749BB /* KWSGetUser.h */,
+				1BD3DD9F1E080DFB00D749BB /* KWSHasTriggeredEvent.h */,
+				1BD3DDA01E080DFB00D749BB /* KWSInvalid.h */,
+				1BD3DDA11E080DFB00D749BB /* KWSInviteUser.h */,
+				1BD3DDA21E080DFB00D749BB /* KWSLeader.h */,
+				1BD3DDA31E080DFB00D749BB /* KWSLeaderboard.h */,
+				1BD3DDA41E080DFB00D749BB /* KWSLoggedUser.h */,
+				1BD3DDA51E080DFB00D749BB /* KWSMetadata.h */,
+				1BD3DDA61E080DFB00D749BB /* KWSNotificationProcess.h */,
+				1BD3DDA71E080DFB00D749BB /* KWSParentEmail.h */,
+				1BD3DDA81E080DFB00D749BB /* KWSParentEmailError.h */,
+				1BD3DDA91E080DFB00D749BB /* KWSPermissions.h */,
+				1BD3DDAA1E080DFB00D749BB /* KWSPoints.h */,
+				1BD3DDAB1E080DFB00D749BB /* KWSRegisterToken.h */,
+				1BD3DDAC1E080DFB00D749BB /* KWSRequestPermission.h */,
+				1BD3DDAD1E080DFB00D749BB /* KWSScore.h */,
+				1BD3DDAE1E080DFB00D749BB /* KWSService.h */,
+				1BD3DDAF1E080DFB00D749BB /* KWSSetAppData.h */,
+				1BD3DDB01E080DFB00D749BB /* KWSTriggerEvent.h */,
+				1BD3DDB11E080DFB00D749BB /* KWSUnregisterToken.h */,
+				1BD3DDB21E080DFB00D749BB /* KWSUpdateUser.h */,
+				1BD3DDB31E080DFB00D749BB /* KWSUser.h */,
+				1BD3DDB41E080DFB00D749BB /* NSArray+SAJson.h */,
+				1BD3DDB51E080DFB00D749BB /* NSDictionary+SafeHandling.h */,
+				1BD3DDB61E080DFB00D749BB /* NSDictionary+SAJson.h */,
+				1BD3DDB71E080DFB00D749BB /* NSString+HTML.h */,
+				1BD3DDB81E080DFB00D749BB /* SAActivityView.h */,
+				1BD3DDB91E080DFB00D749BB /* SAAux.h */,
+				1BD3DDBA1E080DFB00D749BB /* SABaseObject.h */,
+				1BD3DDBB1E080DFB00D749BB /* SADeserializationProtocol.h */,
+				1BD3DDBC1E080DFB00D749BB /* SADownloadItem.h */,
+				1BD3DDBD1E080DFB00D749BB /* SADownloadQueue.h */,
+				1BD3DDBE1E080DFB00D749BB /* SAExtensions.h */,
+				1BD3DDBF1E080DFB00D749BB /* SAFileDownloader.h */,
+				1BD3DDC01E080DFB00D749BB /* SAImageUtils.h */,
+				1BD3DDC11E080DFB00D749BB /* SAJsonParser.h */,
+				1BD3DDC21E080DFB00D749BB /* SALogger.h */,
+				1BD3DDC31E080DFB00D749BB /* SANetwork.h */,
+				1BD3DDC41E080DFB00D749BB /* SAPopup.h */,
+				1BD3DDC51E080DFB00D749BB /* SARequest.h */,
+				1BD3DDC61E080DFB00D749BB /* SASerializationProtocol.h */,
+				1BD3DDC71E080DFB00D749BB /* SASystemVersion.h */,
+				1BD3DDC81E080DFB00D749BB /* SAUtils.h */,
+				1BD3DDC91E080DFB00D749BB /* SystemCheckAllowed.h */,
 				1BD3DC9B1E08073300D749BB /* KidsWebServicesSDK.h */,
 				1BD3DC9C1E08073300D749BB /* Info.plist */,
 			);
@@ -59,7 +254,72 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD3DDF31E080DFB00D749BB /* KWSUpdateUser.h in Headers */,
+				1BD3DDCB1E080DFB00D749BB /* KWS.h in Headers */,
+				1BD3DDE61E080DFB00D749BB /* KWSMetadata.h in Headers */,
+				1BD3DDCF1E080DFB00D749BB /* KWSAppDataResponse.h in Headers */,
+				1BD3DDFE1E080DFB00D749BB /* SADownloadQueue.h in Headers */,
+				1BD3DDEA1E080DFB00D749BB /* KWSPermissions.h in Headers */,
+				1BD3DDD41E080DFB00D749BB /* KWSCheckAllowed.h in Headers */,
+				1BD3DE041E080DFB00D749BB /* SANetwork.h in Headers */,
+				1BD3DDDA1E080DFB00D749BB /* KWSGetAccessTokenAuth.h in Headers */,
+				1BD3DDEB1E080DFB00D749BB /* KWSPoints.h in Headers */,
+				1BD3DDEF1E080DFB00D749BB /* KWSService.h in Headers */,
+				1BD3DE091E080DFB00D749BB /* SAUtils.h in Headers */,
+				1BD3DDE01E080DFB00D749BB /* KWSHasTriggeredEvent.h in Headers */,
+				1BD3DE021E080DFB00D749BB /* SAJsonParser.h in Headers */,
+				1BD3DE031E080DFB00D749BB /* SALogger.h in Headers */,
+				1BD3DDF01E080DFB00D749BB /* KWSSetAppData.h in Headers */,
+				1BD3DDD61E080DFB00D749BB /* KWSCreateUser.h in Headers */,
+				1BD3DDFF1E080DFB00D749BB /* SAExtensions.h in Headers */,
+				1BD3DDE51E080DFB00D749BB /* KWSLoggedUser.h in Headers */,
+				1BD3DE0A1E080DFB00D749BB /* SystemCheckAllowed.h in Headers */,
+				1BD3DDF91E080DFB00D749BB /* SAActivityView.h in Headers */,
+				1BD3DDF81E080DFB00D749BB /* NSString+HTML.h in Headers */,
+				1BD3DDDB1E080DFB00D749BB /* KWSGetAccessTokenCreate.h in Headers */,
+				1BD3DDCA1E080DFB00D749BB /* FirebaseGetToken.h in Headers */,
+				1BD3DDF41E080DFB00D749BB /* KWSUser.h in Headers */,
+				1BD3DDE31E080DFB00D749BB /* KWSLeader.h in Headers */,
+				1BD3DDD31E080DFB00D749BB /* KWSAux.h in Headers */,
+				1BD3DDD51E080DFB00D749BB /* KWSCheckRegistered.h in Headers */,
+				1BD3DDE81E080DFB00D749BB /* KWSParentEmail.h in Headers */,
+				1BD3DDCE1E080DFB00D749BB /* KWSAppData.h in Headers */,
+				1BD3DE061E080DFB00D749BB /* SARequest.h in Headers */,
+				1BD3DDF61E080DFB00D749BB /* NSDictionary+SafeHandling.h in Headers */,
+				1BD3DDF11E080DFB00D749BB /* KWSTriggerEvent.h in Headers */,
+				1BD3DDE11E080DFB00D749BB /* KWSInvalid.h in Headers */,
+				1BD3DDCD1E080DFB00D749BB /* KWSAddress.h in Headers */,
+				1BD3DDD21E080DFB00D749BB /* KWSAuthUserProcess.h in Headers */,
+				1BD3DDCC1E080DFB00D749BB /* KWSAccessToken.h in Headers */,
+				1BD3DDE41E080DFB00D749BB /* KWSLeaderboard.h in Headers */,
+				1BD3DDF51E080DFB00D749BB /* NSArray+SAJson.h in Headers */,
+				1BD3DDDC1E080DFB00D749BB /* KWSGetAppData.h in Headers */,
+				1BD3DE081E080DFB00D749BB /* SASystemVersion.h in Headers */,
+				1BD3DDEE1E080DFB00D749BB /* KWSScore.h in Headers */,
+				1BD3DE001E080DFB00D749BB /* SAFileDownloader.h in Headers */,
+				1BD3DE071E080DFB00D749BB /* SASerializationProtocol.h in Headers */,
+				1BD3DDDE1E080DFB00D749BB /* KWSGetScore.h in Headers */,
+				1BD3DDE71E080DFB00D749BB /* KWSNotificationProcess.h in Headers */,
 				1BD3DC9D1E08073300D749BB /* KidsWebServicesSDK.h in Headers */,
+				1BD3DDE21E080DFB00D749BB /* KWSInviteUser.h in Headers */,
+				1BD3DDD71E080DFB00D749BB /* KWSCreateUserProcess.h in Headers */,
+				1BD3DDDF1E080DFB00D749BB /* KWSGetUser.h in Headers */,
+				1BD3DDF71E080DFB00D749BB /* NSDictionary+SAJson.h in Headers */,
+				1BD3DDED1E080DFB00D749BB /* KWSRequestPermission.h in Headers */,
+				1BD3DDFA1E080DFB00D749BB /* SAAux.h in Headers */,
+				1BD3DDD11E080DFB00D749BB /* KWSAuthUser.h in Headers */,
+				1BD3DDE91E080DFB00D749BB /* KWSParentEmailError.h in Headers */,
+				1BD3DDF21E080DFB00D749BB /* KWSUnregisterToken.h in Headers */,
+				1BD3DDEC1E080DFB00D749BB /* KWSRegisterToken.h in Headers */,
+				1BD3DDFD1E080DFB00D749BB /* SADownloadItem.h in Headers */,
+				1BD3DDD01E080DFB00D749BB /* KWSApplicationProfile.h in Headers */,
+				1BD3DDD91E080DFB00D749BB /* KWSEventStatus.h in Headers */,
+				1BD3DDD81E080DFB00D749BB /* KWSError.h in Headers */,
+				1BD3DE011E080DFB00D749BB /* SAImageUtils.h in Headers */,
+				1BD3DDDD1E080DFB00D749BB /* KWSGetLeaderboard.h in Headers */,
+				1BD3DDFC1E080DFB00D749BB /* SADeserializationProtocol.h in Headers */,
+				1BD3DE051E080DFB00D749BB /* SAPopup.h in Headers */,
+				1BD3DDFB1E080DFB00D749BB /* SABaseObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +546,7 @@
 				1BD3DCA21E08073300D749BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,10 @@
 dependencies: \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SuperAwesome.m \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SuperAwesome.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAResponse.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAJsonParser.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SABaseObject.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADeserializationProtocol.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SASerializationProtocol.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SAJson.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSArray+SAJson.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SafeHandling.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACreativeFormat.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAAd.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAVASTAdType.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACampaignType.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACreative.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SATracking.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADetails.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAMedia.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SABannerAd.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACallback.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SASession.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAInterstitialAd.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAVideoAd.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAAppWall.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SACPI.h
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SuperAwesome.m \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SuperAwesome.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SABannerAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SACallback.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAInterstitialAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAOrientation.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAVideoAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAAppWall.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SACPI.h

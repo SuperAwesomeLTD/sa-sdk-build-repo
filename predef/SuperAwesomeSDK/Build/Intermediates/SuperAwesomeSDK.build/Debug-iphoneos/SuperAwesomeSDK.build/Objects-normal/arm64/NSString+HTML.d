@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSString+HTML.m \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/NSString+HTML.h
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSString+HTML.m \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSString+HTML.h

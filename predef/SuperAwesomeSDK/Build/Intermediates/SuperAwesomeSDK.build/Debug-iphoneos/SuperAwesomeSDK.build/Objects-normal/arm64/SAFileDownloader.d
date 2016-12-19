@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAFileDownloader.m \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SAFileDownloader.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.h \
-  /Users/gabriel.coman/Workspace/_TESTS/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadQueue.h
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAFileDownloader.m \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAFileDownloader.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadItem.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SADownloadQueue.h

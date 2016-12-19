@@ -67,8 +67,8 @@ lipo -create -output "$ios_build/$framework_project.framework/$framework_project
 cd
 cd $ios_build
 zip -r "$framework_project.framework.zip" $framework_project.framework
-# rm -rf $framework_project.framework
-# rm -rf framework
+rm -rf $framework_project.framework
+rm -rf framework
 
 # exit
 cd
