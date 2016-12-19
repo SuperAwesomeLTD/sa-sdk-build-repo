@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SADownloadItem.h"
+
+@class SADownloadItem;
 
 // callback for generic success
 typedef void (^seqDownloadResponse)(BOOL success, NSString* diskPath);

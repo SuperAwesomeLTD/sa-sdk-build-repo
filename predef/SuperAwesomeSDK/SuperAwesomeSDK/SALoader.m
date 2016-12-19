@@ -11,12 +11,43 @@
 // import header
 #import "SALoader.h"
 
-// guard external imports
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAResponse.h>)
+#import <SAModelSpace/SAResponse.h>
 #else
-#import "SAModelSpace.h"
+#import "SAResponse.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
+#else
+#import "SAAd.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SACreative.h>)
+#import <SAModelSpace/SACreative.h>
+#else
+#import "SACreative.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SADetails.h>)
+#import <SAModelSpace/SADetails.h>
+#else
+#import "SADetails.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAMedia.h>)
+#import <SAModelSpace/SAMedia.h>
+#else
+#import "SAMedia.h"
 #endif
 #endif
 
@@ -37,8 +68,8 @@
 #endif
 
 #if defined(__has_include)
-#if __has_include(<SANetwork/SANetwork.h>)
-#import <SANetwork/SANetwork.h>
+#if __has_include(<SANetworking/SANetwork.h>)
+#import <SANetworking/SANetwork.h>
 #else
 #import "SANetwork.h"
 #endif
@@ -91,8 +122,8 @@
     NSDictionary *header = @{@"Content-Type":@"application/json",
                              @"User-Agent":[session getUserAgent]};
     
-    SARequest *request= [[SARequest alloc] init];
-    [request sendGET:endpoint
+    SANetwork *network = [[SANetwork alloc] init];
+    [network sendGET:endpoint
            withQuery:query
            andHeader:header
         withResponse:^(NSInteger status, NSString *payload, BOOL success) {

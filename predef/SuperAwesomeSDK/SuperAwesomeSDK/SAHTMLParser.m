@@ -12,10 +12,34 @@
 #import "SAHTMLParser.h"
 
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
 #else
-#import "SAModelSpace.h"
+#import "SAAd.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SACreative.h>)
+#import <SAModelSpace/SACreative.h>
+#else
+#import "SACreative.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SADetails.h>)
+#import <SAModelSpace/SADetails.h>
+#else
+#import "SADetails.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAMedia.h>)
+#import <SAModelSpace/SAMedia.h>
+#else
+#import "SAMedia.h"
 #endif
 #endif
 
@@ -27,6 +51,13 @@
 #endif
 #endif
 
+#if defined(__has_include)
+#if __has_include(<SAUtils/SAExtensions.h>)
+#import <SAUtils/SAExtensions.h>
+#else
+#import "SAExtensions.h"
+#endif
+#endif
 
 @implementation SAHTMLParser
 
@@ -109,10 +140,10 @@
         @"placement":[NSNumber numberWithInteger:ad.placementId],
         @"line_item":[NSNumber numberWithInteger:ad.lineItemId],
         @"creative":[NSNumber numberWithInteger:ad.creative._id],
-        @"rnd":[NSNumber numberWithInteger:[SAAux getCachebuster]]
+        @"rnd":[NSNumber numberWithInteger:[SAUtils getCachebuster]]
     };
     [richMediaString appendString:@"?"];
-    [richMediaString appendString:[SAAux formGetQueryFromDict:richMediaDict]];
+    [richMediaString appendString:[SAUtils formGetQueryFromDict:richMediaDict]];
     
     // return the parametrized template
     NSString *richString = [htmlString stringByReplacingOccurrencesOfString:@"richMediaURL" withString:richMediaString];
@@ -152,7 +183,7 @@
     }
     
     tagString = [tagString stringByReplacingOccurrencesOfString:@"[click]" withString:[NSString stringWithFormat:@"%@&redir=",click]];
-    tagString = [tagString stringByReplacingOccurrencesOfString:@"[click_enc]" withString:[SAAux encodeURI:click]];
+    tagString = [tagString stringByReplacingOccurrencesOfString:@"[click_enc]" withString:[SAUtils encodeURI:click]];
     tagString = [tagString stringByReplacingOccurrencesOfString:@"[keywords]" withString:@""];
     tagString = [tagString stringByReplacingOccurrencesOfString:@"[timestamp]" withString:[NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]]];
     tagString = [tagString stringByReplacingOccurrencesOfString:@"target=\"_blank\"" withString:@""];

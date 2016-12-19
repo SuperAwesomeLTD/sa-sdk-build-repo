@@ -23,6 +23,14 @@
 #endif
 #endif
 
+#if defined(__has_include)
+#if __has_include(<SAJsonParser/SABaseObject.h>)
+#import <SAJsonParser/SABaseObject.h>
+#else
+#import "SABaseObject.h"
+#endif
+#endif
+
 // creative format typedef
 typedef NS_ENUM(NSInteger, SACreativeFormat) {
     invalid = -1,

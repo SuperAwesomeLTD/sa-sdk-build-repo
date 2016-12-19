@@ -8,34 +8,18 @@ dependencies: \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAOrientation.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAVideoAd.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAParentalGate.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAModelSpace.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAResponse.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAJsonParser.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SABaseObject.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SADeserializationProtocol.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SASerializationProtocol.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SAJson.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSArray+SAJson.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SAJson.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSDictionary+SafeHandling.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SACreative.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAAd.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SADetails.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAMedia.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SATracking.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAUtils.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAAux.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAActivityView.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/NSString+HTML.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAExtensions.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAPopup.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SALogger.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAImageUtils.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAAdLoader.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAAdParser.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAAppWallParser.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAHTMLParser.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SALoader.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAVASTParser.h \
-  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAXMLParser.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SASession.h \
   /Users/gabriel.coman/Workspace/sa-sdk-build-repo/predef/SuperAwesomeSDK/SuperAwesomeSDK/SAEvents.h

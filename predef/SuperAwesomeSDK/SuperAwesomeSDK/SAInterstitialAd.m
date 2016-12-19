@@ -11,10 +11,18 @@
 
 // guarded imports
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAResponse.h>)
+#import <SAModelSpace/SAResponse.h>
 #else
-#import "SAModelSpace.h"
+#import "SAResponse.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
+#else
+#import "SAAd.h"
 #endif
 #endif
 
@@ -23,6 +31,14 @@
 #import <SAUtils/SAUtils.h>
 #else
 #import "SAUtils.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAUtils/SAImageUtils.h>)
+#import <SAUtils/SAImageUtils.h>
+#else
+#import "SAImageUtils.h"
 #endif
 #endif
 
@@ -43,10 +59,10 @@
 #endif
 
 #if defined(__has_include)
-#if __has_include(<SAAdLoader/SAAdLoader.h>)
-#import <SAAdLoader/SAAdLoader.h>
+#if __has_include(<SAAdLoader/SALoader.h>)
+#import <SAAdLoader/SALoader.h>
 #else
-#import "SAAdLoader.h"
+#import "SALoader.h"
 #endif
 #endif
 
@@ -107,7 +123,7 @@ static SAConfiguration configuration = PRODUCTION;
     _banner = [[SABannerAd alloc] initWithFrame:CGRectZero];
     [_banner setCallback:_callbackL];
     [_banner setParentalGate:_isParentalGateEnabledL];
-    [SAAux invoke:@"setAd:" onTarget:_banner, _ad];
+    [SAUtils invoke:@"setAd:" onTarget:_banner, _ad];
     [self.view addSubview:_banner];
 }
 
@@ -232,7 +248,7 @@ static SAConfiguration configuration = PRODUCTION;
     CGFloat tH = frame.size.height;
     CGFloat tX = ( frame.size.width - tW ) / 2;
     CGFloat tY = ( frame.size.height - tH) / 2;
-    CGRect newR = [SAAux mapOldFrame:frame toNewFrame:CGRectMake(tX, tY, tW, tH)];
+    CGRect newR = [SAUtils mapOldFrame:frame toNewFrame:CGRectMake(tX, tY, tW, tH)];
     newR.origin.x += tX;
     newR.origin.y += tY;
 

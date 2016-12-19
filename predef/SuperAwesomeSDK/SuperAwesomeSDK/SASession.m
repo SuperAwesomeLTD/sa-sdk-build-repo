@@ -50,9 +50,9 @@
         
         // get the bundle id, app name, etc, things that might not change
         _bundleId = [[NSBundle mainBundle] bundleIdentifier];
-        _appName = [SAAux encodeURI:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
-        _device = [SAAux getSystemSize] == size_phone ? DEVICE_PHONE : DEVICE_TABLET;
-        _userAgent = [SAAux getUserAgent];
+        _appName = [SAUtils encodeURI:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
+        _device = [SAUtils getSystemSize] == size_phone ? DEVICE_PHONE : DEVICE_TABLET;
+        _userAgent = [SAUtils getUserAgent];
         
         _lang = @"none";
         
@@ -164,7 +164,7 @@
 }
 
 - (NSInteger) getCachebuster {
-    return [SAAux getCachebuster];
+    return [SAUtils getCachebuster];
 }
 
 - (NSString*) getUserAgent {

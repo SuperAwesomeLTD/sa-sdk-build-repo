@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # SDK versions
-sdk_version_ios="5.3.11"
+sdk_version_ios="5.3.14"
 sdk_version_android="5.3.7"
 sdk_version_unity="5.1.6"
 sdk_version_air="5.1.5"
@@ -36,6 +36,13 @@ then
 fi
 mkdir $android_build
 
+# rebuild iOS build folder
+if [ -d $ios_build ]
+then
+    rm -rf $ios_build
+fi
+mkdir $ios_build
+
 # rebuild AIR build folder
 if [ -d $air_build ]
 then
@@ -49,13 +56,6 @@ then
     rm -rf $air_moat_build
 fi
 mkdir $air_moat_build
-
-# rebuild iOS build folder
-if [ -d $ios_build ]
-then
-    rm -rf $ios_build
-fi
-mkdir $ios_build
 
 # rebuild Flash build folder
 if [ -d $flash_build ]
@@ -106,8 +106,8 @@ mkdir -p package/android
 cd
 
 # start other scripts
-# cd $build_repo
-# . ./01android_prebuild.sh
+cd $build_repo
+. ./01android_prebuild.sh
 cd $build_repo
 . ./01android.sh
 cd $build_repo

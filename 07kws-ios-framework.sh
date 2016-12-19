@@ -57,6 +57,8 @@ cd
 cd
 cp -r $kws_ios_build_framework/$kws_framework_project/Build/Release-iphoneos/$kws_framework_project.framework $kws_ios_build/
 lipo -create -output "$kws_ios_build/$kws_framework_project.framework/$kws_framework_project" "$kws_ios_build_framework/$kws_framework_project/Build/Release-iphoneos/$kws_framework_project.framework/$kws_framework_project" "$kws_ios_build_framework/$kws_framework_project/Build/Release-iphonesimulator/$kws_framework_project.framework/$kws_framework_project"
+mkdir $kws_ios_build/$kws_framework_project.framework/Headers
+find "$kws_ios_build_framework_src/" -iname "*.h" -exec cp \{\} $kws_ios_build/$kws_framework_project.framework/Headers \;
 
 cd
 cd $kws_ios_build

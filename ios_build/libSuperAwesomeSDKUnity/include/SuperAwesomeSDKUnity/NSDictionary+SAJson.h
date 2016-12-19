@@ -10,8 +10,7 @@
 #import <Foundation/Foundation.h>
 
 // import protocols
-#import "SADeserializationProtocol.h"
-#import "SASerializationProtocol.h"
+#import "SAJsonParser.h"
 
 /**
  *  Extension to NSDictionary to add serializaiton and deserializaiton functions

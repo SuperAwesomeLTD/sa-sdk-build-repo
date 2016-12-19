@@ -14,10 +14,50 @@
 
 // guarded imports
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAResponse.h>
 #else
-#import "SAModelSpace.h"
+#import "SAResponse.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
+#else
+#import "SAAd.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SACreative.h>)
+#import <SAModelSpace/SACreative.h>
+#else
+#import "SACreative.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SADetails.h>)
+#import <SAModelSpace/SADetails.h>
+#else
+#import "SADetails.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAMedia.h>)
+#import <SAModelSpace/SAMedia.h>
+#else
+#import "SAMedia.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SATracking.h>)
+#import <SAModelSpace/SATracking.h>
+#else
+#import "SATracking.h"
 #endif
 #endif
 
@@ -30,10 +70,18 @@
 #endif
 
 #if defined(__has_include)
-#if __has_include(<SAAdLoader/SAAdLoader.h>)
-#import <SAAdLoader/SAAdLoader.h>
+#if __has_include(<SAUtils/SAImageUtils.h>)
+#import <SAUtils/SAImageUtils.h>
 #else
-#import "SAAdLoader.h"
+#import "SAImageUtils.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAAdLoader/SALoader.h>)
+#import <SAAdLoader/SALoader.h>
+#else
+#import "SALoader.h"
 #endif
 #endif
 
@@ -284,7 +332,7 @@ static SAConfiguration configuration = PRODUCTION;
     
     // actually start playing the video
     if (_ad.creative.details.media.isOnDisk) {
-        NSString *finalDiskURL = [SAAux filePathInDocuments:_ad.creative.details.media.playableDiskUrl];
+        NSString *finalDiskURL = [SAUtils filePathInDocuments:_ad.creative.details.media.playableDiskUrl];
         [_player playWithMediaFile:finalDiskURL];
     } else {
         NSURL *url = [NSURL URLWithString:_ad.creative.details.media.playableMediaUrl];

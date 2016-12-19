@@ -15,6 +15,14 @@
 #endif
 #endif
 
+#if defined(__has_include)
+#if __has_include(<SAJsonParser/SABaseObject.h>)
+#import <SAJsonParser/SABaseObject.h>
+#else
+#import "SABaseObject.h"
+#endif
+#endif
+
 @interface SATracking : SABaseObject <SADeserializationProtocol, SASerializationProtocol>
 @property (nonatomic, strong) NSString *event;
 @property (nonatomic, strong) NSString *URL;

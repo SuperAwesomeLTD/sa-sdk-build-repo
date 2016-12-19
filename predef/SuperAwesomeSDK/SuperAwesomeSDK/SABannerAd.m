@@ -10,10 +10,34 @@
 
 // guarded imports
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAResponse.h>)
+#import <SAModelSpace/SAResponse.h>
 #else
-#import "SAModelSpace.h"
+#import "SAResponse.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
+#else
+#import "SAAd.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SACreative.h>)
+#import <SAModelSpace/SACreative.h>
+#else
+#import "SACreative.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SADetails.h>)
+#import <SAModelSpace/SADetails.h>
+#else
+#import "SADetails.h"
 #endif
 #endif
 
@@ -22,6 +46,14 @@
 #import <SAUtils/SAUtils.h>
 #else
 #import "SAUtils.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAUtils/SAImageUtils.h>)
+#import <SAUtils/SAImageUtils.h>
+#else
+#import "SAImageUtils.h"
 #endif
 #endif
 
@@ -50,10 +82,10 @@
 #endif
 
 #if defined(__has_include)
-#if __has_include(<SAAdLoader/SAAdLoader.h>)
-#import <SAAdLoader/SAAdLoader.h>
+#if __has_include(<SAAdLoader/SALoader.h>)
+#import <SAAdLoader/SALoader.h>
 #else
-#import "SAAdLoader.h"
+#import "SALoader.h"
 #endif
 #endif
 
@@ -309,7 +341,7 @@
     self.frame = toframe;
     
     // new webplayer frame
-    CGRect frame = [SAAux mapOldFrame:CGRectMake(0, 0, _ad.creative.details.width, _ad.creative.details.height)
+    CGRect frame = [SAUtils mapOldFrame:CGRectMake(0, 0, _ad.creative.details.width, _ad.creative.details.height)
                              toNewFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     
     // rearrange the webview

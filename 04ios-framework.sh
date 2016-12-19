@@ -63,6 +63,9 @@ cd
 cd
 cp -r $ios_build_framework/$framework_project/Build/Release-iphoneos/$framework_project.framework $ios_build/
 lipo -create -output "$ios_build/$framework_project.framework/$framework_project" "$ios_build_framework/$framework_project/Build/Release-iphoneos/$framework_project.framework/$framework_project" "$ios_build_framework/$framework_project/Build/Release-iphonesimulator/$framework_project.framework/$framework_project"
+mkdir $ios_build/$framework_project.framework/Headers
+find "$ios_build_framework_src/" -iname "*.h" -exec cp \{\} $ios_build/$framework_project.framework/Headers \;
+
 
 cd
 cd $ios_build

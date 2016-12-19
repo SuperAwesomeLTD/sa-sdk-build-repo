@@ -18,10 +18,10 @@
 
 // guarded imports
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
 #else
-#import "SAModelSpace.h"
+#import "SAAd.h"
 #endif
 #endif
 
@@ -30,6 +30,14 @@
 #import <SAUtils/SAUtils.h>
 #else
 #import "SAUtils.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAUtils/SAExtensions.h>)
+#import <SAUtils/SAExtensions.h>
+#else
+#import "SAExtensions.h"
 #endif
 #endif
 
@@ -109,8 +117,8 @@
 
 // init a new question
 - (void) newQuestion {
-    _number1 = [SAAux randomNumberBetween:SA_RAND_MIN maxNumber:SA_RAND_MAX];
-    _number2 = [SAAux randomNumberBetween:SA_RAND_MIN maxNumber:SA_RAND_MAX];
+    _number1 = [SAUtils randomNumberBetween:SA_RAND_MIN maxNumber:SA_RAND_MAX];
+    _number2 = [SAUtils randomNumberBetween:SA_RAND_MIN maxNumber:SA_RAND_MAX];
     _solution = _number1 + _number2;
 }
 
@@ -121,7 +129,7 @@
     [_events sendAllEventsForKey:@"pg_open"];
     
     // pause video
-    [SAAux invoke:@"pause" onTarget:_weakAdView];
+    [SAUtils invoke:@"pause" onTarget:_weakAdView];
     
     if (NSClassFromString(@"UIAlertController")) {
         [self showWithAlertController];
@@ -149,7 +157,7 @@
         [_events sendAllEventsForKey:@"pg_close"];
         
         // resume video
-        [SAAux invoke:@"resume" onTarget:_weakAdView];
+        [SAUtils invoke:@"resume" onTarget:_weakAdView];
     };
     
     // action block #2
@@ -170,7 +178,7 @@
         else{
             
             // resume video
-            [SAAux invoke:@"resume" onTarget:_weakAdView];
+            [SAUtils invoke:@"resume" onTarget:_weakAdView];
             
             [self handlePGError];
         }
@@ -234,7 +242,7 @@
         } else {
             
             // resume video
-            [SAAux invoke:@"resume" onTarget:_weakAdView];
+            [SAUtils invoke:@"resume" onTarget:_weakAdView];
             
             [self handlePGError];
         }
@@ -245,7 +253,7 @@
         [_events sendAllEventsForKey:@"pg_close"];
         
         // resume video
-        [SAAux invoke:@"resume" onTarget:_weakAdView];
+        [SAUtils invoke:@"resume" onTarget:_weakAdView];
     }
 }
 
@@ -258,9 +266,9 @@
     
     // finally advance to URL
     if ([_weakAdView isKindOfClass:[SAAppWall class]]) {
-        [SAAux invoke:@"click:" onTarget:_weakAdView, @(_gameWallPosition)];
+        [SAUtils invoke:@"click:" onTarget:_weakAdView, @(_gameWallPosition)];
     } else {
-        [SAAux invoke:@"click" onTarget:_weakAdView];
+        [SAUtils invoke:@"click" onTarget:_weakAdView];
     }
 }
 

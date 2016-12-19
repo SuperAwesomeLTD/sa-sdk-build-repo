@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SADeserializationProtocol.h"
-#import "SASerializationProtocol.h"
+
+#import "NSArray+SAJson.h"
+#import "NSDictionary+SAJson.h"
+#import "NSDictionary+SafeHandling.h"
 
 @interface SABaseObject : NSObject
 @end

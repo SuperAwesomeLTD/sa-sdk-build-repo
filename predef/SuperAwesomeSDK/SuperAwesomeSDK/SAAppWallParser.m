@@ -9,18 +9,42 @@
 #import "SAAppWallParser.h"
 
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
 #else
-#import "SAModelSpace.h"
+#import "SAAd.h"
 #endif
 #endif
 
 #if defined(__has_include)
-#if __has_include(<SANetwork/SANetwork.h>)
-#import <SANetwork/SANetwork.h>
+#if __has_include(<SAModelSpace/SACreative.h>)
+#import <SAModelSpace/SACreative.h>
 #else
-#import "SANetwork.h"
+#import "SACreative.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SADetails.h>)
+#import <SAModelSpace/SADetails.h>
+#else
+#import "SADetails.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAMedia.h>)
+#import <SAModelSpace/SAMedia.h>
+#else
+#import "SAMedia.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SANetworking/SAFileDownloader.h>)
+#import <SANetworking/SAFileDownloader.h>
+#else
+#import "SAFileDownloader.h"
 #endif
 #endif
 

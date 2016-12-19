@@ -51,7 +51,7 @@ extern "C" {
                       NSInteger placementId,
                       NSString *callback) {
         
-        NSString *payload = [NSString stringWithFormat:@"{\"placementId\":\"%d\", \"type\":\"sacallback_%@\"}", placementId, callback];
+        NSString *payload = [NSString stringWithFormat:@"{\"placementId\":\"%ld\", \"type\":\"sacallback_%@\"}", (long)placementId, callback];
         UnitySendMessage([unityName UTF8String], "nativeCallback", [payload UTF8String]);
     }
     

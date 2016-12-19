@@ -50,7 +50,7 @@
     NSString *thirdPartOfDAU = [[NSBundle mainBundle] bundleIdentifier];
     
     if (!secondPartOfDAU || [secondPartOfDAU isEqualToString:@""]){
-        secondPartOfDAU = [SAAux generateUniqueKey];
+        secondPartOfDAU = [SAUtils generateUniqueKey];
         [_defs setObject:secondPartOfDAU forKey:SUPER_AWESOME_FIRST_PART_DAU];
         [_defs synchronize];
     }

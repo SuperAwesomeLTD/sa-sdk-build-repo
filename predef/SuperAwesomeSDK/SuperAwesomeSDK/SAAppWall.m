@@ -14,10 +14,42 @@
 
 // guarded imports
 #if defined(__has_include)
-#if __has_include(<SAModelSpace/SAModelSpace.h>)
-#import <SAModelSpace/SAModelSpace.h>
+#if __has_include(<SAModelSpace/SAResponse.h>)
+#import <SAModelSpace/SAResponse.h>
 #else
-#import "SAModelSpace.h"
+#import "SAResponse.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAAd.h>)
+#import <SAModelSpace/SAAd.h>
+#else
+#import "SAAd.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SACreative.h>)
+#import <SAModelSpace/SACreative.h>
+#else
+#import "SACreative.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SADetails.h>)
+#import <SAModelSpace/SADetails.h>
+#else
+#import "SADetails.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAModelSpace/SAMedia.h>)
+#import <SAModelSpace/SAMedia.h>
+#else
+#import "SAMedia.h"
 #endif
 #endif
 
@@ -30,10 +62,18 @@
 #endif
 
 #if defined(__has_include)
-#if __has_include(<SAAdLoader/SAAdLoader.h>)
-#import <SAAdLoader/SAAdLoader.h>
+#if __has_include(<SAUtils/SAImageUtils.h>)
+#import <SAUtils/SAImageUtils.h>
 #else
-#import "SAAdLoader.h"
+#import "SAImageUtils.h"
+#endif
+#endif
+
+#if defined(__has_include)
+#if __has_include(<SAAdLoader/SALoader.h>)
+#import <SAAdLoader/SALoader.h>
+#else
+#import "SALoader.h"
 #endif
 #endif
 
@@ -111,7 +151,7 @@
 
 - (void) arrangeSubviewsForSmallLayout {
     
-    NSString *imageUrl = [SAAux filePathInDocuments:_imagePath];
+    NSString *imageUrl = [SAUtils filePathInDocuments:_imagePath];
     CGRect iconFrame = CGRectMake(15, 15, self.frame.size.width - 30, self.frame.size.width - 30);
     CGRect titleFrame = CGRectMake(0, self.frame.size.width, self.frame.size.width, self.frame.size.height - self.frame.size.width);
     
@@ -136,7 +176,7 @@
 
 - (void) arrangeSubviewsForBigLayout {
     
-    NSString *imageUrl = [SAAux filePathInDocuments:_imagePath];
+    NSString *imageUrl = [SAUtils filePathInDocuments:_imagePath];
     CGRect iconFrame = CGRectMake(25, 25, self.frame.size.height - 50, self.frame.size.height - 50);
     CGRect titleFrame = CGRectMake(self.frame.size.height, 0, self.frame.size.width - self.frame.size.height - 10, self.frame.size.height);
     
