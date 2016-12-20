@@ -3,11 +3,11 @@
 # SDK versions
 sdk_version_ios="5.3.14"
 sdk_version_android="5.3.7"
-sdk_version_unity="5.1.7"
-sdk_version_air="5.1.6"
+sdk_version_unity="5.1.6"
+sdk_version_air="5.1.5"
 sdk_version_flash="3.2.8"
-sdk_version_kws_ios="2.1.5"
-sdk_version_kws_android="2.1.5"
+sdk_version_kws_ios="2.1.9"
+sdk_version_kws_android="2.1.6"
 sdk_version_web="2.0.0"
 sdk_version_kws="1.1.0"
 
