@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B279B8C1E09556800950438 /* KWSRandomName.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B279B8A1E09556800950438 /* KWSRandomName.h */; };
+		1B279B8D1E09556800950438 /* KWSRandomName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B279B8B1E09556800950438 /* KWSRandomName.m */; };
 		1BD3E0AA1E0855EA00D749BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3E0A91E0855EA00D749BB /* Info.plist */; };
 		1BD3E1301E08586E00D749BB /* FirebaseGetToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD3E0B81E08586E00D749BB /* FirebaseGetToken.h */; };
 		1BD3E1311E08586E00D749BB /* FirebaseGetToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3E0B91E08586E00D749BB /* FirebaseGetToken.m */; };
@@ -131,6 +133,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B279B8A1E09556800950438 /* KWSRandomName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSRandomName.h; sourceTree = "<group>"; };
+		1B279B8B1E09556800950438 /* KWSRandomName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWSRandomName.m; sourceTree = "<group>"; };
 		1BD3DC981E08073300D749BB /* KidsWebServicesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KidsWebServicesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD3E0A91E0855EA00D749BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BD3E0B81E08586E00D749BB /* FirebaseGetToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseGetToken.h; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 		1BD3DC9A1E08073300D749BB /* KidsWebServicesSDK */ = {
 			isa = PBXGroup;
 			children = (
+				1B279B8A1E09556800950438 /* KWSRandomName.h */,
+				1B279B8B1E09556800950438 /* KWSRandomName.m */,
 				1BD3E0B81E08586E00D749BB /* FirebaseGetToken.h */,
 				1BD3E0B91E08586E00D749BB /* FirebaseGetToken.m */,
 				1BD3E0BA1E08586E00D749BB /* KWS.h */,
@@ -433,6 +439,7 @@
 				1BD3E1581E08586E00D749BB /* KWSGetScore.h in Headers */,
 				1BD3E1A61E08586E00D749BB /* SystemCheckAllowed.h in Headers */,
 				1BD3E1761E08586E00D749BB /* KWSRequestPermission.h in Headers */,
+				1B279B8C1E09556800950438 /* KWSRandomName.h in Headers */,
 				1BD3E1381E08586E00D749BB /* KWSAppData.h in Headers */,
 				1BD3E1A41E08586E00D749BB /* SAUtils.h in Headers */,
 				1BD3E1661E08586E00D749BB /* KWSLoggedUser.h in Headers */,
@@ -591,6 +598,7 @@
 				1BD3E1571E08586E00D749BB /* KWSGetLeaderboard.m in Sources */,
 				1BD3E1471E08586E00D749BB /* KWSCheckRegistered.m in Sources */,
 				1BD3E17D1E08586E00D749BB /* KWSSetAppData.m in Sources */,
+				1B279B8D1E09556800950438 /* KWSRandomName.m in Sources */,
 				1BD3E1951E08586E00D749BB /* SADownloadQueue.m in Sources */,
 				1BD3E14D1E08586E00D749BB /* KWSError.m in Sources */,
 				1BD3E1991E08586E00D749BB /* SAFileDownloader.m in Sources */,
