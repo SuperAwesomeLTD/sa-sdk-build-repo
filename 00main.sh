@@ -1,20 +1,29 @@
 #!/bin/bash -ex
 
-# SDK versions
+# Awesome Ads SDK versions
 sdk_version_ios="5.3.14"
 sdk_version_android="5.3.7"
 sdk_version_unity="5.1.6"
 sdk_version_air="5.1.5"
 sdk_version_flash="3.2.8"
+sdk_version_web="2.0.0"
+
+# Kids Web Services SDK versions
 sdk_version_kws_ios="2.1.9"
 sdk_version_kws_android="2.1.6"
-sdk_version_web="2.0.0"
 sdk_version_kws="1.1.0"
+sdk_version_kws_parent_ios="1.0.4"
+sdk_version_kws_parent_android="1.0.7"
 
-# other variables
+# main build variables
+# home dir
+# workspace dir
+# build repo
 homey="/Users/gabriel.coman"
 workspace="$homey/Workspace"
 build_repo="$workspace/sa-sdk-build-repo"
+
+# Awesome Ads build dir
 android_build="$build_repo/android_build"
 flash_build="$build_repo/flash_build"
 air_build="$build_repo/air_build"
@@ -22,8 +31,14 @@ air_moat_build="$build_repo/air_moat_build"
 unity_build="$build_repo/unity_build"
 unity_moat_build="$build_repo/unity_moat_build"
 ios_build="$build_repo/ios_build"
+
+# Kids Web Services build dir
 kws_ios_build="$build_repo/kws_ios_build"
 kws_android_build="$build_repo/kws_android_build"
+kws_parent_ios_build="$build_repo/kws_parent_ios_build"
+kws_parent_android_build="$build_repo/kws_parent_android_build"
+
+# Final package dir
 package_file="$build_repo/package"
 
 # start
@@ -92,6 +107,20 @@ then
 fi
 mkdir $kws_android_build
 
+# rebuild KWS Parent iOS build folder
+if [ -d $kws_parent_ios_build ]
+then
+	rm -rf $kws_parent_ios_build
+fi
+mkdir $kws_parent_ios_build
+
+# rebuild KWS Parent Android build folder
+if [ -d $kws_parent_android_build ]
+then
+	rm -rf $kws_parent_android_build
+fi
+mkdir $kws_parent_android_build
+
 cd $build_repo
 
 # create package folder
@@ -101,13 +130,17 @@ mkdir -p package/unity
 mkdir -p package/flash
 mkdir -p package/ios
 mkdir -p package/android
+mkdir -p package/kws_ios
+mkdir -p package/kws_android
+mkdir -p package/kws_parent_ios
+mkdir -p package/kws_parent_android
 
 # exit
 cd
 
-# start other scripts
+# Awesome Ads & KWS Andrid Prebuild
 # cd $build_repo
-# . ./01android_prebuild.sh
+# . ./01android-prebuild.sh
 cd $build_repo
 . ./01android.sh
 cd $build_repo
@@ -128,14 +161,25 @@ cd $build_repo
 . ./05unity.sh
 cd $build_repo
 . ./05unity-moat.sh
+
+# Kids Web Service Build scripts
 cd $build_repo
 . ./06kws-ios-static.sh
 cd $build_repo
 . ./07kws-ios-framework.sh
+# cd $build_repo
+# . ./08kws-android-prebuild.sh
 cd $build_repo
 . ./08kws-android.sh
 cd $build_repo
-. ./09package.sh
+. ./09kws-parent-android.sh
+cd $build_repo
+. ./10kws-parent-ios-static.sh
+cd $build_repo
+. ./10kws-parent-ios-framework.sh
+
+cd $build_repo
+. ./11package.sh
 
 # update the current repo
 cd $build_repo
