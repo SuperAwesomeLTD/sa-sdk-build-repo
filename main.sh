@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo-2/"
+workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK versions
 aa_project="SuperAwesomeSDK"
@@ -17,40 +17,40 @@ kws_version_android="2.1.6"
 kws_parent_project="KidsWebServicesParentSDK"
 kws_version_parent_ios="1.0.4"
 kws_version_parent_android="1.0.7"
-
-# buildscripts
-cd $workspace
-./aa-android-build.sh
-cd $workspace
-./aa-android-moat-build.sh
-cd $workspace
-./aa-android-mopub-build.sh
-cd $workspace
-./aa-ios-build-static.sh
-cd $workspace
-./aa-ios-build-framework.sh
-cd $workspace
-./aa-flash-build.sh
-cd $workspace
-./aa-air-build.sh
-cd $workspace
-./aa-unity-build.sh
-cd $workspace
-./aa-unity-moat-build.sh
-
-cd $workspace
-./kws-ios-build-framework.sh
-cd $workspace
-./kws-ios-build-static.sh
-cd $workspace
-./kws-android-build.sh
-
-cd $workspace
-./kws-ios-parent-build-framework.sh
-cd $workspace
-./kws-ios-parent-build-static.sh
-cd $workspace
-./kws-android-parent-build.sh
+#
+# # buildscripts
+# cd $workspace
+# ./aa-android-build.sh
+# cd $workspace
+# ./aa-android-moat-build.sh
+# cd $workspace
+# ./aa-android-mopub-build.sh
+# cd $workspace
+# ./aa-ios-build-static.sh
+# cd $workspace
+# ./aa-ios-build-framework.sh
+# cd $workspace
+# ./aa-flash-build.sh
+# cd $workspace
+# ./aa-air-build.sh
+# cd $workspace
+# ./aa-unity-build.sh
+# cd $workspace
+# ./aa-unity-moat-build.sh
+#
+# cd $workspace
+# ./kws-ios-build-framework.sh
+# cd $workspace
+# ./kws-ios-build-static.sh
+# cd $workspace
+# ./kws-android-build.sh
+#
+# cd $workspace
+# ./kws-ios-parent-build-framework.sh
+# cd $workspace
+# ./kws-ios-parent-build-static.sh
+# cd $workspace
+# ./kws-android-parent-build.sh
 
 # packaging
 cd $workspace
@@ -90,3 +90,7 @@ cp kws-ios-parent-build-static/$kws_parent_project.iOS.lib.zip package/kws_paren
 cp kws-ios-parent-build-framework/$kws_parent_project.iOS.framework.zip package/kws_parent_ios/$kws_version_parent_ios/$kws_parent_project-$kws_version_parent_ios.iOS.framework.zip
 
 cp kws-android-parent-build/$kws_parent_project.Android.jars.zip package/kws_parent_android/$kws_version_parent_android/$kws_parent_project-$kws_version_parent_android.Android.jars.zip
+
+git status
+git commit -am "update"
+git push origin master
