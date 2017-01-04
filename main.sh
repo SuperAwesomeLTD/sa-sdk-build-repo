@@ -4,53 +4,55 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="5.3.14"
-aa_version_android="5.3.7"
-aa_version_unity="5.1.6"
-aa_version_air="5.1.5"
+aa_version_ios="5.3.15"
+aa_version_android="5.3.9"
+aa_version_unity="5.1.7"
+aa_version_air="5.1.6"
 aa_version_flash="3.2.8"
 
 kws_project="KidsWebServicesSDK"
-kws_version_ios="2.1.9"
-kws_version_android="2.1.6"
+kws_version_ios="2.1.10"
+kws_version_android="2.1.7"
 
 kws_parent_project="KidsWebServicesParentSDK"
 kws_version_parent_ios="1.0.4"
 kws_version_parent_android="1.0.7"
-#
-# # buildscripts
-# cd $workspace
-# ./aa-android-build.sh
-# cd $workspace
-# ./aa-android-moat-build.sh
-# cd $workspace
-# ./aa-android-mopub-build.sh
-# cd $workspace
-# ./aa-ios-build-static.sh
-# cd $workspace
-# ./aa-ios-build-framework.sh
-# cd $workspace
-# ./aa-flash-build.sh
-# cd $workspace
-# ./aa-air-build.sh
-# cd $workspace
-# ./aa-unity-build.sh
-# cd $workspace
-# ./aa-unity-moat-build.sh
-#
-# cd $workspace
-# ./kws-ios-build-framework.sh
-# cd $workspace
-# ./kws-ios-build-static.sh
-# cd $workspace
-# ./kws-android-build.sh
-#
-# cd $workspace
-# ./kws-ios-parent-build-framework.sh
-# cd $workspace
-# ./kws-ios-parent-build-static.sh
-# cd $workspace
-# ./kws-android-parent-build.sh
+
+# buildscripts
+cd $workspace
+./aa-android-build.sh
+cd $workspace
+./aa-android-moat-build.sh
+cd $workspace
+./aa-android-mopub-build.sh
+cd $workspace
+./aa-ios-build-static.sh
+cd $workspace
+./aa-ios-build-framework.sh
+cd $workspace
+./aa-flash-build.sh
+cd $workspace
+./aa-air-build.sh
+cd $workspace
+./aa-air-moat-build.sh
+cd $workspace
+./aa-unity-build.sh
+cd $workspace
+./aa-unity-moat-build.sh
+
+cd $workspace
+./kws-ios-build-framework.sh
+cd $workspace
+./kws-ios-build-static.sh
+cd $workspace
+./kws-android-build.sh
+
+cd $workspace
+./kws-ios-parent-build-framework.sh
+cd $workspace
+./kws-ios-parent-build-static.sh
+cd $workspace
+./kws-android-parent-build.sh
 
 # packaging
 cd $workspace
@@ -76,7 +78,8 @@ cp aa-android-mopub-build/$aa_project.Android.MoPubPlugin.jars.zip package/aa_an
 
 cp aa-flash-build/$aa_project.AdobeFlash.swc package/aa_flash/$aa_version_flash/$aa_project-$aa_version_flash.AdobeFlash.swc
 
-cp aa-air-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.swc
+cp aa-air-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.base.ane
+cp aa-air-moat-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.full.ane
 
 cp aa-unity-build/$aa_project.Unity.base.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.base.unitypackage
 cp aa-unity-moat-build/$aa_project.Unity.full.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.full.unitypackage
