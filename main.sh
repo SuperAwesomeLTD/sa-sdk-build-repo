@@ -95,5 +95,6 @@ cp kws-ios-parent-build-framework/$kws_parent_project.iOS.framework.zip package/
 cp kws-android-parent-build/$kws_parent_project.Android.jars.zip package/kws_parent_android/$kws_version_parent_android/$kws_parent_project-$kws_version_parent_android.Android.jars.zip
 
 git status
+git add *
 git commit -am "update"
 git push origin master
