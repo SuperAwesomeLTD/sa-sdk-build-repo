@@ -31,10 +31,10 @@ kws_version_parent_android="1.0.7"
 # ./aa-ios-build-framework.sh
 # cd $workspace
 # ./aa-flash-build.sh
-cd $workspace
-./aa-air-build.sh
-cd $workspace
-./aa-air-moat-build.sh
+# cd $workspace
+# ./aa-air-build.sh
+# cd $workspace
+# ./aa-air-moat-build.sh
 # cd $workspace
 # ./aa-unity-build.sh
 # cd $workspace
