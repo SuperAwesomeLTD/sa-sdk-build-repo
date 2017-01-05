@@ -185,7 +185,6 @@ echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $iosPlatfor
 echo "<sdkVersion>8.0</sdkVersion>" >> $iosPlatformFile
 echo "<linkerOptions>" >> $iosPlatformFile
 echo "<option>-ios_version_min 8.0</option>" >> $iosPlatformFile
-# echo "<option>-framework $project</option>" >> $iosPlatformFile
 echo "</linkerOptions>" >> $iosPlatformFile
 echo "</platform>" >> $iosPlatformFile
 
@@ -198,9 +197,6 @@ mkdir $build/lib$project/include/$project/
 
 mkdir $build/static
 mkdir $build/static/src
-
-mkdir $build/framework
-mkdir $build/framework/src
 
 sources=(
     "sa-mobile-lib-ios-adloader"
@@ -230,29 +226,25 @@ do
   find "$source/Pod/Classes/" -iname '*.m' -exec cp \{\} $build/static/src \;
 	# copy header files from the Pod Classes folder
 	find "$source/Pod/Classes/" -iname '*.h' -exec cp \{\} $build/lib$project/include/$project \;
+	# copy all headers to the Adobe AIR build/ios folder
+	find "$source/Pod/Classes/" -iname '*.h' -exec cp \{\} $build/ios/ \;
 	# copy AIR plugin, only for the static part of the library
 	if [ -d $source/Pod/Plugin/AIR ]
 	then
+		# copy plugin files to the static/src folder for static lib compilation
 		cp -r $source/Pod/Plugin/AIR/* $build/static/src
+		# copy plugin headers to Adobe AIR build/ios folder
+		find "$source/Pod/Plugin/AIR/" -iname '*.h' -exec cp \{\} $build/ios/ \;
 	fi
-
-	# copy header files from the Pod Classes folder
-	find "$source/Pod/Classes/" -iname '*.h' -exec cp \{\} $build/framework/src \;
-	# copy source files from the Pod Classes folder
-  find "$source/Pod/Classes/" -iname '*.m' -exec cp \{\} $build/framework/src \;
-
 
 	# remove the source
 	rm -rf $source/
 done
 
-################################################################################
-# static part of the library
-
-cd $build/static
+cd $build
 
 # create the first CMakeLists.txt file
-cmakelists="CMakeLists.txt"
+cmakelists=static/"CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
 echo "set(SDKVER \"9.3\")" >> $cmakelists
@@ -268,24 +260,11 @@ echo "set(CMAKE_XCODE_EFFECTIVE_PLATFORMS \"-iphoneos;-iphonesimulator\")" >> $c
 echo "include_directories(\${CMAKE_CURRENT_SOURCE_DIR})" >> $cmakelists
 echo "add_subdirectory( src )" >> $cmakelists
 
-cd src
-cmakelists2="CMakeLists.txt"
+cmakelists2=static/src/"CMakeLists.txt"
 echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $project STATIC \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
-
-# go back to build folder
-cd ../..
-
-# create a main header file in the lib folder's include/SuperAwesomeSDK folder
-sourcefile=lib$project/include/$project/$project.h
-
-echo "#import <UIKit/UIKit.h>" >> $sourcefile
-files=($(cd static/src/ && ls *.h))
-for item in ${files[*]}
-do echo "#import \"$item\"" >> $sourcefile
-done
 
 # go-to the "Static" project
 cd static
@@ -305,111 +284,6 @@ cd ../
 
 # add the newly created library to the "ios" folder of the AIR build
 cp lib$project/lib$project.a ios/lib$project.a && rm -rf static && rm -rf lib$project
-
-################################################################################
-# framework part of the library
-
-cd framework
-
-# create and copy the header
-
-sourcefile=src/"$project.h"
-echo "#import <UIKit/UIKit.h>" > $sourcefile
-files=($(cd src/ && ls *.h))
-for item in ${files[*]}
-do echo "#import \"$item\"" >> $sourcefile
-done
-
-# create the first CMakeLists.txt file
-cmakelists="CMakeLists.txt"
-echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
-echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"10.0\")" >> $cmakelists
-echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
-echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS\${SDKVER}.sdk\")" >> $cmakelists
-echo "if(EXISTS \${SDKROOT})" >> $cmakelists
-echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
-echo "else()" >> $cmakelists
-echo "message(\"Warning, iOS Base SDK path not found: \" ${SDKROOT})" >> $cmakelists
-echo "endif()" >> $cmakelists
-echo "set(CMAKE_OSX_ARCHITECTURES \"\$(ARCHS_STANDARD)\")" >> $cmakelists
-echo "set(CMAKE_XCODE_EFFECTIVE_PLATFORMS \"-iphoneos;-iphonesimulator\")" >> $cmakelists
-echo "include_directories(\${CMAKE_CURRENT_SOURCE_DIR})" >> $cmakelists
-echo "add_subdirectory( src )" >> $cmakelists
-
-# create the second CMakeLists.txt file
-cmakelists2=src/"CMakeLists.txt"
-echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
-echo "add_library( $project SHARED \${SRCS} )" >> $cmakelists2
-echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
-echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
-echo "set_target_properties( $project PROPERTIES" >> $cmakelists2
-echo "FRAMEWORK TRUE" >> $cmakelists2
-echo "FRAMEWORK_VERSION C" >> $cmakelists2
-echo "MACOSX_FRAMEWORK_IDENTIFIER tv.superawesome.$project" >> $cmakelists2
-echo "MACOSX_FRAMEWORK_INFO_PLIST Info.plist" >> $cmakelists2
-echo "MACOSX_RPATH TRUE" >> $cmakelists2
-echo "PUBLIC_HEADER $sourcefile" >> $cmakelists2
-echo "XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY \"\""
-echo ")" >> $cmakelists2
-
-# create plist file
-
-plist="Info.plist"
-echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" >> $plist
-echo "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">" >> $plist
-echo "<plist version=\"1.0\">" >> $plist
-echo "<dict>" >> $plist
-echo "<key>CFBundleDevelopmentRegion</key>" >> $plist
-echo "<string>en</string>" >> $plist
-echo "<key>CFBundleExecutable</key>" >> $plist
-echo "<string>\$(EXECUTABLE_NAME)</string>" >> $plist
-echo "<key>CFBundleIdentifier</key>" >> $plist
-echo "<string>tv.superawesome.$project</string>" >> $plist
-echo "<key>CFBundleInfoDictionaryVersion</key>" >> $plist
-echo "<string>6.0</string>" >> $plist
-echo "<key>CFBundleName</key>" >> $plist
-echo "<string>\$(PRODUCT_NAME)</string>" >> $plist
-echo "<key>CFBundlePackageType</key>" >> $plist
-echo "<string>FMWK</string>" >> $plist
-echo "<key>CFBundleShortVersionString</key>" >> $plist
-echo "<string>1.0</string>" >> $plist
-echo "<key>CFBundleSignature</key>" >> $plist
-echo "<string>????</string>" >> $plist
-echo "<key>CFBundleVersion</key>" >> $plist
-echo "<string>\$(CURRENT_PROJECT_VERSION)</string>" >> $plist
-echo "<key>NSPrincipalClass</key>" >> $plist
-echo "<string></string>" >> $plist
-echo "</dict>" >> $plist
-echo "</plist>" >> $plist
-
-# Use CMake to create the project
-/Applications/CMake.app/Contents/bin/cmake -G Xcode .
-# Use XCode to build for iPhone and iPhoneSimulator
-/usr/bin/xcodebuild -target $project ONLY_ACTIVE_ARCH=NO -configuration Release -sdk iphonesimulator
-/usr/bin/xcodebuild -target $project ONLY_ACTIVE_ARCH=NO -configuration Release -sdk iphoneos
-
-# go back to the air_buil folder
-cd ../
-
-# create a new framework folder with a Headers subfolder
-mkdir $project.framework
-mkdir $project.framework/Headers
-# copy the plist
-cp framework/src/Release-iphoneos/$project.framework/Info.plist $project.framework/Info.plist
-
-# do a lipo to unite the iphone & simulator libs
-lipo \
-	-create \
-	"framework/src/Release-iphoneos/$project.framework/$project" \
-	"framework/src/Release-iphonesimulator/$project.framework/$project" \
-	-output "$project.framework/$project"
-
-# copy headers
-find framework/src/ -iname '*.h' -exec cp \{\} $project.framework/Headers/ \;
-
-# delete
-rm -rf framework
 
 cd ../
 

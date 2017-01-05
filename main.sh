@@ -19,40 +19,40 @@ kws_version_parent_ios="1.0.4"
 kws_version_parent_android="1.0.7"
 
 # buildscripts
-cd $workspace
-./aa-android-build.sh
-cd $workspace
-./aa-android-moat-build.sh
-cd $workspace
-./aa-android-mopub-build.sh
-cd $workspace
-./aa-ios-build-static.sh
-cd $workspace
-./aa-ios-build-framework.sh
-cd $workspace
-./aa-flash-build.sh
+# cd $workspace
+# ./aa-android-build.sh
+# cd $workspace
+# ./aa-android-moat-build.sh
+# cd $workspace
+# ./aa-android-mopub-build.sh
+# cd $workspace
+# ./aa-ios-build-static.sh
+# cd $workspace
+# ./aa-ios-build-framework.sh
+# cd $workspace
+# ./aa-flash-build.sh
 cd $workspace
 ./aa-air-build.sh
 cd $workspace
 ./aa-air-moat-build.sh
-cd $workspace
-./aa-unity-build.sh
-cd $workspace
-./aa-unity-moat-build.sh
+# cd $workspace
+# ./aa-unity-build.sh
+# cd $workspace
+# ./aa-unity-moat-build.sh
 
-cd $workspace
-./kws-ios-build-framework.sh
-cd $workspace
-./kws-ios-build-static.sh
-cd $workspace
-./kws-android-build.sh
-
-cd $workspace
-./kws-ios-parent-build-framework.sh
-cd $workspace
-./kws-ios-parent-build-static.sh
-cd $workspace
-./kws-android-parent-build.sh
+# cd $workspace
+# ./kws-ios-build-framework.sh
+# cd $workspace
+# ./kws-ios-build-static.sh
+# cd $workspace
+# ./kws-android-build.sh
+#
+# cd $workspace
+# ./kws-ios-parent-build-framework.sh
+# cd $workspace
+# ./kws-ios-parent-build-static.sh
+# cd $workspace
+# ./kws-android-parent-build.sh
 
 # packaging
 cd $workspace
