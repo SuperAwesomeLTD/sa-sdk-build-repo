@@ -328,7 +328,7 @@ echo "<platforms>" >> $extensionFile
 echo "<platform name=\"Android-ARM\">" >> $extensionFile
 echo "<applicationDeployment> " >> $extensionFile
 echo "<nativeLibrary>saair.jar</nativeLibrary>" >> $extensionFile
-echo "<initializer>tv.superawesome.plugins.air.SAAIRExtension</initializer>" >> $extensionFile
+echo "<initializer>tv.superawesome.plugins.air.SAAIR</initializer>" >> $extensionFile
 echo "</applicationDeployment>" >> $extensionFile
 echo "</platform>" >> $extensionFile
 # ios platform
