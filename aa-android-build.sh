@@ -25,6 +25,7 @@ sources=(
     "sa-mobile-lib-android-session"
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
+		"sa-mobile-lib-android-vastparser"
     "sa-mobile-lib-android-webplayer"
 )
 
@@ -38,10 +39,11 @@ destinations=(
 		"sasession"
 		"sautils"
 		"savideoplayer"
+		"savastparser"
     "sawebplayer"
 )
 
-for i in {0..9}
+for i in {0..10}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -119,8 +121,8 @@ echo "<application>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAGameWall\" android:label=\"SAGameWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
-echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"true\">" >> $androidManifest
+echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
+echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
 echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
 echo "</receiver>" >> $androidManifest
 echo "</application>" >> $androidManifest

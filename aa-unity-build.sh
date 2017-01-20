@@ -53,6 +53,7 @@ sources=(
     "sa-mobile-lib-android-session"
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
+		"sa-mobile-lib-android-vastparser"
     "sa-mobile-lib-android-webplayer"
 )
 
@@ -66,10 +67,11 @@ destinations=(
 		"sasession"
 		"sautils"
 		"savideoplayer"
+		"savastparser"
     "sawebplayer"
 )
 
-for i in {0..9}
+for i in {0..10}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -140,8 +142,8 @@ echo "<application>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAGameWall\" android:label=\"SAGameWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\"/>" >> $androidManifest
-echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"true\">" >> $androidManifest
+echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
+echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
 echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
 echo "</receiver>" >> $androidManifest
 echo "</application>" >> $androidManifest
@@ -166,10 +168,11 @@ sources=(
     "sa-mobile-lib-ios-utils"
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
+		"sa-mobile-lib-ios-vastparser"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..9}
+for i in {0..10}
 do
 	# get source & repository
 	source=${sources[$i]}
@@ -186,8 +189,8 @@ do
 	# copy Unity plugin, only for the static part of the library
 	if [ -d $source/Pod/Plugin/Unity ]
 	then
-		cp -r $source/Pod/Plugin/Unity/* $build/static/src
-		cp -r $source/Pod/Plugin/Unity/* $build/lib$project/include/$project
+		cp -r $source/Pod/Plugin/Unity/* $build/static/src/
+		cp -r $source/Pod/Plugin/Unity/* $build/lib$project/include/$project/
 	fi
 
 	# copy header files from the Pod Classes folder
@@ -203,9 +206,8 @@ cd $build/static
 cmakelists="CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"9.3\")" >> $cmakelists
-echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer\")" >> $cmakelists
-echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneSimulator\${SDKVER}.sdk\")" >> $cmakelists
+echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
+echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS.sdk\")" >> $cmakelists
 echo "if(EXISTS \${SDKROOT})" >> $cmakelists
 echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
 echo "else()" >> $cmakelists
@@ -221,6 +223,7 @@ echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $project STATIC \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
+echo "set_property(TARGET $project PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET \"8.0\")" >> $cmakelists2
 
 cd ../
 

@@ -31,10 +31,11 @@ sources=(
     "sa-mobile-lib-ios-utils"
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
+		"sa-mobile-lib-ios-vastparser"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..9}
+for i in {0..10}
 do
 	# get source & repository
 	source=${sources[$i]}
@@ -65,9 +66,8 @@ cd $build
 cmakelists=static/"CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"9.3\")" >> $cmakelists
-echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer\")" >> $cmakelists
-echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneSimulator\${SDKVER}.sdk\")" >> $cmakelists
+echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
+echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS.sdk\")" >> $cmakelists
 echo "if(EXISTS \${SDKROOT})" >> $cmakelists
 echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
 echo "else()" >> $cmakelists
@@ -83,6 +83,7 @@ echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $project STATIC \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
+echo "set_property(TARGET $project PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET \"8.0\")" >> $cmakelists2
 
 # create a main header file in the lib folder's include/SuperAwesomeSDK folder
 sourcefile=lib$project/include/$project/$project.h

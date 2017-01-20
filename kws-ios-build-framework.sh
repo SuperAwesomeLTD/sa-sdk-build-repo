@@ -56,15 +56,15 @@ done
 cmakelists=framework/"CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"10.0\")" >> $cmakelists
 echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
-echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS\${SDKVER}.sdk\")" >> $cmakelists
+echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS.sdk\")" >> $cmakelists
 echo "if(EXISTS \${SDKROOT})" >> $cmakelists
 echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
 echo "else()" >> $cmakelists
 echo "message(\"Warning, iOS Base SDK path not found: \" ${SDKROOT})" >> $cmakelists
 echo "endif()" >> $cmakelists
 echo "set(CMAKE_OSX_ARCHITECTURES \"\$(ARCHS_STANDARD)\")" >> $cmakelists
+echo "set(CMAKE_OSX_DEPLOYMENT_TARGET \"iOS 8.0\")" >> $cmakelists
 echo "set(CMAKE_XCODE_EFFECTIVE_PLATFORMS \"-iphoneos;-iphonesimulator\")" >> $cmakelists
 echo "include_directories(\${CMAKE_CURRENT_SOURCE_DIR})" >> $cmakelists
 echo "add_subdirectory( src )" >> $cmakelists
@@ -75,6 +75,7 @@ echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $project SHARED \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
+echo "set_property(TARGET $project PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET \"8.0\")" >> $cmakelists2
 echo "set_target_properties( $project PROPERTIES" >> $cmakelists2
 echo "FRAMEWORK TRUE" >> $cmakelists2
 echo "FRAMEWORK_VERSION C" >> $cmakelists2

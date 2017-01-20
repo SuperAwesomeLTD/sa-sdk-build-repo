@@ -78,6 +78,7 @@ sources=(
     "sa-mobile-lib-android-session"
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
+		"sa-mobile-lib-android-vastparser"
     "sa-mobile-lib-android-webplayer"
 )
 
@@ -92,10 +93,11 @@ destinations=(
 		"sasession"
 		"sautils"
 		"savideoplayer"
+		"savastparser"
     "sawebplayer"
 )
 
-for i in {0..10}
+for i in {0..11}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -168,7 +170,7 @@ cd $build
 androidPlatformFile="android_platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $androidPlatformFile
 echo "<packagedDependencies>" >> $androidPlatformFile
-for i in {0..10}
+for i in {0..11}
 do echo "<packagedDependency>${destinations[$i]}.jar</packagedDependency>" >> $androidPlatformFile
 done
 echo "<packagedDependency>moatlib.jar</packagedDependency>" >> $androidPlatformFile
@@ -220,10 +222,11 @@ sources=(
     "sa-mobile-lib-ios-utils"
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
+		"sa-mobile-lib-ios-vastparser"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..9}
+for i in {0..10}
 do
 	# get source & repository
 	source=${sources[$i]}
@@ -245,7 +248,7 @@ do
 	if [ -d $source/Pod/Plugin/AIR ]
 	then
 		# copy plugin files to the static/src folder for static lib compilation
-		cp -r $source/Pod/Plugin/AIR/* $build/static/src
+		cp -r $source/Pod/Plugin/AIR/* $build/static/src/
 		# copy plugin headers to Adobe AIR build/ios folder
 		find "$source/Pod/Plugin/AIR/" -iname '*.h' -exec cp \{\} $build/ios/ \;
 	fi
@@ -254,7 +257,7 @@ do
 	if [ -d $source/Pod/Plugin/Moat ]
 	then
 		# copy plugin files to the static/src folder for static lib compilation
-		cp -r $source/Pod/Plugin/Moat/* $build/static/src
+		cp -r $source/Pod/Plugin/Moat/* $build/static/src/
 		# copy plugin headers to Adobe AIR build/ios folder
 		find "$source/Pod/Plugin/Moat/" -iname '*.h' -exec cp \{\} $build/ios/ \;
 		# copy library
@@ -271,9 +274,8 @@ cd $build
 cmakelists=static/"CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"9.3\")" >> $cmakelists
-echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer\")" >> $cmakelists
-echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneSimulator\${SDKVER}.sdk\")" >> $cmakelists
+echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
+echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS.sdk\")" >> $cmakelists
 echo "if(EXISTS \${SDKROOT})" >> $cmakelists
 echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
 echo "else()" >> $cmakelists
@@ -289,6 +291,7 @@ echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $project STATIC \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
+echo "set_property(TARGET $project PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET \"8.0\")" >> $cmakelists2
 
 # go-to the "Static" project
 cd static

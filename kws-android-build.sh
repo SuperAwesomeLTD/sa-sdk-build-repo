@@ -75,7 +75,9 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > $androidManifest
 echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"kws.superawesome.tv.kwssdk\">" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />" >> $androidManifest
-echo "<application android:allowBackup=\"true\"></application>" >> $androidManifest
+echo "<application android:allowBackup=\"true\">" >> $androidManifest
+echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
+echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 
 cd ../

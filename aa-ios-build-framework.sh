@@ -24,10 +24,11 @@ sources=(
     "sa-mobile-lib-ios-utils"
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
+		"sa-mobile-lib-ios-vastparser"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..9}
+for i in {0..10}
 do
 	source=${sources[$i]}
 	repository=git@github.com:SuperAwesomeLTD/$source.git
@@ -72,6 +73,7 @@ echo "else()" >> $cmakelists
 echo "message(\"Warning, iOS Base SDK path not found: \" ${SDKROOT})" >> $cmakelists
 echo "endif()" >> $cmakelists
 echo "set(CMAKE_OSX_ARCHITECTURES \"\$(ARCHS_STANDARD)\")" >> $cmakelists
+echo "set(CMAKE_OSX_DEPLOYMENT_TARGET \"iOS 8.0\")" >> $cmakelists
 echo "set(CMAKE_XCODE_EFFECTIVE_PLATFORMS \"-iphoneos;-iphonesimulator\")" >> $cmakelists
 echo "include_directories(\${CMAKE_CURRENT_SOURCE_DIR})" >> $cmakelists
 echo "add_subdirectory( src )" >> $cmakelists
@@ -82,6 +84,7 @@ echo "file( GLOB SRCS *.m *.h )" > $cmakelists2
 echo "add_library( $project SHARED \${SRCS} )" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fobjc-arc\")" >> $cmakelists2
 echo "target_compile_options($project PUBLIC \"-fmodules\")" >> $cmakelists2
+echo "set_property(TARGET $project PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET \"8.0\")" >> $cmakelists2
 echo "set_target_properties( $project PROPERTIES" >> $cmakelists2
 echo "FRAMEWORK TRUE" >> $cmakelists2
 echo "FRAMEWORK_VERSION C" >> $cmakelists2
