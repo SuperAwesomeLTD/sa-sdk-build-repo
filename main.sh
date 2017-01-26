@@ -11,8 +11,8 @@ aa_version_air="5.2.0"
 aa_version_flash="3.2.8"
 
 kws_project="KidsWebServicesSDK"
-kws_version_ios="2.2.2"
-kws_version_android="2.2.2"
+kws_version_ios="2.2.0"
+kws_version_android="2.2.0"
 
 kws_parent_project="KidsWebServicesParentSDK"
 kws_version_parent_ios="1.1.1"
