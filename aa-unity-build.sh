@@ -27,9 +27,6 @@ rm -rf demo/Assets/Plugins/
 mkdir demo/Assets/Plugins/
 mkdir demo/Assets/Plugins/iOS
 mkdir demo/Assets/Plugins/Android
-mkdir demo/Assets/Plugins/Android/res
-mkdir demo/Assets/Plugins/Android/res/drawable
-mkdir demo/Assets/Plugins/Android/res/layout
 mkdir demo/Assets/Plugins/Android/SuperAwesome_lib
 mkdir lib$project/
 mkdir lib$project/include
@@ -96,8 +93,6 @@ do
 
 		# copy main SDK & AIR lib
 		cp superawesome-base/build/outputs/aar/superawesome-base-release.aar ../$build/demo/Assets/Plugins/Android/superawesome-base.zip
-		cp -r superawesome-base/src/main/res/layout/* ../$build/demo/Assets/Plugins/Android/res/layout/
-		cp -r superawesome-base/src/main/res/drawable/* ../$build/demo/Assets/Plugins/Android/res/drawable/
 		cp saunity/build/outputs/aar/saunity-release.aar ../$build/demo/Assets/Plugins/Android/saunity.zip
 
 		# goto build/android folder
@@ -139,9 +134,9 @@ echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" pac
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAGameWall\" android:label=\"SAGameWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
 echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
 echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest

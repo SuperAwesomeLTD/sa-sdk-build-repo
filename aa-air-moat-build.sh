@@ -16,9 +16,6 @@ cd $build
 
 mkdir ios
 mkdir android
-mkdir android/res
-mkdir android/res/drawable
-mkdir android/res/layout
 mkdir default
 
 cd ../
@@ -122,8 +119,6 @@ do
 
 		# copy main SDK & AIR lib
 		cp superawesome-base/build/outputs/aar/superawesome-base-release.aar ../$build/android/superawesome-base.zip
-		cp -r superawesome-base/src/main/res/layout/* ../$build/android/res/layout/
-		cp -r superawesome-base/src/main/res/drawable/* ../$build/android/res/drawable/
 		cp saair/build/outputs/aar/saair-release.aar ../$build/android/saair.zip
 
 		# goto build/android folder
@@ -175,12 +170,6 @@ do echo "<packagedDependency>${destinations[$i]}.jar</packagedDependency>" >> $a
 done
 echo "<packagedDependency>moatlib.jar</packagedDependency>" >> $androidPlatformFile
 echo "</packagedDependencies>" >> $androidPlatformFile
-echo "<packagedResources>" >> $androidPlatformFile
-echo "<packagedResource>" >> $androidPlatformFile
-echo "<packageName>tv.superawesome.sdk</packageName>" >> $androidPlatformFile
-echo "<folderName>res</folderName>" >> $androidPlatformFile
-echo "</packagedResource>" >> $androidPlatformFile
-echo "</packagedResources>" >> $androidPlatformFile
 echo "</platform>" >> $androidPlatformFile
 
 cd ../

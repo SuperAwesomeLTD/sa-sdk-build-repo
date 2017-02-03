@@ -7,9 +7,6 @@ project="SuperAwesomeSDK"
 
 # create the build folder
 rm -rf $build && mkdir $build
-mkdir $build/res
-mkdir $build/res/layout
-mkdir $build/res/drawable
 
 ################################################################################
 # Build all the android libraries (as jars) and resources
@@ -71,9 +68,6 @@ do
 
 		# copy main SDK & AIR lib
 		cp superawesome-base/build/outputs/aar/superawesome-base-release.aar ../$build/superawesome-base.zip
-		# get the resources
-		cp -r superawesome-base/src/main/res/layout/* ../$build/res/layout/
-		cp -r superawesome-base/src/main/res/drawable/* ../$build/res/drawable/
 
 		# goto build/android folder
 		cd ../$build
@@ -81,8 +75,6 @@ do
 		# unzip the superawesome sdk
 		unzip superawesome-base.zip -d superawesome-base && rm superawesome-base.zip
 		cp superawesome-base/classes.jar superawesome-base.jar && rm -rf superawesome-base
-		# zip the rsources
-		zip -r res.zip res && rm -rf res
 
 	# case when it's one of the libraries
 	else
@@ -125,9 +117,9 @@ echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" pac
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAGameWall\" android:label=\"SAGameWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.views.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
 echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
 echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
@@ -147,7 +139,6 @@ cd $build
 zip -r $project.Android.full.jars.zip *
 
 rm *.jar
-rm res.zip
 rm AndroidManifest.xml
 
 # exit

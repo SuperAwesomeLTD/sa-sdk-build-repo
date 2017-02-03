@@ -5,18 +5,18 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 # Awesome Ads SDK versions
 aa_project="SuperAwesomeSDK"
 aa_version_ios="5.4.0"
-aa_version_android="5.4.7"
-aa_version_unity="5.2.0"
-aa_version_air="5.2.0"
+aa_version_android="5.4.8"
+aa_version_unity="5.2.1"
+aa_version_air="5.2.1"
 aa_version_flash="3.2.8"
 
 kws_project="KidsWebServicesSDK"
 kws_version_ios="2.2.0"
-kws_version_android="2.2.0"
+kws_version_android="2.2.1"
 
 kws_parent_project="KidsWebServicesParentSDK"
 kws_version_parent_ios="1.1.1"
-kws_version_parent_android="1.1.1"
+kws_version_parent_android="1.1.2"
 
 # buildscripts
 cd $workspace
@@ -25,14 +25,14 @@ cd $workspace
 ./aa-android-moat-build.sh
 cd $workspace
 ./aa-android-mopub-build.sh
-# cd $workspace
-# ./aa-ios-build-static.sh
-# cd $workspace
-# ./aa-ios-build-framework.sh
-# cd $workspace
-# ./aa-ios-mopub-build.sh
-# cd $workspace
-# ./aa-flash-build.sh
+cd $workspace
+./aa-ios-build-static.sh
+cd $workspace
+./aa-ios-build-framework.sh
+cd $workspace
+./aa-ios-mopub-build.sh
+cd $workspace
+./aa-flash-build.sh
 cd $workspace
 ./aa-air-build.sh
 cd $workspace
@@ -42,19 +42,19 @@ cd $workspace
 cd $workspace
 ./aa-unity-moat-build.sh
 
-# cd $workspace
-# ./kws-ios-build-framework.sh
-# cd $workspace
-# ./kws-ios-build-static.sh
-# cd $workspace
-# ./kws-android-build.sh
-#
-# cd $workspace
-# ./kws-ios-parent-build-framework.sh
-# cd $workspace
-# ./kws-ios-parent-build-static.sh
-# cd $workspace
-# ./kws-android-parent-build.sh
+cd $workspace
+./kws-ios-build-framework.sh
+cd $workspace
+./kws-ios-build-static.sh
+cd $workspace
+./kws-android-build.sh
+
+cd $workspace
+./kws-ios-parent-build-framework.sh
+cd $workspace
+./kws-ios-parent-build-static.sh
+cd $workspace
+./kws-android-parent-build.sh
 
 # packaging
 cd $workspace
