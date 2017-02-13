@@ -23,7 +23,8 @@ sources=(
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
 		"sa-mobile-lib-android-vastparser"
-    "sa-mobile-lib-android-webplayer"
+		"sa-mobile-lib-android-cpi"
+		"sa-mobile-lib-android-webplayer"
 )
 
 destinations=(
@@ -37,10 +38,11 @@ destinations=(
 		"sautils"
 		"savideoplayer"
 		"savastparser"
+		"sacpi"
     "sawebplayer"
 )
 
-for i in {0..10}
+for i in {0..11}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -113,7 +115,7 @@ echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:lab
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.views.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
-echo "<receiver android:name=\"tv.superawesome.sdk.cpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
+echo "<receiver android:name=\"tv.superawesome.lib.sacpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
 echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
 echo "</receiver>" >> $androidManifest
 echo "</application>" >> $androidManifest

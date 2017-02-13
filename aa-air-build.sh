@@ -75,6 +75,7 @@ sources=(
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
 		"sa-mobile-lib-android-vastparser"
+		"sa-mobile-lib-android-cpi"
     "sa-mobile-lib-android-webplayer"
 )
 
@@ -89,10 +90,11 @@ destinations=(
 		"sautils"
 		"savideoplayer"
 		"savastparser"
+		"sacpi"
     "sawebplayer"
 )
 
-for i in {0..10}
+for i in {0..11}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -157,7 +159,7 @@ cd $build
 androidPlatformFile="android_platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $androidPlatformFile
 echo "<packagedDependencies>" >> $androidPlatformFile
-for i in {0..10}
+for i in {0..11}
 do echo "<packagedDependency>${destinations[$i]}.jar</packagedDependency>" >> $androidPlatformFile
 done
 echo "</packagedDependencies>" >> $androidPlatformFile
@@ -200,10 +202,11 @@ sources=(
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
 		"sa-mobile-lib-ios-vastparser"
+		"sa-mobile-lib-ios-cpi"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..10}
+for i in {0..11}
 do
 	# get source & repository
 	source=${sources[$i]}
