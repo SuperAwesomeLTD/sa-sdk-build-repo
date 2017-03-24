@@ -4,10 +4,10 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="5.5.3"
-aa_version_android="5.5.3"
-aa_version_unity="5.3.3"
-aa_version_air="5.3.2"
+aa_version_ios="5.5.4"
+aa_version_android="5.5.6"
+aa_version_unity="5.3.4"
+aa_version_air="5.3.3"
 aa_version_flash="3.2.8"
 
 kws_project="KidsWebServicesSDK"
