@@ -4,10 +4,10 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="5.6.0"
-aa_version_android="5.6.0"
-aa_version_unity="5.4.0"
-aa_version_air="5.4.0"
+aa_version_ios="5.7.0"
+aa_version_android="5.7.0"
+aa_version_unity="5.5.0"
+aa_version_air="5.5.0"
 aa_version_flash="3.2.8"
 
 kws_project="KidsWebServicesSDK"
@@ -26,11 +26,15 @@ kws_version_parent_android="1.2.0"
 # cd $workspace
 # ./aa-android-mopub-build.sh
 # cd $workspace
+# ./aa-android-admob-build.sh
+# cd $workspace
 # ./aa-ios-build-static.sh
 # cd $workspace
 # ./aa-ios-build-framework.sh
 # cd $workspace
 # ./aa-ios-mopub-build.sh
+# cd $workspace
+# ./aa-ios-admob-build.sh
 # cd $workspace
 # ./aa-flash-build.sh
 # cd $workspace
@@ -74,10 +78,12 @@ mkdir -p package/kws_parent_android/$kws_version_parent_android
 cp aa-ios-build-static/$aa_project.iOS.lib.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.lib.zip
 cp aa-ios-build-framework/$aa_project.iOS.framework.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.framework.zip
 cp aa-ios-mopub-build/$aa_project.iOS.MoPubPlugin.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.MoPubPlugin.zip
+cp aa-ios-admob-build/$aa_project.iOS.AdMobPlugin.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.AdMobPlugin.zip
 
 cp aa-android-build/$aa_project.Android.base.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.base.jars.zip
 cp aa-android-moat-build/$aa_project.Android.full.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.full.jars.zip
 cp aa-android-mopub-build/$aa_project.Android.MoPubPlugin.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.MoPubPlugin.jars.zip
+cp aa-android-admob-build/$aa_project.Android.AdMobPlugin.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.AdMobPlugin.jars.zip
 
 cp aa-flash-build/$aa_project.AdobeFlash.swc package/aa_flash/$aa_version_flash/$aa_project-$aa_version_flash.AdobeFlash.swc
 
