@@ -2,49 +2,69 @@
 
 workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
-# Awesome Ads SDK versions
+# Awesome Ads SDK - Publishers versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="5.7.2"
-aa_version_android="5.7.4"
-aa_version_unity="5.5.2"
-aa_version_air="5.5.2"
+aa_version_ios="6.0.0"
+aa_version_android="6.0.0"
+aa_version_unity="6.0.0"
+aa_version_air="6.0.0"
 aa_version_flash="3.2.9"
 
+# Awesome Ads SDK - Advertisers versions
+adv_project="SuperAwesomeAdvertiserSDK"
+adv_version_ios="1.0.9"
+adv_version_android="1.0.3"
+adv_version_unity="1.0.1"
+adv_version_air="1.0.3"
+
+# KWS - Children
 kws_project="KidsWebServicesSDK"
 kws_version_ios="2.3.0"
 kws_version_android="2.3.0"
 
+# KWS - Parents
 kws_parent_project="KidsWebServicesParentSDK"
 kws_version_parent_ios="1.2.0"
 kws_version_parent_android="1.2.0"
 
 # buildscripts
-cd $workspace
-./aa-android-build.sh
-cd $workspace
-./aa-android-moat-build.sh
-cd $workspace
-./aa-android-mopub-build.sh
-cd $workspace
-./aa-android-admob-build.sh
-cd $workspace
-./aa-ios-build-static.sh
-cd $workspace
-./aa-ios-build-framework.sh
-cd $workspace
-./aa-ios-mopub-build.sh
-cd $workspace
-./aa-ios-admob-build.sh
-cd $workspace
-./aa-flash-build.sh
-cd $workspace
-./aa-air-build.sh
-cd $workspace
-./aa-air-moat-build.sh
-cd $workspace
-./aa-unity-build.sh
-cd $workspace
-./aa-unity-moat-build.sh
+# cd $workspace
+# ./aa-android-build.sh
+# cd $workspace
+# ./aa-android-moat-build.sh
+# cd $workspace
+# ./aa-android-mopub-build.sh
+# cd $workspace
+# ./aa-android-admob-build.sh
+# cd $workspace
+# ./aa-ios-build-static.sh
+# cd $workspace
+# ./aa-ios-build-framework.sh
+# cd $workspace
+# ./aa-ios-mopub-build.sh
+# cd $workspace
+# ./aa-ios-admob-build.sh
+# cd $workspace
+# ./aa-flash-build.sh
+# cd $workspace
+# ./aa-air-build.sh
+# cd $workspace
+# ./aa-air-moat-build.sh
+# cd $workspace
+# ./aa-unity-build.sh
+# cd $workspace
+# ./aa-unity-moat-build.sh
+#
+# cd $workspace
+# ./adv-ios-build-static
+# cd $workspace
+# ./adv-ios-build-framework
+# cd $workspace
+# ./adv-android-build
+# cd $workspace
+# ./adv-air-build
+# cd $workspace
+# ./adv-unity-build
 
 # cd $workspace
 # ./kws-ios-build-framework.sh
@@ -69,6 +89,10 @@ mkdir -p package/aa_android/$aa_version_android
 mkdir -p package/aa_flash/$aa_version_flash
 mkdir -p package/aa_air/$aa_version_air
 mkdir -p package/aa_unity/$aa_version_unity
+mkdir -p package/adv_ios/$adv_version_ios
+mkdir -p package/adv_android/$adv_version_android
+mkdir -p package/adv_unity/$adv_version_unity
+mkdir -p package/adv_air/$adv_version_air
 mkdir -p package/kws_ios/$kws_version_ios
 mkdir -p package/kws_android/$kws_version_android
 mkdir -p package/kws_parent_ios/$kws_version_parent_ios
@@ -92,6 +116,12 @@ cp aa-air-moat-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa
 
 cp aa-unity-build/$aa_project.Unity.base.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.base.unitypackage
 cp aa-unity-moat-build/$aa_project.Unity.full.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.full.unitypackage
+
+cp adv-ios-build-static/$adv_project.iOS.lib.zip package/adv_ios/$adv_version_ios/$adv_project-$adv_version_ios.iOS.lib.zip
+cp adv-ios-build-framework/$adv_project.iOS.framework.zip package/adv_ios/$adv_version_ios/$adv_project-$adv_version_ios.iOS.framework.zip
+cp adv-android-build/$adv_project.Android.base.jars.zip package/adv_android/$adv_version_android/$adv_project-$adv_version_android.Android.jars.zip
+cp adv-air-build/$adv_project.AdobeAIR.ane package/adv_air/$adv_version_air/$adv_project-$adv_version_air.AdobeAIR.ane
+cp adv-unity-build/$adv_project.Unity.base.unitypackage package/adv_unity/$adv_version_unity/$adv_project-$adv_version_unity.Unity.unitypackage
 
 cp kws-ios-build-static/$kws_project.iOS.lib.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.lib.zip
 cp kws-ios-build-framework/$kws_project.iOS.framework.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.framework.zip

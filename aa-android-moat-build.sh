@@ -24,7 +24,6 @@ sources=(
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
 		"sa-mobile-lib-android-vastparser"
-		"sa-mobile-lib-android-cpi"
     "sa-mobile-lib-android-webplayer"
 )
 
@@ -40,11 +39,10 @@ destinations=(
 		"sautils"
 		"savideoplayer"
 		"savastparser"
-		"sacpi"
     "sawebplayer"
 )
 
-for i in {0..12}
+for i in {0..11}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -115,17 +113,14 @@ cd $build
 
 androidManifest="AndroidManifest.xml"
 echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > $androidManifest
-echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"tv.superawesome.sdk\">" >> $androidManifest
+echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"tv.superawesome.sdk.publisher\">" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
-echo "<activity android:name=\"tv.superawesome.sdk.views.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
-echo "<receiver android:name=\"tv.superawesome.lib.sacpi.SACPI\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\">" >> $androidManifest
-echo "<intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\"/></intent-filter>" >> $androidManifest
-echo "</receiver>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 

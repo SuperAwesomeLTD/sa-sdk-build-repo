@@ -76,7 +76,6 @@ sources=(
     "sa-mobile-lib-android-utils"
     "sa-mobile-lib-android-videoplayer"
 		"sa-mobile-lib-android-vastparser"
-		"sa-mobile-lib-android-cpi"
     "sa-mobile-lib-android-webplayer"
 )
 
@@ -92,11 +91,10 @@ destinations=(
 		"sautils"
 		"savideoplayer"
 		"savastparser"
-		"sacpi"
     "sawebplayer"
 )
 
-for i in {0..12}
+for i in {0..11}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -167,7 +165,7 @@ cd $build
 androidPlatformFile="android_platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $androidPlatformFile
 echo "<packagedDependencies>" >> $androidPlatformFile
-for i in {0..12}
+for i in {0..11}
 do echo "<packagedDependency>${destinations[$i]}.jar</packagedDependency>" >> $androidPlatformFile
 done
 echo "<packagedDependency>moatlib.jar</packagedDependency>" >> $androidPlatformFile
@@ -214,11 +212,10 @@ sources=(
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
 		"sa-mobile-lib-ios-vastparser"
-		"sa-mobile-lib-ios-cpi"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..11}
+for i in {0..10}
 do
 	# get source & repository
 	source=${sources[$i]}
@@ -316,7 +313,7 @@ cd $build
 # write to file
 extensionFile="extension.xml"
 echo "<extension xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $extensionFile
-echo "<id>tv.superawesome.plugins.air</id>" >> $extensionFile
+echo "<id>tv.superawesome.plugins.publisher.air</id>" >> $extensionFile
 echo "<versionNumber>1.0.0</versionNumber>" >> $extensionFile
 # platforms
 echo "<platforms>" >> $extensionFile
@@ -324,7 +321,7 @@ echo "<platforms>" >> $extensionFile
 echo "<platform name=\"Android-ARM\">" >> $extensionFile
 echo "<applicationDeployment> " >> $extensionFile
 echo "<nativeLibrary>saair.jar</nativeLibrary>" >> $extensionFile
-echo "<initializer>tv.superawesome.plugins.air.SAAIR</initializer>" >> $extensionFile
+echo "<initializer>tv.superawesome.plugins.publisher.air.SAAIR</initializer>" >> $extensionFile
 echo "</applicationDeployment>" >> $extensionFile
 echo "</platform>" >> $extensionFile
 # ios platform

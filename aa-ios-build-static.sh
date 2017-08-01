@@ -32,11 +32,10 @@ sources=(
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
 		"sa-mobile-lib-ios-vastparser"
-		"sa-mobile-lib-ios-cpi"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..11}
+for i in {0..10}
 do
 	# get source & repository
 	source=${sources[$i]}
