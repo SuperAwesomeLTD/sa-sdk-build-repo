@@ -119,6 +119,7 @@ done
 androidManifest=$build/demo/Assets/Plugins/Android/SuperAwesomeAdvertiser_lib/"AndroidManifest.xml"
 echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > $androidManifest
 echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"tv.superawesome.sdk.advertiser\">" >> $androidManifest
+echo "<uses-sdk android:minSdkVersion=\"9\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.INTERNET\" />" >> $androidManifest
 echo "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>" >> $androidManifest
 echo "<application>" >> $androidManifest
