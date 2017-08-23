@@ -5,9 +5,9 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 # Awesome Ads SDK - Publishers versions
 aa_project="SuperAwesomeSDK"
 aa_version_ios="6.0.0"
-aa_version_android="6.0.2"
-aa_version_unity="6.0.1"
-aa_version_air="6.0.1"
+aa_version_android="6.0.3"
+aa_version_unity="6.0.2"
+aa_version_air="6.0.2"
 aa_version_flash="3.2.9"
 
 # Awesome Ads SDK - Advertisers versions
