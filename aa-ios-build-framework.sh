@@ -25,10 +25,12 @@ sources=(
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
 		"sa-mobile-lib-ios-vastparser"
+		"sa-mobile-lib-ios-parentalgate"
+		"sa-mobile-lib-ios-bumper"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..10}
+for i in {0..12}
 do
 	source=${sources[$i]}
 	repository=git@github.com:SuperAwesomeLTD/$source.git

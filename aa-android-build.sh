@@ -13,6 +13,8 @@ rm -rf $build && mkdir $build
 ################################################################################
 
 sources=(
+		"sa-mobile-lib-android-parentalgate"
+		"sa-mobile-lib-android-bumper"
 		"sa-mobile-sdk-android"
     "sa-mobile-lib-android-adloader"
     "sa-mobile-lib-android-events"
@@ -27,6 +29,8 @@ sources=(
 )
 
 destinations=(
+		"saparentalgate"
+		"sabumperpage"
 		"superawesome-base"
 		"saadloader"
 		"saevents"
@@ -40,7 +44,7 @@ destinations=(
     "sawebplayer"
 )
 
-for i in {0..10}
+for i in {0..12}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -112,6 +116,7 @@ echo "<application>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.lib.sabumperpage.SABumperPage\" android:label=\"SABumperPage\" android:configChanges=\"keyboardHidden|orientation|screenSize\" android:theme=\"@android:style/Theme.Holo.Dialog.NoActionBar\" android:excludeFromRecents=\"true\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest

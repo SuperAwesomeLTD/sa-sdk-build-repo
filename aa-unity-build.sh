@@ -52,6 +52,8 @@ sources=(
     "sa-mobile-lib-android-videoplayer"
 		"sa-mobile-lib-android-vastparser"
     "sa-mobile-lib-android-webplayer"
+		"sa-mobile-lib-android-parentalgate"
+		"sa-mobile-lib-android-bumper"
 )
 
 destinations=(
@@ -66,9 +68,11 @@ destinations=(
 		"savideoplayer"
 		"savastparser"
     "sawebplayer"
+		"saparentalgate"
+		"sabumperpage"
 )
 
-for i in {0..10}
+for i in {0..12}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -138,6 +142,7 @@ echo "<application>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAVideoAd\" android:label=\"SAFullscreenVideoAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
+echo "<activity android:name=\"tv.superawesome.lib.sabumperpage.SABumperPage\" android:label=\"SABumperPage\" android:configChanges=\"keyboardHidden|orientation|screenSize\" android:theme=\"@android:style/Theme.Holo.Dialog.NoActionBar\" android:excludeFromRecents=\"true\"/>" >> $androidManifest
 echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
@@ -162,10 +167,12 @@ sources=(
     "sa-mobile-lib-ios-videoplayer"
     "sa-mobile-lib-ios-webplayer"
 		"sa-mobile-lib-ios-vastparser"
+		"sa-mobile-lib-ios-parentalgate"
+		"sa-mobile-lib-ios-bumper"
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..10}
+for i in {0..12}
 do
 	# get source & repository
 	source=${sources[$i]}
