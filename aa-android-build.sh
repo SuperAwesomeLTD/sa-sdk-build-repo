@@ -13,8 +13,6 @@ rm -rf $build && mkdir $build
 ################################################################################
 
 sources=(
-		"sa-mobile-lib-android-parentalgate"
-		"sa-mobile-lib-android-bumper"
 		"sa-mobile-sdk-android"
     "sa-mobile-lib-android-adloader"
     "sa-mobile-lib-android-events"
@@ -26,11 +24,11 @@ sources=(
     "sa-mobile-lib-android-videoplayer"
 		"sa-mobile-lib-android-vastparser"
 		"sa-mobile-lib-android-webplayer"
+		"sa-mobile-lib-android-parentalgate"
+		"sa-mobile-lib-android-bumper"
 )
 
 destinations=(
-		"saparentalgate"
-		"sabumperpage"
 		"superawesome-base"
 		"saadloader"
 		"saevents"
@@ -42,6 +40,8 @@ destinations=(
 		"savideoplayer"
 		"savastparser"
     "sawebplayer"
+		"saparentalgate"
+		"sabumperpage"
 )
 
 for i in {0..12}
