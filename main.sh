@@ -22,7 +22,7 @@ ag_project="SAAgeGateSDK"
 ag_version_ios="1.0.7"
 ag_version_android="1.0.3"
 ag_version_unity="1.0.0"
-ag_version_air="1.0.0"
+ag_version_air="1.0.1"
 
 # KWS - Children
 kws_project="KidsWebServicesSDK"
