@@ -27,7 +27,7 @@ rm -rf demo/Assets/Plugins/
 mkdir demo/Assets/Plugins/
 mkdir demo/Assets/Plugins/iOS
 mkdir demo/Assets/Plugins/Android
-mkdir demo/Assets/Plugins/Android/SuperAwesomeAdvertiser_lib
+mkdir demo/Assets/Plugins/Android/SAAgeGate_lib
 mkdir lib$project/
 mkdir lib$project/include
 mkdir lib$project/include/$project/
@@ -79,7 +79,7 @@ cd ../../../../..
 # delete the source
 rm -rf $source
 
-androidManifest=$build/demo/Assets/Plugins/Android/SuperAwesomeAdvertiser_lib/"AndroidManifest.xml"
+androidManifest=$build/demo/Assets/Plugins/Android/SAAgeGate_lib/"AndroidManifest.xml"
 echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > $androidManifest
 echo "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"tv.superawesome.sdk.agegate\">" >> $androidManifest
 echo "<uses-sdk android:minSdkVersion=\"9\" />" >> $androidManifest
@@ -89,7 +89,7 @@ echo "<activity android:name=\"tv.superawesome.sdk.agegate.SAAgeInput\" android:
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 
-projectProperties=$build/demo/Assets/Plugins/Android/SuperAwesomeAdvertiser_lib/"project.properties"
+projectProperties=$build/demo/Assets/Plugins/Android/SAAgeGate_lib/"project.properties"
 echo "# Project target." > $projectProperties
 echo "target=android-11" >> $projectProperties
 echo "android.library=true" >> $projectProperties
