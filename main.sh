@@ -34,33 +34,33 @@ kws_parent_project="KidsWebServicesParentSDK"
 kws_version_parent_ios="1.2.0"
 kws_version_parent_android="1.2.0"
 
-# # buildscripts
-# cd $workspace
-# ./aa-android-build.sh
-# cd $workspace
-# ./aa-android-moat-build.sh
-# cd $workspace
-# ./aa-android-mopub-build.sh
-# cd $workspace
-# ./aa-android-admob-build.sh
-# cd $workspace
-# ./aa-ios-build-static.sh
-# cd $workspace
-# ./aa-ios-build-framework.sh
-# cd $workspace
-# ./aa-ios-mopub-build.sh
-# cd $workspace
-# ./aa-ios-admob-build.sh
-# cd $workspace
-# ./aa-flash-build.sh
-# cd $workspace
-# ./aa-air-build.sh
-# cd $workspace
-# ./aa-air-moat-build.sh
-# cd $workspace
-# ./aa-unity-build.sh
-# cd $workspace
-# ./aa-unity-moat-build.sh
+# buildscripts
+cd $workspace
+./aa-android-build.sh
+cd $workspace
+./aa-android-moat-build.sh
+cd $workspace
+./aa-android-mopub-build.sh
+cd $workspace
+./aa-android-admob-build.sh
+cd $workspace
+./aa-ios-build-static.sh
+cd $workspace
+./aa-ios-build-framework.sh
+cd $workspace
+./aa-ios-mopub-build.sh
+cd $workspace
+./aa-ios-admob-build.sh
+cd $workspace
+./aa-flash-build.sh
+cd $workspace
+./aa-air-build.sh
+cd $workspace
+./aa-air-moat-build.sh
+cd $workspace
+./aa-unity-build.sh
+cd $workspace
+./aa-unity-moat-build.sh
 #
 # cd $workspace
 # ./adv-ios-build-static.sh
