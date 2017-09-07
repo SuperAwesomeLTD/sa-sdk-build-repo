@@ -4,10 +4,10 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK - Publishers versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="6.1.2"
-aa_version_android="6.1.1"
-aa_version_unity="6.1.1"
-aa_version_air="6.1.1"
+aa_version_ios="6.1.3"
+aa_version_android="6.1.2"
+aa_version_unity="6.1.2"
+aa_version_air="6.1.2"
 aa_version_flash="3.2.9"
 
 # Awesome Ads SDK - Advertisers versions
@@ -73,16 +73,16 @@ cd $workspace
 # cd $workspace
 # ./adv-unity-build.sh
 
-cd $workspace
-./ag-ios-build-static.sh
-cd $workspace
-./ag-ios-build-framework.sh
-cd $workspace
-./ag-android-build.sh
-cd $workspace
-./ag-air-build.sh
-cd $workspace
-./ag-unity-build.sh
+# cd $workspace
+# ./ag-ios-build-static.sh
+# cd $workspace
+# ./ag-ios-build-framework.sh
+# cd $workspace
+# ./ag-android-build.sh
+# cd $workspace
+# ./ag-air-build.sh
+# cd $workspace
+# ./ag-unity-build.sh
 
 # cd $workspace
 # ./kws-ios-build-framework.sh
