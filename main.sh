@@ -4,10 +4,10 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK - Publishers versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="6.1.3"
-aa_version_android="6.1.2"
-aa_version_unity="6.1.2"
-aa_version_air="6.1.2"
+aa_version_ios="6.1.4"
+aa_version_android="6.1.3"
+aa_version_unity="6.1.3"
+aa_version_air="6.1.3"
 aa_version_flash="3.2.9"
 
 # Awesome Ads SDK - Advertisers versions
@@ -35,43 +35,43 @@ kws_version_parent_ios="1.2.0"
 kws_version_parent_android="1.2.0"
 
 # buildscripts
-# cd $workspace
-# ./aa-android-build.sh
-# cd $workspace
-# ./aa-android-moat-build.sh
-# cd $workspace
-# ./aa-android-mopub-build.sh
-# cd $workspace
-# ./aa-android-admob-build.sh
-# cd $workspace
-# ./aa-ios-build-static.sh
-# cd $workspace
-# ./aa-ios-build-framework.sh
-# cd $workspace
-# ./aa-ios-mopub-build.sh
-# cd $workspace
-# ./aa-ios-admob-build.sh
-# cd $workspace
-# ./aa-flash-build.sh
-# cd $workspace
-# ./aa-air-build.sh
-# cd $workspace
-# ./aa-air-moat-build.sh
-# cd $workspace
-# ./aa-unity-build.sh
-# cd $workspace
-# ./aa-unity-moat-build.sh
+cd $workspace
+./aa-android-build.sh
+cd $workspace
+./aa-android-moat-build.sh
+cd $workspace
+./aa-android-mopub-build.sh
+cd $workspace
+./aa-android-admob-build.sh
+cd $workspace
+./aa-ios-build-static.sh
+cd $workspace
+./aa-ios-build-framework.sh
+cd $workspace
+./aa-ios-mopub-build.sh
+cd $workspace
+./aa-ios-admob-build.sh
+cd $workspace
+./aa-flash-build.sh
+cd $workspace
+./aa-air-build.sh
+cd $workspace
+./aa-air-moat-build.sh
+cd $workspace
+./aa-unity-build.sh
+cd $workspace
+./aa-unity-moat-build.sh
 #
-cd $workspace
-./adv-ios-build-static.sh
-cd $workspace
-./adv-ios-build-framework.sh
-cd $workspace
-./adv-android-build.sh
-cd $workspace
-./adv-air-build.sh
-cd $workspace
-./adv-unity-build.sh
+# cd $workspace
+# ./adv-ios-build-static.sh
+# cd $workspace
+# ./adv-ios-build-framework.sh
+# cd $workspace
+# ./adv-android-build.sh
+# cd $workspace
+# ./adv-air-build.sh
+# cd $workspace
+# ./adv-unity-build.sh
 
 # cd $workspace
 # ./ag-ios-build-static.sh
