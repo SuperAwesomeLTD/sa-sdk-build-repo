@@ -4,10 +4,10 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK - Publishers versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="6.1.4"
-aa_version_android="6.1.3"
-aa_version_unity="6.1.4"
-aa_version_air="6.1.3"
+aa_version_ios="6.1.5"
+aa_version_android="6.1.4"
+aa_version_unity="6.1.5"
+aa_version_air="6.1.4"
 aa_version_flash="3.2.9"
 
 # Awesome Ads SDK - Advertisers versions
@@ -57,11 +57,11 @@ kws_version_parent_android="1.2.0"
 # ./aa-air-build.sh
 # cd $workspace
 # ./aa-air-moat-build.sh
-cd $workspace
-./aa-unity-build.sh
-cd $workspace
-./aa-unity-moat-build.sh
-#
+# cd $workspace
+# ./aa-unity-build.sh
+# cd $workspace
+# ./aa-unity-moat-build.sh
+
 # cd $workspace
 # ./adv-ios-build-static.sh
 # cd $workspace
@@ -106,7 +106,7 @@ mkdir -p package/aa_ios/$aa_version_ios
 mkdir -p package/aa_android/$aa_version_android
 mkdir -p package/aa_flash/$aa_version_flash
 mkdir -p package/aa_air/$aa_version_air
-mkdir -p package/aa_unity/$aa_version_unity
+# mkdir -p package/aa_unity/$aa_version_unity
 
 mkdir -p package/adv_ios/$adv_version_ios
 mkdir -p package/adv_android/$adv_version_android
@@ -139,8 +139,8 @@ cp aa-flash-build/$aa_project.AdobeFlash.swc package/aa_flash/$aa_version_flash/
 cp aa-air-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.base.ane
 cp aa-air-moat-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.full.ane
 
-cp aa-unity-build/$aa_project.Unity.base.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.base.unitypackage
-cp aa-unity-moat-build/$aa_project.Unity.full.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.full.unitypackage
+# cp aa-unity-build/$aa_project.Unity.base.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.base.unitypackage
+# cp aa-unity-moat-build/$aa_project.Unity.full.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.full.unitypackage
 
 cp adv-ios-build-static/$adv_project.iOS.lib.zip package/adv_ios/$adv_version_ios/$adv_project-$adv_version_ios.iOS.lib.zip
 cp adv-ios-build-framework/$adv_project.iOS.framework.zip package/adv_ios/$adv_version_ios/$adv_project-$adv_version_ios.iOS.framework.zip

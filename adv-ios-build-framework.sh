@@ -4,6 +4,8 @@
 build="adv-ios-build-framework"
 # project
 project="SuperAwesomeAdvertiserSDK"
+# version
+adv_version_ios="1.0.9"
 
 # create build folder & subfolders
 rm -rf $build && mkdir $build
@@ -49,7 +51,7 @@ done
 cmakelists=framework/"CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"10.0\")" >> $cmakelists
+echo "set(SDKVER \"11.0\")" >> $cmakelists
 echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
 echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS\${SDKVER}.sdk\")" >> $cmakelists
 echo "if(EXISTS \${SDKROOT})" >> $cmakelists
@@ -58,6 +60,7 @@ echo "else()" >> $cmakelists
 echo "message(\"Warning, iOS Base SDK path not found: \" ${SDKROOT})" >> $cmakelists
 echo "endif()" >> $cmakelists
 echo "set(CMAKE_OSX_ARCHITECTURES \"\$(ARCHS_STANDARD)\")" >> $cmakelists
+echo "set(CMAKE_OSX_VALID_ARCHITECTURES armv7 armv7s arm64 i386 x86_64)" >> $cmakelists
 echo "set(CMAKE_OSX_DEPLOYMENT_TARGET \"iOS 8.0\")" >> $cmakelists
 echo "set(CMAKE_XCODE_EFFECTIVE_PLATFORMS \"-iphoneos;-iphonesimulator\")" >> $cmakelists
 echo "include_directories(\${CMAKE_CURRENT_SOURCE_DIR})" >> $cmakelists
@@ -100,11 +103,11 @@ echo "<string>\$(PRODUCT_NAME)</string>" >> $plist
 echo "<key>CFBundlePackageType</key>" >> $plist
 echo "<string>FMWK</string>" >> $plist
 echo "<key>CFBundleShortVersionString</key>" >> $plist
-echo "<string>1.0</string>" >> $plist
+echo "<string>$adv_version_ios</string>" >> $plist
 echo "<key>CFBundleSignature</key>" >> $plist
 echo "<string>????</string>" >> $plist
 echo "<key>CFBundleVersion</key>" >> $plist
-echo "<string>\$(CURRENT_PROJECT_VERSION)</string>" >> $plist
+echo "<string>$adv_version_ios</string>" >> $plist
 echo "<key>NSPrincipalClass</key>" >> $plist
 echo "<string></string>" >> $plist
 echo "</dict>" >> $plist
@@ -147,8 +150,8 @@ find framework/src/ -iname '*.h' -exec cp \{\} $project.framework/Headers/ \;
 zip -r $project.iOS.framework.zip $project.framework
 
 # delete
-rm -rf framework
-rm -rf $project.framework
+# rm -rf framework
+# rm -rf $project.framework
 
 # exit
 cd
