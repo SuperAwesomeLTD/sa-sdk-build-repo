@@ -4,10 +4,10 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 
 # Awesome Ads SDK - Publishers versions
 aa_project="SuperAwesomeSDK"
-aa_version_ios="6.1.5"
-aa_version_android="6.1.4"
-aa_version_unity="6.1.5"
-aa_version_air="6.1.4"
+aa_version_ios="6.1.6"
+aa_version_android="6.1.5"
+aa_version_unity="6.1.6"
+aa_version_air="6.1.5"
 aa_version_flash="3.2.9"
 
 # Awesome Ads SDK - Advertisers versions
@@ -26,8 +26,8 @@ ag_version_air="1.0.1"
 
 # KWS - Children
 kws_project="KidsWebServicesSDK"
-kws_version_ios="2.3.2"
-kws_version_android="2.3.2"
+kws_version_ios="2.3.6"
+kws_version_android="2.3.3"
 
 # KWS - Parents
 kws_parent_project="KidsWebServicesParentSDK"
@@ -102,26 +102,26 @@ cd $workspace
 cd $workspace
 
 # create new versions
-# mkdir -p package/aa_ios/$aa_version_ios
-# mkdir -p package/aa_android/$aa_version_android
-# mkdir -p package/aa_flash/$aa_version_flash
-# mkdir -p package/aa_air/$aa_version_air
-# mkdir -p package/aa_unity/$aa_version_unity
+mkdir -p package/aa_ios/$aa_version_ios
+mkdir -p package/aa_android/$aa_version_android
+mkdir -p package/aa_flash/$aa_version_flash
+mkdir -p package/aa_air/$aa_version_air
+mkdir -p package/aa_unity/$aa_version_unity
 
-# mkdir -p package/adv_ios/$adv_version_ios
-# mkdir -p package/adv_android/$adv_version_android
-# mkdir -p package/adv_unity/$adv_version_unity
-# mkdir -p package/adv_air/$adv_version_air
+mkdir -p package/adv_ios/$adv_version_ios
+mkdir -p package/adv_android/$adv_version_android
+mkdir -p package/adv_unity/$adv_version_unity
+mkdir -p package/adv_air/$adv_version_air
 
-# mkdir -p package/ag_ios/$ag_version_ios
-# mkdir -p package/ag_android/$ag_version_android
-# mkdir -p package/ag_unity/$ag_version_unity
-# mkdir -p package/ag_air/$ag_version_air
+mkdir -p package/ag_ios/$ag_version_ios
+mkdir -p package/ag_android/$ag_version_android
+mkdir -p package/ag_unity/$ag_version_unity
+mkdir -p package/ag_air/$ag_version_air
 
 mkdir -p package/kws_ios/$kws_version_ios
 mkdir -p package/kws_android/$kws_version_android
-# mkdir -p package/kws_parent_ios/$kws_version_parent_ios
-# mkdir -p package/kws_parent_android/$kws_version_parent_android
+mkdir -p package/kws_parent_ios/$kws_version_parent_ios
+mkdir -p package/kws_parent_android/$kws_version_parent_android
 
 # copy sources
 # cp aa-ios-build-static/$aa_project.iOS.lib.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.lib.zip
@@ -147,7 +147,7 @@ mkdir -p package/kws_android/$kws_version_android
 # cp adv-android-build/$adv_project.Android.base.jars.zip package/adv_android/$adv_version_android/$adv_project-$adv_version_android.Android.jars.zip
 # cp adv-air-build/$adv_project.AdobeAIR.ane package/adv_air/$adv_version_air/$adv_project-$adv_version_air.AdobeAIR.ane
 # cp adv-unity-build/$adv_project.Unity.base.unitypackage package/adv_unity/$adv_version_unity/$adv_project-$adv_version_unity.Unity.unitypackage
-#
+
 # cp ag-ios-build-static/$ag_project.iOS.lib.zip package/ag_ios/$ag_version_ios/$ag_project-$ag_version_ios.iOS.lib.zip
 # cp ag-ios-build-framework/$ag_project.iOS.framework.zip package/ag_ios/$ag_version_ios/$ag_project-$ag_version_ios.iOS.framework.zip
 # cp ag-android-build/$ag_project.Android.base.jars.zip package/ag_android/$ag_version_android/$ag_project-$ag_version_android.Android.jars.zip
@@ -158,7 +158,7 @@ cp kws-ios-build-static/$kws_project.iOS.lib.zip package/kws_ios/$kws_version_io
 cp kws-ios-build-framework/$kws_project.iOS.framework.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.framework.zip
 
 cp kws-android-build/$kws_project.Android.jars.zip package/kws_android/$kws_version_android/$kws_project-$kws_version_android.Android.jars.zip
-
+#
 # cp kws-ios-parent-build-static/$kws_parent_project.iOS.lib.zip package/kws_parent_ios/$kws_version_parent_ios/$kws_parent_project-$kws_version_parent_ios.iOS.lib.zip
 # cp kws-ios-parent-build-framework/$kws_parent_project.iOS.framework.zip package/kws_parent_ios/$kws_version_parent_ios/$kws_parent_project-$kws_version_parent_ios.iOS.framework.zip
 #

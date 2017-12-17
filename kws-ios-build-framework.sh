@@ -29,10 +29,18 @@ do
 	# clone the git repo
 	rm -rf $source && git clone -b master $repository
 
-	# copy header files from the Pod Classes folder
-	find "$source/Pod/Classes/" -iname '*.h' -exec cp \{\} $build/framework/src \;
-	# copy source files from the Pod Classes folder
-  find "$source/Pod/Classes/" -iname '*.m' -exec cp \{\} $build/framework/src \;
+	# case when it's the main superawesome SDK
+	if [ $source = "sa-kws-ios-sdk-objc" ]; then
+		# copy header files from the Pod Classes folder
+		find "$source/KWSiOSSDKObjC/Classes/" -iname '*.h' -exec cp \{\} $build/framework/src \;
+		# copy source files from the Pod Classes folder
+	  find "$source/KWSiOSSDKObjC/Classes/" -iname '*.m' -exec cp \{\} $build/framework/src \;
+	else
+		# copy header files from the Pod Classes folder
+		find "$source/Pod/Classes/" -iname '*.h' -exec cp \{\} $build/framework/src \;
+		# copy source files from the Pod Classes folder
+	  find "$source/Pod/Classes/" -iname '*.m' -exec cp \{\} $build/framework/src \;
+	fi
 
 	# remove the source
 	rm -rf $source/
