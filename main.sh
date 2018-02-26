@@ -6,7 +6,7 @@ workspace="/Users/gabriel.coman/Workspace/sa-sdk-build-repo/"
 aa_project="SuperAwesomeSDK"
 aa_version_ios="6.1.6"
 aa_version_android="6.1.5"
-aa_version_unity="6.1.6"
+aa_version_unity="6.1.5"
 aa_version_air="6.1.5"
 aa_version_flash="3.2.9"
 
@@ -57,10 +57,10 @@ kws_version_parent_android="1.2.0"
 # ./aa-air-build.sh
 # cd $workspace
 # ./aa-air-moat-build.sh
-# cd $workspace
-# ./aa-unity-build.sh
-# cd $workspace
-# ./aa-unity-moat-build.sh
+cd $workspace
+./aa-unity-build.sh
+cd $workspace
+./aa-unity-moat-build.sh
 
 # cd $workspace
 # ./adv-ios-build-static.sh
@@ -84,12 +84,12 @@ kws_version_parent_android="1.2.0"
 # cd $workspace
 # ./ag-unity-build.sh
 
-cd $workspace
-./kws-ios-build-framework.sh
-cd $workspace
-./kws-ios-build-static.sh
-cd $workspace
-./kws-android-build.sh
+# cd $workspace
+# ./kws-ios-build-framework.sh
+# cd $workspace
+# ./kws-ios-build-static.sh
+# cd $workspace
+# ./kws-android-build.sh
 
 # cd $workspace
 # ./kws-ios-parent-build-framework.sh
@@ -139,8 +139,8 @@ mkdir -p package/kws_parent_android/$kws_version_parent_android
 # cp aa-air-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.base.ane
 # cp aa-air-moat-build/$aa_project.AdobeAIR.ane package/aa_air/$aa_version_air/$aa_project-$aa_version_air.AdobeAIR.full.ane
 
-# cp aa-unity-build/$aa_project.Unity.base.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.base.unitypackage
-# cp aa-unity-moat-build/$aa_project.Unity.full.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.full.unitypackage
+cp aa-unity-build/$aa_project.Unity.base.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.base.unitypackage
+cp aa-unity-moat-build/$aa_project.Unity.full.unitypackage package/aa_unity/$aa_version_unity/$aa_project-$aa_version_unity.Unity.full.unitypackage
 
 # cp adv-ios-build-static/$adv_project.iOS.lib.zip package/adv_ios/$adv_version_ios/$adv_project-$adv_version_ios.iOS.lib.zip
 # cp adv-ios-build-framework/$adv_project.iOS.framework.zip package/adv_ios/$adv_version_ios/$adv_project-$adv_version_ios.iOS.framework.zip
@@ -154,10 +154,10 @@ mkdir -p package/kws_parent_android/$kws_version_parent_android
 # cp ag-air-build/$ag_project.AdobeAIR.ane package/ag_air/$ag_version_air/$ag_project-$ag_version_air.AdobeAIR.ane
 # cp ag-unity-build/$ag_project.Unity.base.unitypackage package/ag_unity/$ag_version_unity/$ag_project-$ag_version_unity.Unity.unitypackage
 
-cp kws-ios-build-static/$kws_project.iOS.lib.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.lib.zip
-cp kws-ios-build-framework/$kws_project.iOS.framework.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.framework.zip
-
-cp kws-android-build/$kws_project.Android.jars.zip package/kws_android/$kws_version_android/$kws_project-$kws_version_android.Android.jars.zip
+# cp kws-ios-build-static/$kws_project.iOS.lib.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.lib.zip
+# cp kws-ios-build-framework/$kws_project.iOS.framework.zip package/kws_ios/$kws_version_ios/$kws_project-$kws_version_ios.iOS.framework.zip
+#
+# cp kws-android-build/$kws_project.Android.jars.zip package/kws_android/$kws_version_android/$kws_project-$kws_version_android.Android.jars.zip
 #
 # cp kws-ios-parent-build-static/$kws_parent_project.iOS.lib.zip package/kws_parent_ios/$kws_version_parent_ios/$kws_parent_project-$kws_version_parent_ios.iOS.lib.zip
 # cp kws-ios-parent-build-framework/$kws_parent_project.iOS.framework.zip package/kws_parent_ios/$kws_version_parent_ios/$kws_parent_project-$kws_version_parent_ios.iOS.framework.zip
