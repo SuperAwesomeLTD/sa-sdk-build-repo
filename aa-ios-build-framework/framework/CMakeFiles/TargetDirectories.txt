@@ -1,0 +1,3 @@
+/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeFiles/ALL_BUILD.dir
+/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeFiles/ZERO_CHECK.dir
+/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeFiles/SuperAwesomeSDK.dir

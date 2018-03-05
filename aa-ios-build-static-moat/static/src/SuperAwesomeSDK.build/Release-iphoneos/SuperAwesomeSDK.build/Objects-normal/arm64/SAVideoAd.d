@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAVideoAd.m \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAVideoAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SACallback.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAOrientation.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAParentalGate.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SuperAwesome.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SABannerAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAInterstitialAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SADefines.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAResponse.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SACreative.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAJsonParser.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SABaseObject.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/NSArray+SAJson.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/NSDictionary+SAJson.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/NSDictionary+SafeHandling.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAAd.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SADetails.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAMedia.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAUtils.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAImageUtils.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SALoader.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SASession.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAEvents.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAViewableModule.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAVideoPlayer.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAURLClicker.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SABumperPage.h \
+  /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-static-moat/static/src/SAVersion.h

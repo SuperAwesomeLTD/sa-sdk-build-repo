@@ -164,8 +164,8 @@ find framework/src/ -iname '*.h' -exec cp \{\} $project.framework/Headers/ \;
 zip -r $project.iOS.framework.zip $project.framework
 
 # delete
-rm -rf framework
-rm -rf $project.framework
+#rm -rf framework
+#rm -rf $project.framework
 
 # exit
 cd

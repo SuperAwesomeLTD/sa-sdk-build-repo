@@ -1,0 +1,1227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1B2B5415E1E4468CBA7E77D1 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4B1F24F7DD9B40BEB4D7E6E1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A5F015FFFF9D4C95B7C868B9 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DF6B2C12BFFA4855A411DE53 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 833215E763064BA0A1EE8746 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				CB5455FA36F84DCE830D3455 /* CMake Rules */,
+			);
+			dependencies = (
+				37840D7D21DA425EB613AC06 /* PBXTargetDependency */,
+				83BAD6C5220A453B92626488 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02A47E2D5D774355A06A727A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.h */ = {isa = PBXBuildFile; fileRef = A4B3437EBA1148A78A3DCB06 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.h */; settings = {COMPILER_FLAGS = ""; }; };
+		04BE74945DDB4EF18DF0E6FD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.h */ = {isa = PBXBuildFile; fileRef = 8CA44694516143C8ACB305A7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.h */; settings = {COMPILER_FLAGS = ""; }; };
+		0C260A169159464B8D12A5A9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADefines.h */ = {isa = PBXBuildFile; fileRef = 29913651B8954840806EA422 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADefines.h */; settings = {COMPILER_FLAGS = ""; }; };
+		0C7611A3E5B84F899E7F6E61 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.m */ = {isa = PBXBuildFile; fileRef = 82B126EF11594068B959BA97 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.m */; settings = {COMPILER_FLAGS = ""; }; };
+		0CBA7FF5CA554AB5AE540948 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.h */ = {isa = PBXBuildFile; fileRef = 5A634802F78648A39E9F7431 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.h */; settings = {COMPILER_FLAGS = ""; }; };
+		0EE4EA2ED45B415992D4F25D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.h */ = {isa = PBXBuildFile; fileRef = CC15C251D01D4BC19CD5B013 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.h */; settings = {COMPILER_FLAGS = ""; }; };
+		0F25BFDBBFE546CA9E611CBD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.m */ = {isa = PBXBuildFile; fileRef = 9CBD3F626278449FB64FCD9B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.m */; settings = {COMPILER_FLAGS = ""; }; };
+		1162E70A00E34AD3A9D475D1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B8BE1AF719274A8C8BC06D95 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		12589ACE45044A979752D566 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.m */ = {isa = PBXBuildFile; fileRef = 2D1775B43EA840DD8C6287A5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.m */; settings = {COMPILER_FLAGS = ""; }; };
+		1341F785DE8F437DAB534FC9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.h */ = {isa = PBXBuildFile; fileRef = 42CD7FCC0AA4411C875732FC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		13A194F0A0554949BA01C147 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesomeSDK.h */ = {isa = PBXBuildFile; fileRef = 51CBD5F3E92440E5B0EA88A5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesomeSDK.h */; settings = {COMPILER_FLAGS = ""; }; };
+		1BD5BB190E824260A991168E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.h */ = {isa = PBXBuildFile; fileRef = 2E716994000049FDBD7EDA62 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.h */; settings = {COMPILER_FLAGS = ""; }; };
+		200B6721EBDF401FB4675606 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.m */ = {isa = PBXBuildFile; fileRef = A2191A7432534A039425D689 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2061489E9E6C494290219B2F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.h */ = {isa = PBXBuildFile; fileRef = 4AD45EC91C144E85B7C630E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		216A7449E14B42ABA06EE10E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.m */ = {isa = PBXBuildFile; fileRef = 81087412AEDC4469B9F6DD8C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2262E088AB4B48E7BE499EF3 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.h */ = {isa = PBXBuildFile; fileRef = E7A1299227164F1FB8EEF886 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.h */; settings = {COMPILER_FLAGS = ""; }; };
+		2274833931A84C68978745E4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.m */ = {isa = PBXBuildFile; fileRef = 2432D4F58FED4C47AC55C225 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.m */; settings = {COMPILER_FLAGS = ""; }; };
+		26697F6CEBDB44389DDA54BC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.m */ = {isa = PBXBuildFile; fileRef = 498BA2814B234C6C897D7C71 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.m */; settings = {COMPILER_FLAGS = ""; }; };
+		26C8281418F8469E901DEEF5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.m */ = {isa = PBXBuildFile; fileRef = 4B048225800248EF8D17E771 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.m */; settings = {COMPILER_FLAGS = ""; }; };
+		26F4BC9D007B4CDFA21D1CCE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.h */ = {isa = PBXBuildFile; fileRef = 49977215533448EA843E4830 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.h */; settings = {COMPILER_FLAGS = ""; }; };
+		27C83B7895BE4C47AA943D71 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.m */ = {isa = PBXBuildFile; fileRef = 4CA3F2087D7F448E99208854 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2B2983BDF7C946CF8C927579 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.m */ = {isa = PBXBuildFile; fileRef = F7FAE428E30D4049A9EE3B14 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2C7083913F2F4E4CBC186A50 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.m */ = {isa = PBXBuildFile; fileRef = F8A6D847A0CB4ECC8418C681 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2D6534D97D1545A99AA6DD36 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.m */ = {isa = PBXBuildFile; fileRef = 323FBB7B1C9A403CA68BA700 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2F5A9014A60E4427B54D5CF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.h */ = {isa = PBXBuildFile; fileRef = 6D689DDDF2884D2AB0D2247B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.h */; settings = {COMPILER_FLAGS = ""; }; };
+		306A98ACC2E54504A8BD8611 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.h */ = {isa = PBXBuildFile; fileRef = 8182275E1A854356A05396B4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3096E9F0A56A4BDAA4B2F97D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.h */ = {isa = PBXBuildFile; fileRef = 2B6B40D266DC4FC0939545AA /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3806046320C34239BDE19384 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.m */ = {isa = PBXBuildFile; fileRef = E74805EAABBF41C4BEE02FD0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.m */; settings = {COMPILER_FLAGS = ""; }; };
+		3944EE8D1013496EA3A32F27 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.m */ = {isa = PBXBuildFile; fileRef = 1CE09A6CAEE3461AB1509DAD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.m */; settings = {COMPILER_FLAGS = ""; }; };
+		3AEB3853BEB7466E9BD0FC80 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesome.h */ = {isa = PBXBuildFile; fileRef = E84187A236F14D9591465B88 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesome.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3BB831A1DF354D18A7FC375F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACallback.h */ = {isa = PBXBuildFile; fileRef = B15CEE99EBFB4234BF39D1EB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACallback.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3DBC03525EEB4438A79F6AE4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.m */ = {isa = PBXBuildFile; fileRef = 944AD59FD8CC4B6496851104 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.m */; settings = {COMPILER_FLAGS = ""; }; };
+		3EFFCBA489BC42DEBA4B8D6F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.m */ = {isa = PBXBuildFile; fileRef = 8788DAA059164FB48B632A90 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		3F18C58B5A7743AEA2E4EF30 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.m */ = {isa = PBXBuildFile; fileRef = F8EBB125F96E4D34821C9DA4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.m */; settings = {COMPILER_FLAGS = ""; }; };
+		3F57D46272644ABD8DBAF1AE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.h */ = {isa = PBXBuildFile; fileRef = D678485B96D743388537F98D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.h */; settings = {COMPILER_FLAGS = ""; }; };
+		43700D6A494149E2A664E40F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.h */ = {isa = PBXBuildFile; fileRef = 3D2FFECA2A72492291F5EC56 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.h */; settings = {COMPILER_FLAGS = ""; }; };
+		47827676B18647258DC1A31C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.m */ = {isa = PBXBuildFile; fileRef = 5F20162A3E204376943F7574 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.m */; settings = {COMPILER_FLAGS = ""; }; };
+		4B67EDBC45B0443DBE7EC656 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.m */ = {isa = PBXBuildFile; fileRef = C780377507A24188B1C917F6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.m */; settings = {COMPILER_FLAGS = ""; }; };
+		4EEDBD25404545119AF53DA6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.m */ = {isa = PBXBuildFile; fileRef = 65AF9EB121CC45FCA7722216 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.m */; settings = {COMPILER_FLAGS = ""; }; };
+		50DFF90FCB5F4F65B79AB424 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.m */ = {isa = PBXBuildFile; fileRef = 334FF439B3864C9399892DC7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.m */; settings = {COMPILER_FLAGS = ""; }; };
+		50E470E3AE5244B580F8D031 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.h */ = {isa = PBXBuildFile; fileRef = 98F0FE89CF1E4DB1A471C992 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.h */; settings = {COMPILER_FLAGS = ""; }; };
+		53D6ACB5DB5A441F80279CAC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.m */ = {isa = PBXBuildFile; fileRef = 77CD15E927304A1EA978F477 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5486528ADE1948BBA7312955 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.h */ = {isa = PBXBuildFile; fileRef = 326464409E2947038991E7E8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.h */; settings = {COMPILER_FLAGS = ""; }; };
+		553BD340B919478E9CE1DEA7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.h */ = {isa = PBXBuildFile; fileRef = F8B42FD78B0942959AEB3CCF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.h */; settings = {COMPILER_FLAGS = ""; }; };
+		5AE90789BB024128AA301573 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.h */ = {isa = PBXBuildFile; fileRef = 8AC3F9D5060540D7AEB78ED2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.h */; settings = {COMPILER_FLAGS = ""; }; };
+		5D82D0AA082D42E5ACEE1ACC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.h */ = {isa = PBXBuildFile; fileRef = C92AB739148340E3B522A3EF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6123031678A449DF999362BD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.h */ = {isa = PBXBuildFile; fileRef = 8EAC50832A7742F2865606CE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.h */; settings = {COMPILER_FLAGS = ""; }; };
+		629FFB0E42F648C0ABC1CDAE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.h */ = {isa = PBXBuildFile; fileRef = BE17C0C6682F4EBF9279F2C5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.h */; settings = {COMPILER_FLAGS = ""; }; };
+		63A05CB024A042C2BF94E549 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.m */ = {isa = PBXBuildFile; fileRef = 350128FCF0504020B7DC287E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.m */; settings = {COMPILER_FLAGS = ""; }; };
+		64387791BD4D4E459E62DF70 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.h */ = {isa = PBXBuildFile; fileRef = 2AF8957E957245BEBCDB7A1E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.h */; settings = {COMPILER_FLAGS = ""; }; };
+		643B247F607A447A848F9E37 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.m */ = {isa = PBXBuildFile; fileRef = 524CDD5E5FA5423294A3B26E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.m */; settings = {COMPILER_FLAGS = ""; }; };
+		65775F5AADC444178924C25E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.h */ = {isa = PBXBuildFile; fileRef = 5321881F41AA4FE384BB5B55 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.h */; settings = {COMPILER_FLAGS = ""; }; };
+		66DCB2B545254634A34461E0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.m */ = {isa = PBXBuildFile; fileRef = 872CDAA151F74FB385A9AB61 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.m */; settings = {COMPILER_FLAGS = ""; }; };
+		66FE6FDC710F4A139E57A26E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.h */ = {isa = PBXBuildFile; fileRef = E6975704860F495285E0E6BA /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6A921CA4AE914419B65052D0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.m */ = {isa = PBXBuildFile; fileRef = 6723542811B54182A75ACAD0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.m */; settings = {COMPILER_FLAGS = ""; }; };
+		6E5F5334AC4E423DB433211D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.h */ = {isa = PBXBuildFile; fileRef = 622E890FD4684D5AB0FC9A8F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6F88FBA43F094D6DA2109514 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.m */ = {isa = PBXBuildFile; fileRef = 6ED046335ECF4B58A8652E70 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.m */; settings = {COMPILER_FLAGS = ""; }; };
+		7034F5482BAB4297A7ABD950 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.m */ = {isa = PBXBuildFile; fileRef = 79D118149C2B4691B9E94B83 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.m */; settings = {COMPILER_FLAGS = ""; }; };
+		727B20BBD2E948B0B850A599 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.m */ = {isa = PBXBuildFile; fileRef = 495CE7CC8A9E40DB8016A377 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.m */; settings = {COMPILER_FLAGS = ""; }; };
+		72E7100CD60B475DB14365FF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAOrientation.h */ = {isa = PBXBuildFile; fileRef = 1B457A79AE53435FB24D4C60 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAOrientation.h */; settings = {COMPILER_FLAGS = ""; }; };
+		742696C4954B443FA85F87E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.h */ = {isa = PBXBuildFile; fileRef = 556A9D1609F3443CAE2F3F29 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		74E52649310645C38A376E21 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.h */ = {isa = PBXBuildFile; fileRef = BC1D206D300940088706A66B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.h */; settings = {COMPILER_FLAGS = ""; }; };
+		74FDDA0362FD4345B339B671 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.h */ = {isa = PBXBuildFile; fileRef = EF1D0A6C62E04F788A8E702C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.h */; settings = {COMPILER_FLAGS = ""; }; };
+		77FB670798BF4809B99A4545 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.h */ = {isa = PBXBuildFile; fileRef = CCFDC6D9D40B4CC8B47C3EFF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.h */; settings = {COMPILER_FLAGS = ""; }; };
+		7A0A7FC0BA504F3B903E880A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.h */ = {isa = PBXBuildFile; fileRef = D03E8DD2DDD34CD682600BB0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.h */; settings = {COMPILER_FLAGS = ""; }; };
+		7ED0DE12D49C4B27B53FE59A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.h */ = {isa = PBXBuildFile; fileRef = 678FCAC2EEAF4B28B8E1B869 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.h */; settings = {COMPILER_FLAGS = ""; }; };
+		8031FCA2C204441982BB56BE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.h */ = {isa = PBXBuildFile; fileRef = CBFF2ECDD59B42BCA1AB431B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.h */; settings = {COMPILER_FLAGS = ""; }; };
+		835BCBE68D0A46A0B7D1B8AB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.h */ = {isa = PBXBuildFile; fileRef = 8DEF3C40E38C4ADCAE58E9B6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		86D36F99E86547DA80FF21A1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.h */ = {isa = PBXBuildFile; fileRef = 5B968325CFFE412BBAA0A656 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		895816CDD09E479BB5030FBB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.h */ = {isa = PBXBuildFile; fileRef = EEDFD9CFFFD74850AF02DF17 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.h */; settings = {COMPILER_FLAGS = ""; }; };
+		89E692D86DBC4EF9B724E2CE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.m */ = {isa = PBXBuildFile; fileRef = 484C8D945087454B814B1AF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.m */; settings = {COMPILER_FLAGS = ""; }; };
+		8AA9651092CE4D99B9E74E55 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.m */ = {isa = PBXBuildFile; fileRef = ECEFA120E54F4B88B55C40DC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.m */; settings = {COMPILER_FLAGS = ""; }; };
+		8D0521E1A59C491493757162 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.m */ = {isa = PBXBuildFile; fileRef = E9F62AA6CC944488A3F4952B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.m */; settings = {COMPILER_FLAGS = ""; }; };
+		8F8A803AD80F49ADBA958823 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.h */ = {isa = PBXBuildFile; fileRef = FA551696B501459FB891F8D4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.h */; settings = {COMPILER_FLAGS = ""; }; };
+		9327D42690654F06AF4C918C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.h */ = {isa = PBXBuildFile; fileRef = 23DB8D91F06246C590F62F8C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.h */; settings = {COMPILER_FLAGS = ""; }; };
+		941A0941D2E045B08C10EEFD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.h */ = {isa = PBXBuildFile; fileRef = D8396DE23ED5447CAF78C6F4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.h */; settings = {COMPILER_FLAGS = ""; }; };
+		9604242475174210992C679D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.h */ = {isa = PBXBuildFile; fileRef = D3796024E0704369A8BC1966 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.h */; settings = {COMPILER_FLAGS = ""; }; };
+		96967E456255427580060064 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.h */ = {isa = PBXBuildFile; fileRef = 80BBDFD45B514DB28E17137A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.h */; settings = {COMPILER_FLAGS = ""; }; };
+		99CD9865B2604ACFB8475514 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.m */ = {isa = PBXBuildFile; fileRef = 07A172D17FA147948E13745A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.m */; settings = {COMPILER_FLAGS = ""; }; };
+		9AB1BDB450714B4A965FB0FB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.h */ = {isa = PBXBuildFile; fileRef = 1DD88CC2B75541A48A9F6612 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.h */; settings = {COMPILER_FLAGS = ""; }; };
+		9C9EEA41AADD49C6887C49C0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.m */ = {isa = PBXBuildFile; fileRef = 3DC84FE6A51F4579AECDF4FE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.m */; settings = {COMPILER_FLAGS = ""; }; };
+		9D6D29CCD01C4BABAC363E69 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.h */ = {isa = PBXBuildFile; fileRef = ED303331E0A041A4BA148518 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.h */; settings = {COMPILER_FLAGS = ""; }; };
+		9D865E57F9D44EFFB9A0EBFE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.m */ = {isa = PBXBuildFile; fileRef = E58F7BD3FDE447FD991FE6A4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.m */; settings = {COMPILER_FLAGS = ""; }; };
+		9DE917609C9044C18153CA04 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.m */ = {isa = PBXBuildFile; fileRef = B9B2AA5F69DB4FB8AC4429D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		9F319FF507D146BA80E637A3 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.h */ = {isa = PBXBuildFile; fileRef = F4BB5A5A5ED34FA388A09B0C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.h */; settings = {COMPILER_FLAGS = ""; }; };
+		A02D3B83FCF24156B3E07F8A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.m */ = {isa = PBXBuildFile; fileRef = 8C7AFE2C59FF42C985EE716C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.m */; settings = {COMPILER_FLAGS = ""; }; };
+		A2CEA89CED3845678F39721A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.m */ = {isa = PBXBuildFile; fileRef = 6F281301361C4CCDB3F0BED2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.m */; settings = {COMPILER_FLAGS = ""; }; };
+		A34B57AF373941E7BA7084C1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.m */ = {isa = PBXBuildFile; fileRef = 4D33917CB71B40338C6D23D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		A50A712475174C91BE14A619 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.m */ = {isa = PBXBuildFile; fileRef = 1937BFF790A949428B3391A8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.m */; settings = {COMPILER_FLAGS = ""; }; };
+		AA116EEAEE9542A0AA122E28 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.h */ = {isa = PBXBuildFile; fileRef = 70E0E9F8933544ABA2C3EE76 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		ABE50A0C7A84417E89BEC73F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.h */ = {isa = PBXBuildFile; fileRef = B54E59DA69E14F37AF2427B7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.h */; settings = {COMPILER_FLAGS = ""; }; };
+		AD7DF16446874D7BB5637FAB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.m */ = {isa = PBXBuildFile; fileRef = 18A88D38140C4824A92AFCF0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.m */; settings = {COMPILER_FLAGS = ""; }; };
+		AFBDE90E1B894E45BD1D11FD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.h */ = {isa = PBXBuildFile; fileRef = 6B372759840F42D7B8DA98A2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B35E598FB3DE4F2583B0E6F0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.m */ = {isa = PBXBuildFile; fileRef = 3985A98A529E45D59351C369 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.m */; settings = {COMPILER_FLAGS = ""; }; };
+		B3B8E45DFD48482090321612 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.m */ = {isa = PBXBuildFile; fileRef = 9C3CEB9B18BE47AE9605D59F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.m */; settings = {COMPILER_FLAGS = ""; }; };
+		B7B1F6B050BD4D55837992BC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.m */ = {isa = PBXBuildFile; fileRef = 58AA2C43CAAA4F5D9ACCFC31 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.m */; settings = {COMPILER_FLAGS = ""; }; };
+		B88E9EC438284601BF786614 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.h */ = {isa = PBXBuildFile; fileRef = 15D3BB3AB76C492C886AC318 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.h */; settings = {COMPILER_FLAGS = ""; }; };
+		BA6A7601ACF54215A7F4B5D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.m */ = {isa = PBXBuildFile; fileRef = 0CD3CA0C79AB4EED898DCEAC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.m */; settings = {COMPILER_FLAGS = ""; }; };
+		BA6D83F39E224FC9B5E0AFF2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.m */ = {isa = PBXBuildFile; fileRef = DCD9522811774B3EB97654EB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		BBEC69DAF5BA431E96100047 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAJsonParser.h */ = {isa = PBXBuildFile; fileRef = 876FB6D3E83D4C0F807992ED /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAJsonParser.h */; settings = {COMPILER_FLAGS = ""; }; };
+		C5B00E6AF7A34E50AD9E2019 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.m */ = {isa = PBXBuildFile; fileRef = F4125FA97B68408191FCD9D0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C5BF3E2192434A9A95D8A2C1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.m */ = {isa = PBXBuildFile; fileRef = B51AC8EA26A343CE9CC0687B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C867A36F41964A5D9F67B059 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.h */ = {isa = PBXBuildFile; fileRef = A80939DFB0F147379023BC06 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.h */; settings = {COMPILER_FLAGS = ""; }; };
+		C90BCC61D6B143B3AAE69113 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.h */ = {isa = PBXBuildFile; fileRef = 16EB5AA378DD40B591FA85E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.h */; settings = {COMPILER_FLAGS = ""; }; };
+		CC2D8F71ECEF480D919B7B37 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.h */ = {isa = PBXBuildFile; fileRef = 3C896EFE082A420E95E75B8F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		CC9D257CDDBF4C5ABED90BAF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.h */ = {isa = PBXBuildFile; fileRef = C85003DC5E624704BB81294A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.h */; settings = {COMPILER_FLAGS = ""; }; };
+		D7406A8F9410481F98A17987 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.m */ = {isa = PBXBuildFile; fileRef = A9B80435AD8B4B3CBCC7B5E9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.m */; settings = {COMPILER_FLAGS = ""; }; };
+		D78E30DD1C9D4C9CBF7F6537 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.h */ = {isa = PBXBuildFile; fileRef = 98992285B9984419A279463D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.h */; settings = {COMPILER_FLAGS = ""; }; };
+		DA2B9232D1E349A88A41A4CC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.h */ = {isa = PBXBuildFile; fileRef = 4C09E40B262947D39362818A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		DA9DCDD6C06C4B239342B685 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.m */ = {isa = PBXBuildFile; fileRef = C03EB892B8A845979E94B08C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.m */; settings = {COMPILER_FLAGS = ""; }; };
+		DB3F26927CB04B238076680E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.m */ = {isa = PBXBuildFile; fileRef = FB064A6BB6A5422096650304 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.m */; settings = {COMPILER_FLAGS = ""; }; };
+		DC19F859A9454B8FA49F5B2A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.h */ = {isa = PBXBuildFile; fileRef = 4D8B052CBF4F402484B2E394 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.h */; settings = {COMPILER_FLAGS = ""; }; };
+		DDDCE85E5AA44F288488FCF8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.h */ = {isa = PBXBuildFile; fileRef = 55A52103D28D40B0AB7B697B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.h */; settings = {COMPILER_FLAGS = ""; }; };
+		DF6DEC643F8E4C3487186E29 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.m */ = {isa = PBXBuildFile; fileRef = 84BE5275CE8B4DBBB2AF5932 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E00CA117656F4DC8ADC8CF63 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.m */ = {isa = PBXBuildFile; fileRef = EFFEA8C345974EC6A58BCCF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E092E426552844E793B8CE91 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.m */ = {isa = PBXBuildFile; fileRef = F1905F38FCCD41E292A407D8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E1190B7B762D42DEB9755115 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.m */ = {isa = PBXBuildFile; fileRef = 28090F499A2C487AAF4A491E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E5E18C715489468FB281D907 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.m */ = {isa = PBXBuildFile; fileRef = 58F828586EAE4E99A7A6103C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E6D29364A5884373ACA9E90C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.m */ = {isa = PBXBuildFile; fileRef = A87B5FD8F2B74C2E94265583 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E77E5AD1CE7547D5BB987B22 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.m */ = {isa = PBXBuildFile; fileRef = 36B78DA2594D4F6397569C54 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.m */; settings = {COMPILER_FLAGS = ""; }; };
+		E989DBAA980B4463BA312649 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.h */ = {isa = PBXBuildFile; fileRef = FDE2F26FAAFF47499BD2957B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.h */; settings = {COMPILER_FLAGS = ""; }; };
+		EB68499B5924450A86DFEECE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.h */ = {isa = PBXBuildFile; fileRef = EC95CFBBC8A2453382CD90B0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.h */; settings = {COMPILER_FLAGS = ""; }; };
+		EF0C5E5CE9AF4B66A513392E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.h */ = {isa = PBXBuildFile; fileRef = 9FB45FE865E745FEB52F5E41 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.h */; settings = {COMPILER_FLAGS = ""; }; };
+		F2A904A1E4C24C19A4A95B95 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.m */ = {isa = PBXBuildFile; fileRef = FD6AC1CC68DC411ABAA3C9EF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.m */; settings = {COMPILER_FLAGS = ""; }; };
+		FF25BCBC61444E708D58D901 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.h */ = {isa = PBXBuildFile; fileRef = 7D159ED0E4244496A3562509 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.h */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4FDCC19A0E104E2387F14EE8 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		58B539F1E47044EA88955D6D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		76406664064A4D48A895E49E = {
+			isa = PBXBuildStyle;
+		};
+		8991CA0B957C4E1BB01C2897 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		E01DF61FBA1F42EEA8535E0A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		02D94DD6091345AFB207679B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA765C120D24A008FA1C8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2B5415E1E4468CBA7E77D1;
+			remoteInfo = ZERO_CHECK;
+		};
+		862C3E13423C46E2A1913986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA765C120D24A008FA1C8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2B5415E1E4468CBA7E77D1;
+			remoteInfo = ZERO_CHECK;
+		};
+		C20412884D4B469D860E8CDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA765C120D24A008FA1C8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 658D6E5A4F6A4B15A2B9C89D;
+			remoteInfo = SuperAwesomeSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A172D17FA147948E13745A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAFileListDownloader.m; path = src/SAFileListDownloader.m; sourceTree = SOURCE_ROOT; };
+		0A7F72DCD63B40F7B838A223 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0CD3CA0C79AB4EED898DCEAC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVASTModule.m; path = src/SAVASTModule.m; sourceTree = SOURCE_ROOT; };
+		15D3BB3AB76C492C886AC318 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAViewableModule.h; path = src/SAViewableModule.h; sourceTree = SOURCE_ROOT; };
+		16859D6A68E2426B88CE5FC6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		16EB5AA378DD40B591FA85E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAImageUtils.h; path = src/SAImageUtils.h; sourceTree = SOURCE_ROOT; };
+		18A88D38140C4824A92AFCF0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAViewableModule.m; path = src/SAViewableModule.m; sourceTree = SOURCE_ROOT; };
+		1937BFF790A949428B3391A8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SALoader.m; path = src/SALoader.m; sourceTree = SOURCE_ROOT; };
+		1B457A79AE53435FB24D4C60 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAOrientation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAOrientation.h; path = src/SAOrientation.h; sourceTree = SOURCE_ROOT; };
+		1CE09A6CAEE3461AB1509DAD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = "NSDictionary+SafeHandling.m"; path = "src/NSDictionary+SafeHandling.m"; sourceTree = SOURCE_ROOT; };
+		1DD88CC2B75541A48A9F6612 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVASTMedia.h; path = src/SAVASTMedia.h; sourceTree = SOURCE_ROOT; };
+		23DB8D91F06246C590F62F8C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SABaseObject.h; path = src/SABaseObject.h; sourceTree = SOURCE_ROOT; };
+		2432D4F58FED4C47AC55C225 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAMedia.m; path = src/SAMedia.m; sourceTree = SOURCE_ROOT; };
+		28090F499A2C487AAF4A491E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVideoPlayer.m; path = src/SAVideoPlayer.m; sourceTree = SOURCE_ROOT; };
+		29913651B8954840806EA422 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADefines.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SADefines.h; path = src/SADefines.h; sourceTree = SOURCE_ROOT; };
+		2AF8957E957245BEBCDB7A1E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVASTAd.h; path = src/SAVASTAd.h; sourceTree = SOURCE_ROOT; };
+		2B6B40D266DC4FC0939545AA /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAServerEvent.h; path = src/SAServerEvent.h; sourceTree = SOURCE_ROOT; };
+		2D1775B43EA840DD8C6287A5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAImageUtils.m; path = src/SAImageUtils.m; sourceTree = SOURCE_ROOT; };
+		2E716994000049FDBD7EDA62 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "NSDictionary+SAJson.h"; path = "src/NSDictionary+SAJson.h"; sourceTree = SOURCE_ROOT; };
+		323FBB7B1C9A403CA68BA700 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAWebPlayer.m; path = src/SAWebPlayer.m; sourceTree = SOURCE_ROOT; };
+		326464409E2947038991E7E8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVASTParser.h; path = src/SAVASTParser.h; sourceTree = SOURCE_ROOT; };
+		334FF439B3864C9399892DC7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SABannerAd.m; path = src/SABannerAd.m; sourceTree = SOURCE_ROOT; };
+		350128FCF0504020B7DC287E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVersion.m; path = src/SAVersion.m; sourceTree = SOURCE_ROOT; };
+		35DE5BE47A55434EADEBC2D4 /* SuperAwesomeSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SuperAwesomeSDK.framework/SuperAwesomeSDK; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B78DA2594D4F6397569C54 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = "NSArray+SAJson.m"; path = "src/NSArray+SAJson.m"; sourceTree = SOURCE_ROOT; };
+		3985A98A529E45D59351C369 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAURLClicker.m; path = src/SAURLClicker.m; sourceTree = SOURCE_ROOT; };
+		3C896EFE082A420E95E75B8F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAURLEvent.h; path = src/SAURLEvent.h; sourceTree = SOURCE_ROOT; };
+		3D2FFECA2A72492291F5EC56 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAFileQueue.h; path = src/SAFileQueue.h; sourceTree = SOURCE_ROOT; };
+		3DC84FE6A51F4579AECDF4FE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SACreative.m; path = src/SACreative.m; sourceTree = SOURCE_ROOT; };
+		42CD7FCC0AA4411C875732FC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAViewableImpressionEvent.h; path = src/SAViewableImpressionEvent.h; sourceTree = SOURCE_ROOT; };
+		484C8D945087454B814B1AF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVASTAd.m; path = src/SAVASTAd.m; sourceTree = SOURCE_ROOT; };
+		495CE7CC8A9E40DB8016A377 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAServerModule.m; path = src/SAServerModule.m; sourceTree = SOURCE_ROOT; };
+		498BA2814B234C6C897D7C71 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAFileQueue.m; path = src/SAFileQueue.m; sourceTree = SOURCE_ROOT; };
+		49977215533448EA843E4830 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SALoadScreen.h; path = src/SALoadScreen.h; sourceTree = SOURCE_ROOT; };
+		4AD45EC91C144E85B7C630E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVASTEvent.h; path = src/SAVASTEvent.h; sourceTree = SOURCE_ROOT; };
+		4B048225800248EF8D17E771 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAUtils.m; path = src/SAUtils.m; sourceTree = SOURCE_ROOT; };
+		4C09E40B262947D39362818A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAClickEvent.h; path = src/SAClickEvent.h; sourceTree = SOURCE_ROOT; };
+		4CA3F2087D7F448E99208854 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAURLEvent.m; path = src/SAURLEvent.m; sourceTree = SOURCE_ROOT; };
+		4D33917CB71B40338C6D23D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAPGCloseEvent.m; path = src/SAPGCloseEvent.m; sourceTree = SOURCE_ROOT; };
+		4D8B052CBF4F402484B2E394 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAPGOpenEvent.h; path = src/SAPGOpenEvent.h; sourceTree = SOURCE_ROOT; };
+		51CBD5F3E92440E5B0EA88A5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesomeSDK.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SuperAwesomeSDK.h; path = src/SuperAwesomeSDK.h; sourceTree = SOURCE_ROOT; };
+		524CDD5E5FA5423294A3B26E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SABumperImageUtils.m; path = src/SABumperImageUtils.m; sourceTree = SOURCE_ROOT; };
+		5321881F41AA4FE384BB5B55 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAAlert.h; path = src/SAAlert.h; sourceTree = SOURCE_ROOT; };
+		556A9D1609F3443CAE2F3F29 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAPGFailEvent.h; path = src/SAPGFailEvent.h; sourceTree = SOURCE_ROOT; };
+		55A52103D28D40B0AB7B697B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SABlackMask.h; path = src/SABlackMask.h; sourceTree = SOURCE_ROOT; };
+		58AA2C43CAAA4F5D9ACCFC31 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAExtensions.m; path = src/SAExtensions.m; sourceTree = SOURCE_ROOT; };
+		58F828586EAE4E99A7A6103C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVASTEvent.m; path = src/SAVASTEvent.m; sourceTree = SOURCE_ROOT; };
+		5A634802F78648A39E9F7431 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAWebView.h; path = src/SAWebView.h; sourceTree = SOURCE_ROOT; };
+		5B968325CFFE412BBAA0A656 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAPGSuccessEvent.h; path = src/SAPGSuccessEvent.h; sourceTree = SOURCE_ROOT; };
+		5F20162A3E204376943F7574 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SANetwork.m; path = src/SANetwork.m; sourceTree = SOURCE_ROOT; };
+		622E890FD4684D5AB0FC9A8F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "NSArray+SAJson.h"; path = "src/NSArray+SAJson.h"; sourceTree = SOURCE_ROOT; };
+		65AF9EB121CC45FCA7722216 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAExpandedWebPlayer.m; path = src/SAExpandedWebPlayer.m; sourceTree = SOURCE_ROOT; };
+		6723542811B54182A75ACAD0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAFileDownloader.m; path = src/SAFileDownloader.m; sourceTree = SOURCE_ROOT; };
+		678FCAC2EEAF4B28B8E1B869 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAWebPlayer.h; path = src/SAWebPlayer.h; sourceTree = SOURCE_ROOT; };
+		6B372759840F42D7B8DA98A2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SALoader.h; path = src/SALoader.h; sourceTree = SOURCE_ROOT; };
+		6D689DDDF2884D2AB0D2247B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAFileItem.h; path = src/SAFileItem.h; sourceTree = SOURCE_ROOT; };
+		6ED046335ECF4B58A8652E70 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAAd.m; path = src/SAAd.m; sourceTree = SOURCE_ROOT; };
+		6F281301361C4CCDB3F0BED2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAFileItem.m; path = src/SAFileItem.m; sourceTree = SOURCE_ROOT; };
+		70E0E9F8933544ABA2C3EE76 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAImpressionEvent.h; path = src/SAImpressionEvent.h; sourceTree = SOURCE_ROOT; };
+		77CD15E927304A1EA978F477 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAPGSuccessEvent.m; path = src/SAPGSuccessEvent.m; sourceTree = SOURCE_ROOT; };
+		79D118149C2B4691B9E94B83 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAEvents.m; path = src/SAEvents.m; sourceTree = SOURCE_ROOT; };
+		7D159ED0E4244496A3562509 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAFileDownloader.h; path = src/SAFileDownloader.h; sourceTree = SOURCE_ROOT; };
+		80BBDFD45B514DB28E17137A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SACreative.h; path = src/SACreative.h; sourceTree = SOURCE_ROOT; };
+		81087412AEDC4469B9F6DD8C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SABumperPage.m; path = src/SABumperPage.m; sourceTree = SOURCE_ROOT; };
+		8182275E1A854356A05396B4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAFileListDownloader.h; path = src/SAFileListDownloader.h; sourceTree = SOURCE_ROOT; };
+		82B126EF11594068B959BA97 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAMRAID.m; path = src/SAMRAID.m; sourceTree = SOURCE_ROOT; };
+		84BE5275CE8B4DBBB2AF5932 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SACronograph.m; path = src/SACronograph.m; sourceTree = SOURCE_ROOT; };
+		872CDAA151F74FB385A9AB61 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SASession.m; path = src/SASession.m; sourceTree = SOURCE_ROOT; };
+		876FB6D3E83D4C0F807992ED /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAJsonParser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAJsonParser.h; path = src/SAJsonParser.h; sourceTree = SOURCE_ROOT; };
+		8788DAA059164FB48B632A90 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAImpressionEvent.m; path = src/SAImpressionEvent.m; sourceTree = SOURCE_ROOT; };
+		8AC3F9D5060540D7AEB78ED2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAProcessHTML.h; path = src/SAProcessHTML.h; sourceTree = SOURCE_ROOT; };
+		8C7AFE2C59FF42C985EE716C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SABlackMask.m; path = src/SABlackMask.m; sourceTree = SOURCE_ROOT; };
+		8CA44694516143C8ACB305A7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVASTModule.h; path = src/SAVASTModule.h; sourceTree = SOURCE_ROOT; };
+		8DEF3C40E38C4ADCAE58E9B6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAPGCloseEvent.h; path = src/SAPGCloseEvent.h; sourceTree = SOURCE_ROOT; };
+		8EAC50832A7742F2865606CE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SABannerAd.h; path = src/SABannerAd.h; sourceTree = SOURCE_ROOT; };
+		944AD59FD8CC4B6496851104 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAProcessHTML.m; path = src/SAProcessHTML.m; sourceTree = SOURCE_ROOT; };
+		98992285B9984419A279463D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAExtensions.h; path = src/SAExtensions.h; sourceTree = SOURCE_ROOT; };
+		98F0FE89CF1E4DB1A471C992 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SABumperImageUtils.h; path = src/SABumperImageUtils.h; sourceTree = SOURCE_ROOT; };
+		9C3CEB9B18BE47AE9605D59F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = "NSDictionary+SAJson.m"; path = "src/NSDictionary+SAJson.m"; sourceTree = SOURCE_ROOT; };
+		9CBD3F626278449FB64FCD9B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAResponse.m; path = src/SAResponse.m; sourceTree = SOURCE_ROOT; };
+		9FB45FE865E745FEB52F5E41 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SABumperPage.h; path = src/SABumperPage.h; sourceTree = SOURCE_ROOT; };
+		A2191A7432534A039425D689 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAPGFailEvent.m; path = src/SAPGFailEvent.m; sourceTree = SOURCE_ROOT; };
+		A4B3437EBA1148A78A3DCB06 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SASession.h; path = src/SASession.h; sourceTree = SOURCE_ROOT; };
+		A80939DFB0F147379023BC06 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAUtils.h; path = src/SAUtils.h; sourceTree = SOURCE_ROOT; };
+		A87B5FD8F2B74C2E94265583 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVASTMedia.m; path = src/SAVASTMedia.m; sourceTree = SOURCE_ROOT; };
+		A9B80435AD8B4B3CBCC7B5E9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SABaseObject.m; path = src/SABaseObject.m; sourceTree = SOURCE_ROOT; };
+		B15CEE99EBFB4234BF39D1EB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACallback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SACallback.h; path = src/SACallback.h; sourceTree = SOURCE_ROOT; };
+		B51AC8EA26A343CE9CC0687B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SADetails.m; path = src/SADetails.m; sourceTree = SOURCE_ROOT; };
+		B54E59DA69E14F37AF2427B7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAXMLParser.h; path = src/SAXMLParser.h; sourceTree = SOURCE_ROOT; };
+		B8BE1AF719274A8C8BC06D95 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B9B2AA5F69DB4FB8AC4429D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAViewableImpressionEvent.m; path = src/SAViewableImpressionEvent.m; sourceTree = SOURCE_ROOT; };
+		BC1D206D300940088706A66B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVideoAd.h; path = src/SAVideoAd.h; sourceTree = SOURCE_ROOT; };
+		BE17C0C6682F4EBF9279F2C5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAResizedWebPlayer.h; path = src/SAResizedWebPlayer.h; sourceTree = SOURCE_ROOT; };
+		C03EB892B8A845979E94B08C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAMRAIDCommand.m; path = src/SAMRAIDCommand.m; sourceTree = SOURCE_ROOT; };
+		C780377507A24188B1C917F6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SALoadScreen.m; path = src/SALoadScreen.m; sourceTree = SOURCE_ROOT; };
+		C85003DC5E624704BB81294A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAParentalGate.h; path = src/SAParentalGate.h; sourceTree = SOURCE_ROOT; };
+		C92AB739148340E3B522A3EF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAInterstitialAd.h; path = src/SAInterstitialAd.h; sourceTree = SOURCE_ROOT; };
+		CBFF2ECDD59B42BCA1AB431B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAExpandedWebPlayer.h; path = src/SAExpandedWebPlayer.h; sourceTree = SOURCE_ROOT; };
+		CC15C251D01D4BC19CD5B013 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "NSDictionary+SafeHandling.h"; path = "src/NSDictionary+SafeHandling.h"; sourceTree = SOURCE_ROOT; };
+		CCFDC6D9D40B4CC8B47C3EFF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAURLClicker.h; path = src/SAURLClicker.h; sourceTree = SOURCE_ROOT; };
+		D03E8DD2DDD34CD682600BB0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAMRAID.h; path = src/SAMRAID.h; sourceTree = SOURCE_ROOT; };
+		D3796024E0704369A8BC1966 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAMoatModule.h; path = src/SAMoatModule.h; sourceTree = SOURCE_ROOT; };
+		D678485B96D743388537F98D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAEvents.h; path = src/SAEvents.h; sourceTree = SOURCE_ROOT; };
+		D8396DE23ED5447CAF78C6F4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAResponse.h; path = src/SAResponse.h; sourceTree = SOURCE_ROOT; };
+		DCD9522811774B3EB97654EB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAServerEvent.m; path = src/SAServerEvent.m; sourceTree = SOURCE_ROOT; };
+		E58F7BD3FDE447FD991FE6A4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SACapper.m; path = src/SACapper.m; sourceTree = SOURCE_ROOT; };
+		E6975704860F495285E0E6BA /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SACronograph.h; path = src/SACronograph.h; sourceTree = SOURCE_ROOT; };
+		E74805EAABBF41C4BEE02FD0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAInterstitialAd.m; path = src/SAInterstitialAd.m; sourceTree = SOURCE_ROOT; };
+		E7A1299227164F1FB8EEF886 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAMRAIDCommand.h; path = src/SAMRAIDCommand.h; sourceTree = SOURCE_ROOT; };
+		E84187A236F14D9591465B88 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesome.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SuperAwesome.h; path = src/SuperAwesome.h; sourceTree = SOURCE_ROOT; };
+		E9F62AA6CC944488A3F4952B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAParentalGate.m; path = src/SAParentalGate.m; sourceTree = SOURCE_ROOT; };
+		EC95CFBBC8A2453382CD90B0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SACapper.h; path = src/SACapper.h; sourceTree = SOURCE_ROOT; };
+		ECEFA120E54F4B88B55C40DC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAXMLParser.m; path = src/SAXMLParser.m; sourceTree = SOURCE_ROOT; };
+		ED303331E0A041A4BA148518 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAMedia.h; path = src/SAMedia.h; sourceTree = SOURCE_ROOT; };
+		EEDFD9CFFFD74850AF02DF17 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAAd.h; path = src/SAAd.h; sourceTree = SOURCE_ROOT; };
+		EF1D0A6C62E04F788A8E702C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVersion.h; path = src/SAVersion.h; sourceTree = SOURCE_ROOT; };
+		EFFEA8C345974EC6A58BCCF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAMoatModule.m; path = src/SAMoatModule.m; sourceTree = SOURCE_ROOT; };
+		F1905F38FCCD41E292A407D8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVideoAd.m; path = src/SAVideoAd.m; sourceTree = SOURCE_ROOT; };
+		F4125FA97B68408191FCD9D0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAClickEvent.m; path = src/SAClickEvent.m; sourceTree = SOURCE_ROOT; };
+		F4BB5A5A5ED34FA388A09B0C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SADetails.h; path = src/SADetails.h; sourceTree = SOURCE_ROOT; };
+		F7FAE428E30D4049A9EE3B14 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAResizedWebPlayer.m; path = src/SAResizedWebPlayer.m; sourceTree = SOURCE_ROOT; };
+		F8A6D847A0CB4ECC8418C681 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAVASTParser.m; path = src/SAVASTParser.m; sourceTree = SOURCE_ROOT; };
+		F8B42FD78B0942959AEB3CCF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAVideoPlayer.h; path = src/SAVideoPlayer.h; sourceTree = SOURCE_ROOT; };
+		F8EBB125F96E4D34821C9DA4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAWebView.m; path = src/SAWebView.m; sourceTree = SOURCE_ROOT; };
+		FA551696B501459FB891F8D4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SANetwork.h; path = src/SANetwork.h; sourceTree = SOURCE_ROOT; };
+		FB064A6BB6A5422096650304 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAAlert.m; path = src/SAAlert.m; sourceTree = SOURCE_ROOT; };
+		FD6AC1CC68DC411ABAA3C9EF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = SAPGOpenEvent.m; path = src/SAPGOpenEvent.m; sourceTree = SOURCE_ROOT; };
+		FDE2F26FAAFF47499BD2957B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SAServerModule.h; path = src/SAServerModule.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08F2EFD208534C6894FC53E8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				622E890FD4684D5AB0FC9A8F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.h */,
+				2E716994000049FDBD7EDA62 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.h */,
+				CC15C251D01D4BC19CD5B013 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.h */,
+				EEDFD9CFFFD74850AF02DF17 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.h */,
+				5321881F41AA4FE384BB5B55 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.h */,
+				8EAC50832A7742F2865606CE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.h */,
+				23DB8D91F06246C590F62F8C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.h */,
+				55A52103D28D40B0AB7B697B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.h */,
+				98F0FE89CF1E4DB1A471C992 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.h */,
+				9FB45FE865E745FEB52F5E41 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.h */,
+				B15CEE99EBFB4234BF39D1EB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACallback.h */,
+				EC95CFBBC8A2453382CD90B0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.h */,
+				4C09E40B262947D39362818A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.h */,
+				80BBDFD45B514DB28E17137A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.h */,
+				E6975704860F495285E0E6BA /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.h */,
+				29913651B8954840806EA422 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADefines.h */,
+				F4BB5A5A5ED34FA388A09B0C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.h */,
+				D678485B96D743388537F98D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.h */,
+				CBFF2ECDD59B42BCA1AB431B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.h */,
+				98992285B9984419A279463D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.h */,
+				7D159ED0E4244496A3562509 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.h */,
+				6D689DDDF2884D2AB0D2247B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.h */,
+				8182275E1A854356A05396B4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.h */,
+				3D2FFECA2A72492291F5EC56 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.h */,
+				16EB5AA378DD40B591FA85E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.h */,
+				70E0E9F8933544ABA2C3EE76 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.h */,
+				C92AB739148340E3B522A3EF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.h */,
+				876FB6D3E83D4C0F807992ED /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAJsonParser.h */,
+				49977215533448EA843E4830 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.h */,
+				6B372759840F42D7B8DA98A2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.h */,
+				D03E8DD2DDD34CD682600BB0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.h */,
+				E7A1299227164F1FB8EEF886 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.h */,
+				ED303331E0A041A4BA148518 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.h */,
+				D3796024E0704369A8BC1966 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.h */,
+				FA551696B501459FB891F8D4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.h */,
+				1B457A79AE53435FB24D4C60 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAOrientation.h */,
+				8DEF3C40E38C4ADCAE58E9B6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.h */,
+				556A9D1609F3443CAE2F3F29 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.h */,
+				4D8B052CBF4F402484B2E394 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.h */,
+				5B968325CFFE412BBAA0A656 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.h */,
+				C85003DC5E624704BB81294A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.h */,
+				8AC3F9D5060540D7AEB78ED2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.h */,
+				BE17C0C6682F4EBF9279F2C5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.h */,
+				D8396DE23ED5447CAF78C6F4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.h */,
+				2B6B40D266DC4FC0939545AA /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.h */,
+				FDE2F26FAAFF47499BD2957B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.h */,
+				A4B3437EBA1148A78A3DCB06 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.h */,
+				CCFDC6D9D40B4CC8B47C3EFF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.h */,
+				3C896EFE082A420E95E75B8F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.h */,
+				A80939DFB0F147379023BC06 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.h */,
+				2AF8957E957245BEBCDB7A1E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.h */,
+				4AD45EC91C144E85B7C630E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.h */,
+				1DD88CC2B75541A48A9F6612 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.h */,
+				8CA44694516143C8ACB305A7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.h */,
+				326464409E2947038991E7E8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.h */,
+				EF1D0A6C62E04F788A8E702C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.h */,
+				BC1D206D300940088706A66B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.h */,
+				F8B42FD78B0942959AEB3CCF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.h */,
+				42CD7FCC0AA4411C875732FC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.h */,
+				15D3BB3AB76C492C886AC318 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.h */,
+				678FCAC2EEAF4B28B8E1B869 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.h */,
+				5A634802F78648A39E9F7431 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.h */,
+				B54E59DA69E14F37AF2427B7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.h */,
+				E84187A236F14D9591465B88 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesome.h */,
+				51CBD5F3E92440E5B0EA88A5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesomeSDK.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1D19BF17BB194904B842F168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DE5BE47A55434EADEBC2D4 /* SuperAwesomeSDK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2996CB4624DC4462BC0EE383 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				36B78DA2594D4F6397569C54 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.m */,
+				9C3CEB9B18BE47AE9605D59F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.m */,
+				1CE09A6CAEE3461AB1509DAD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.m */,
+				6ED046335ECF4B58A8652E70 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.m */,
+				FB064A6BB6A5422096650304 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.m */,
+				334FF439B3864C9399892DC7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.m */,
+				A9B80435AD8B4B3CBCC7B5E9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.m */,
+				8C7AFE2C59FF42C985EE716C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.m */,
+				524CDD5E5FA5423294A3B26E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.m */,
+				81087412AEDC4469B9F6DD8C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.m */,
+				E58F7BD3FDE447FD991FE6A4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.m */,
+				F4125FA97B68408191FCD9D0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.m */,
+				3DC84FE6A51F4579AECDF4FE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.m */,
+				84BE5275CE8B4DBBB2AF5932 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.m */,
+				B51AC8EA26A343CE9CC0687B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.m */,
+				79D118149C2B4691B9E94B83 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.m */,
+				65AF9EB121CC45FCA7722216 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.m */,
+				58AA2C43CAAA4F5D9ACCFC31 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.m */,
+				6723542811B54182A75ACAD0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.m */,
+				6F281301361C4CCDB3F0BED2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.m */,
+				07A172D17FA147948E13745A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.m */,
+				498BA2814B234C6C897D7C71 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.m */,
+				2D1775B43EA840DD8C6287A5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.m */,
+				8788DAA059164FB48B632A90 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.m */,
+				E74805EAABBF41C4BEE02FD0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.m */,
+				C780377507A24188B1C917F6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.m */,
+				1937BFF790A949428B3391A8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.m */,
+				82B126EF11594068B959BA97 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.m */,
+				C03EB892B8A845979E94B08C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.m */,
+				2432D4F58FED4C47AC55C225 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.m */,
+				EFFEA8C345974EC6A58BCCF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.m */,
+				5F20162A3E204376943F7574 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.m */,
+				4D33917CB71B40338C6D23D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.m */,
+				A2191A7432534A039425D689 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.m */,
+				FD6AC1CC68DC411ABAA3C9EF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.m */,
+				77CD15E927304A1EA978F477 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.m */,
+				E9F62AA6CC944488A3F4952B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.m */,
+				944AD59FD8CC4B6496851104 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.m */,
+				F7FAE428E30D4049A9EE3B14 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.m */,
+				9CBD3F626278449FB64FCD9B /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.m */,
+				DCD9522811774B3EB97654EB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.m */,
+				495CE7CC8A9E40DB8016A377 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.m */,
+				872CDAA151F74FB385A9AB61 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.m */,
+				3985A98A529E45D59351C369 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.m */,
+				4CA3F2087D7F448E99208854 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.m */,
+				4B048225800248EF8D17E771 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.m */,
+				484C8D945087454B814B1AF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.m */,
+				58F828586EAE4E99A7A6103C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.m */,
+				A87B5FD8F2B74C2E94265583 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.m */,
+				0CD3CA0C79AB4EED898DCEAC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.m */,
+				F8A6D847A0CB4ECC8418C681 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.m */,
+				350128FCF0504020B7DC287E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.m */,
+				F1905F38FCCD41E292A407D8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.m */,
+				28090F499A2C487AAF4A491E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.m */,
+				B9B2AA5F69DB4FB8AC4429D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.m */,
+				18A88D38140C4824A92AFCF0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.m */,
+				323FBB7B1C9A403CA68BA700 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.m */,
+				F8EBB125F96E4D34821C9DA4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.m */,
+				ECEFA120E54F4B88B55C40DC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.m */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2A7978E734884D00ACD82DC1 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DB3522D4F88D42A395B03E14 /* CMake Rules */,
+				0A7F72DCD63B40F7B838A223 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		420B9B7C3C5244A4B1F8E2D4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		643584AA786D4D6D80E140F6 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				420B9B7C3C5244A4B1F8E2D4 /* CMake Rules */,
+				16859D6A68E2426B88CE5FC6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		9898234AFB754A65B16EBC88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B23CCF00D04547E1823A5231 /* SuperAwesomeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2996CB4624DC4462BC0EE383 /* Source Files */,
+				08F2EFD208534C6894FC53E8 /* Header Files */,
+				B8BE1AF719274A8C8BC06D95 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeLists.txt */,
+			);
+			name = SuperAwesomeSDK;
+			sourceTree = "<group>";
+		};
+		CD35AA4CEADA46A2B5C44FC2 = {
+			isa = PBXGroup;
+			children = (
+				F6F2D651C953409387A913CD /* Sources */,
+				9898234AFB754A65B16EBC88 /* Resources */,
+				1D19BF17BB194904B842F168 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB3522D4F88D42A395B03E14 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F6F2D651C953409387A913CD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A7978E734884D00ACD82DC1 /* ALL_BUILD */,
+				643584AA786D4D6D80E140F6 /* ZERO_CHECK */,
+				B23CCF00D04547E1823A5231 /* SuperAwesomeSDK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06CAFC97299D44F39004B979 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5F5334AC4E423DB433211D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.h */,
+				1BD5BB190E824260A991168E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.h */,
+				0EE4EA2ED45B415992D4F25D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.h */,
+				895816CDD09E479BB5030FBB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.h */,
+				65775F5AADC444178924C25E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.h */,
+				6123031678A449DF999362BD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.h */,
+				9327D42690654F06AF4C918C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.h */,
+				DDDCE85E5AA44F288488FCF8 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.h */,
+				50E470E3AE5244B580F8D031 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.h */,
+				EF0C5E5CE9AF4B66A513392E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.h */,
+				3BB831A1DF354D18A7FC375F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACallback.h */,
+				EB68499B5924450A86DFEECE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.h */,
+				DA2B9232D1E349A88A41A4CC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.h */,
+				96967E456255427580060064 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.h */,
+				66FE6FDC710F4A139E57A26E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.h */,
+				0C260A169159464B8D12A5A9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADefines.h */,
+				9F319FF507D146BA80E637A3 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.h */,
+				3F57D46272644ABD8DBAF1AE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.h */,
+				8031FCA2C204441982BB56BE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.h */,
+				D78E30DD1C9D4C9CBF7F6537 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.h */,
+				FF25BCBC61444E708D58D901 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.h */,
+				2F5A9014A60E4427B54D5CF4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.h */,
+				306A98ACC2E54504A8BD8611 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.h */,
+				43700D6A494149E2A664E40F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.h */,
+				C90BCC61D6B143B3AAE69113 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.h */,
+				AA116EEAEE9542A0AA122E28 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.h */,
+				5D82D0AA082D42E5ACEE1ACC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.h */,
+				BBEC69DAF5BA431E96100047 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAJsonParser.h */,
+				26F4BC9D007B4CDFA21D1CCE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.h */,
+				AFBDE90E1B894E45BD1D11FD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.h */,
+				7A0A7FC0BA504F3B903E880A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.h */,
+				2262E088AB4B48E7BE499EF3 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.h */,
+				9D6D29CCD01C4BABAC363E69 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.h */,
+				9604242475174210992C679D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.h */,
+				8F8A803AD80F49ADBA958823 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.h */,
+				72E7100CD60B475DB14365FF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAOrientation.h */,
+				835BCBE68D0A46A0B7D1B8AB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.h */,
+				742696C4954B443FA85F87E6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.h */,
+				DC19F859A9454B8FA49F5B2A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.h */,
+				86D36F99E86547DA80FF21A1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.h */,
+				CC9D257CDDBF4C5ABED90BAF /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.h */,
+				5AE90789BB024128AA301573 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.h */,
+				629FFB0E42F648C0ABC1CDAE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.h */,
+				941A0941D2E045B08C10EEFD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.h */,
+				3096E9F0A56A4BDAA4B2F97D /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.h */,
+				E989DBAA980B4463BA312649 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.h */,
+				02A47E2D5D774355A06A727A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.h */,
+				77FB670798BF4809B99A4545 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.h */,
+				CC2D8F71ECEF480D919B7B37 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.h */,
+				C867A36F41964A5D9F67B059 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.h */,
+				64387791BD4D4E459E62DF70 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.h */,
+				2061489E9E6C494290219B2F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.h */,
+				9AB1BDB450714B4A965FB0FB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.h */,
+				04BE74945DDB4EF18DF0E6FD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.h */,
+				5486528ADE1948BBA7312955 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.h */,
+				74FDDA0362FD4345B339B671 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.h */,
+				74E52649310645C38A376E21 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.h */,
+				553BD340B919478E9CE1DEA7 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.h */,
+				1341F785DE8F437DAB534FC9 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.h */,
+				B88E9EC438284601BF786614 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.h */,
+				7ED0DE12D49C4B27B53FE59A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.h */,
+				0CBA7FF5CA554AB5AE540948 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.h */,
+				ABE50A0C7A84417E89BEC73F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.h */,
+				3AEB3853BEB7466E9BD0FC80 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesome.h */,
+				13A194F0A0554949BA01C147 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SuperAwesomeSDK.h */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		658D6E5A4F6A4B15A2B9C89D /* SuperAwesomeSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 869F4FF5EB814ACABDA7A1FA /* Build configuration list for PBXNativeTarget "SuperAwesomeSDK" */;
+			buildPhases = (
+				06CAFC97299D44F39004B979 /* Headers */,
+				32BA9EA5C7D24284A4999F2A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B47BDDE3118F4C319736754D /* PBXTargetDependency */,
+			);
+			name = SuperAwesomeSDK;
+			productName = SuperAwesomeSDK;
+			productReference = 35DE5BE47A55434EADEBC2D4 /* SuperAwesomeSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AA765C120D24A008FA1C8A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0900;
+			};
+			buildConfigurationList = 9BD286D3A2634E99B021CE78 /* Build configuration list for PBXProject "SuperAwesomeSDK" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				8991CA0B957C4E1BB01C2897 /* Debug */,
+				4FDCC19A0E104E2387F14EE8 /* Release */,
+				E01DF61FBA1F42EEA8535E0A /* MinSizeRel */,
+				58B539F1E47044EA88955D6D /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CD35AA4CEADA46A2B5C44FC2;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				DF6B2C12BFFA4855A411DE53 /* ALL_BUILD */,
+				1B2B5415E1E4468CBA7E77D1 /* ZERO_CHECK */,
+				658D6E5A4F6A4B15A2B9C89D /* SuperAwesomeSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A11FBDC9EF744D0599ADF70B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A5F015FFFF9D4C95B7C868B9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework -f /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B6615D5E77FB4E0BB4B3AF24 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CB5455FA36F84DCE830D3455 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework -f /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32BA9EA5C7D24284A4999F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77E5AD1CE7547D5BB987B22 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSArray+SAJson.m */,
+				B3B8E45DFD48482090321612 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SAJson.m */,
+				3944EE8D1013496EA3A32F27 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/NSDictionary+SafeHandling.m */,
+				6F88FBA43F094D6DA2109514 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAd.m */,
+				DB3F26927CB04B238076680E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAAlert.m */,
+				50DFF90FCB5F4F65B79AB424 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABannerAd.m */,
+				D7406A8F9410481F98A17987 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABaseObject.m */,
+				A02D3B83FCF24156B3E07F8A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABlackMask.m */,
+				643B247F607A447A848F9E37 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperImageUtils.m */,
+				216A7449E14B42ABA06EE10E /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SABumperPage.m */,
+				9D865E57F9D44EFFB9A0EBFE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACapper.m */,
+				C5B00E6AF7A34E50AD9E2019 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAClickEvent.m */,
+				9C9EEA41AADD49C6887C49C0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACreative.m */,
+				DF6DEC643F8E4C3487186E29 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SACronograph.m */,
+				C5BF3E2192434A9A95D8A2C1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SADetails.m */,
+				7034F5482BAB4297A7ABD950 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAEvents.m */,
+				4EEDBD25404545119AF53DA6 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExpandedWebPlayer.m */,
+				B7B1F6B050BD4D55837992BC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAExtensions.m */,
+				6A921CA4AE914419B65052D0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileDownloader.m */,
+				A2CEA89CED3845678F39721A /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileItem.m */,
+				99CD9865B2604ACFB8475514 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileListDownloader.m */,
+				26697F6CEBDB44389DDA54BC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAFileQueue.m */,
+				12589ACE45044A979752D566 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImageUtils.m */,
+				3EFFCBA489BC42DEBA4B8D6F /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAImpressionEvent.m */,
+				3806046320C34239BDE19384 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAInterstitialAd.m */,
+				4B67EDBC45B0443DBE7EC656 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoadScreen.m */,
+				A50A712475174C91BE14A619 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SALoader.m */,
+				0C7611A3E5B84F899E7F6E61 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAID.m */,
+				DA9DCDD6C06C4B239342B685 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMRAIDCommand.m */,
+				2274833931A84C68978745E4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMedia.m */,
+				E00CA117656F4DC8ADC8CF63 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAMoatModule.m */,
+				47827676B18647258DC1A31C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SANetwork.m */,
+				A34B57AF373941E7BA7084C1 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGCloseEvent.m */,
+				200B6721EBDF401FB4675606 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGFailEvent.m */,
+				F2A904A1E4C24C19A4A95B95 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGOpenEvent.m */,
+				53D6ACB5DB5A441F80279CAC /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAPGSuccessEvent.m */,
+				8D0521E1A59C491493757162 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAParentalGate.m */,
+				3DBC03525EEB4438A79F6AE4 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAProcessHTML.m */,
+				2B2983BDF7C946CF8C927579 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResizedWebPlayer.m */,
+				0F25BFDBBFE546CA9E611CBD /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAResponse.m */,
+				BA6D83F39E224FC9B5E0AFF2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerEvent.m */,
+				727B20BBD2E948B0B850A599 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAServerModule.m */,
+				66DCB2B545254634A34461E0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SASession.m */,
+				B35E598FB3DE4F2583B0E6F0 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLClicker.m */,
+				27C83B7895BE4C47AA943D71 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAURLEvent.m */,
+				26C8281418F8469E901DEEF5 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAUtils.m */,
+				89E692D86DBC4EF9B724E2CE /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTAd.m */,
+				E5E18C715489468FB281D907 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTEvent.m */,
+				E6D29364A5884373ACA9E90C /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTMedia.m */,
+				BA6A7601ACF54215A7F4B5D2 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTModule.m */,
+				2C7083913F2F4E4CBC186A50 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVASTParser.m */,
+				63A05CB024A042C2BF94E549 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVersion.m */,
+				E092E426552844E793B8CE91 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoAd.m */,
+				E1190B7B762D42DEB9755115 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAVideoPlayer.m */,
+				9DE917609C9044C18153CA04 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableImpressionEvent.m */,
+				AD7DF16446874D7BB5637FAB /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAViewableModule.m */,
+				2D6534D97D1545A99AA6DD36 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebPlayer.m */,
+				3F18C58B5A7743AEA2E4EF30 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAWebView.m */,
+				8AA9651092CE4D99B9E74E55 /* /Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/SAXMLParser.m */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37840D7D21DA425EB613AC06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 658D6E5A4F6A4B15A2B9C89D /* SuperAwesomeSDK */;
+			targetProxy = C20412884D4B469D860E8CDE /* PBXContainerItemProxy */;
+		};
+		83BAD6C5220A453B92626488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B2B5415E1E4468CBA7E77D1 /* ZERO_CHECK */;
+			targetProxy = 02D94DD6091345AFB207679B /* PBXContainerItemProxy */;
+		};
+		B47BDDE3118F4C319736754D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B2B5415E1E4468CBA7E77D1 /* ZERO_CHECK */;
+			targetProxy = 862C3E13423C46E2A1913986 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		088FF31EFA624A98B5DAD26C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		23175C3520844521BA980D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2918903D1A994C6992C1257D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",SuperAwesomeSDK_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INFOPLIST_FILE = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeFiles/SuperAwesomeSDK.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -fobjc-arc -fmodules -fembed-bitcode  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SuperAwesomeSDK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4B7FEA9C63C040A8858DCE47 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",SuperAwesomeSDK_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INFOPLIST_FILE = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeFiles/SuperAwesomeSDK.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -fobjc-arc -fmodules -fembed-bitcode  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SuperAwesomeSDK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4BF089C5185E484AAE2490EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = "iOS 8.0";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/build";
+			};
+			name = RelWithDebInfo;
+		};
+		4DF42AE73A5C413A9E7C3C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = "iOS 8.0";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/build";
+			};
+			name = Debug;
+		};
+		5E85D13462E642768938CA86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		61C4A5D0CE384998B59D0DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		681BF69A98B144DD9FE60956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",SuperAwesomeSDK_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INFOPLIST_FILE = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeFiles/SuperAwesomeSDK.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "   -fPIC -fobjc-arc -fmodules -fembed-bitcode  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SuperAwesomeSDK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7283F6B09B4B495A9FDE2A9E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		88A8CC87FE5A4164BBC7C83F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		89DA3D565BBE4B408738730B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = "iOS 8.0";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/build";
+			};
+			name = MinSizeRel;
+		};
+		A5C91C516123465FBC04C5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = "iOS 8.0";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/build";
+			};
+			name = Release;
+		};
+		C188ED987C6740F6B0F629A9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",SuperAwesomeSDK_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INFOPLIST_FILE = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src/CMakeFiles/SuperAwesomeSDK.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -fobjc-arc -fmodules -fembed-bitcode  ";
+				OTHER_LDFLAGS = "  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SuperAwesomeSDK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D94841D97D474AB1A6442BA9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F0AC020E6FEC4032A653DD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/gabriel.coman/Workspace/sa-sdk-build-repo/aa-ios-build-framework/framework";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B1F24F7DD9B40BEB4D7E6E1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E85D13462E642768938CA86 /* Debug */,
+				F0AC020E6FEC4032A653DD75 /* Release */,
+				088FF31EFA624A98B5DAD26C /* MinSizeRel */,
+				88A8CC87FE5A4164BBC7C83F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		833215E763064BA0A1EE8746 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C4A5D0CE384998B59D0DD4 /* Debug */,
+				23175C3520844521BA980D1B /* Release */,
+				7283F6B09B4B495A9FDE2A9E /* MinSizeRel */,
+				D94841D97D474AB1A6442BA9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		869F4FF5EB814ACABDA7A1FA /* Build configuration list for PBXNativeTarget "SuperAwesomeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681BF69A98B144DD9FE60956 /* Debug */,
+				2918903D1A994C6992C1257D /* Release */,
+				C188ED987C6740F6B0F629A9 /* MinSizeRel */,
+				4B7FEA9C63C040A8858DCE47 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BD286D3A2634E99B021CE78 /* Build configuration list for PBXProject "SuperAwesomeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF42AE73A5C413A9E7C3C0B /* Debug */,
+				A5C91C516123465FBC04C5FF /* Release */,
+				89DA3D565BBE4B408738730B /* MinSizeRel */,
+				4BF089C5185E484AAE2490EA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AA765C120D24A008FA1C8A7 /* Project object */;
+}
