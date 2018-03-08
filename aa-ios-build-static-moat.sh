@@ -51,7 +51,7 @@ do
 	# copy source files from the Pod Classes folder
   find "$source/Pod/Classes/" -iname '*.m' -exec cp \{\} $build/static/src \;
 
-	if [ id "$source/Pod/Plugin/Moat" ]; then
+	if [ -d "$source/Pod/Plugin/Moat" ]; then
 		find "$source/Pod/Plugin/Moat" -iname '*.h' -exec cp \{\} $build/static/src \;
 		find "$source/Pod/Plugin/Moat" -iname '*.m' -exec cp \{\} $build/static/src \;
 	fi
@@ -134,17 +134,64 @@ lipo \
 cd ../..
 
 # ##############################################################################
-# Finish & cleanup
+# Join libraries
 # ##############################################################################
+
+archs=(i386 x86_64 armv7 arm64)
+libraries=(libSuperAwesomeSDK.a libSUPMoatMobileAppKit.a)
+
+cd $build/lib$project
+
+for library in ${libraries[*]}
+do
+	lipo -info $library
+	# Extract individual architectures for this library
+	for arch in ${archs[*]}
+    do
+      lipo -extract $arch $library -o ${library}_${arch}.a
+    done
+done
+
+# Combine results of the same architecture into a library for that architecture
+source_combined=""
+for arch in ${archs[*]}
+do
+    source_libraries=""
+
+    for library in ${libraries[*]}
+    do
+      source_libraries="${source_libraries} ${library}_${arch}.a"
+    done
+
+    libtool -static ${source_libraries} -o "${1}_${arch}.a"
+    source_combined="${source_combined} ${1}_${arch}.a"
+
+    # Delete intermediate files
+    rm ${source_libraries}
+done
+
+# Merge the combined library for each architecture into a single fat binary
+lipo -create $source_combined -o lib$project.full.a
+
+# Delete intermediate files
+rm lib$project.a
+rm libSUPMoatMobileAppKit.a
+rm ${source_combined}
+
+cd ../..
+
+##############################################################################
+# Finish & cleanup
+##############################################################################
 
 # goto build folder
 cd $build
 
 # zip the library
-zip -r $project.iOS.lib.zip lib$project
+zip -r $project.iOS.full.lib.zip lib$project
 
 # remove
-#rm -rf static
-#rm -rf lib$project
+rm -rf static
+rm -rf lib$project
 
 cd ../

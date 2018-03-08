@@ -161,7 +161,7 @@ lipo \
 find framework/src/ -iname '*.h' -exec cp \{\} $project.framework/Headers/ \;
 
 # zip
-zip -r $project.iOS.framework.zip $project.framework
+zip -r $project.iOS.base.framework.zip $project.framework
 
 # delete
 #rm -rf framework

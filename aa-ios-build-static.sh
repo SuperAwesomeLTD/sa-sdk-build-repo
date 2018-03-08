@@ -128,7 +128,7 @@ cd ../..
 cd $build
 
 # zip the library
-zip -r $project.iOS.lib.zip lib$project
+zip -r $project.iOS.base.lib.zip lib$project
 
 # remove
 rm -rf static

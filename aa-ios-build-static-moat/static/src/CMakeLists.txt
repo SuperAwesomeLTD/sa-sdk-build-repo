@@ -1,6 +1,0 @@
-file( GLOB SRCS *.m *.h )
-add_library( SuperAwesomeSDK STATIC ${SRCS} )
-target_compile_options(SuperAwesomeSDK PUBLIC "-fobjc-arc")
-target_compile_options(SuperAwesomeSDK PUBLIC "-fmodules")
-target_compile_options(SuperAwesomeSDK PUBLIC "-fembed-bitcode")
-set_property(TARGET SuperAwesomeSDK PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET "8.0")

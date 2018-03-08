@@ -37,20 +37,22 @@ kws_version_parent_android="1.2.0"
 # buildscripts
 # cd $workspace
 # ./aa-android-build.sh
-cd $workspace
-./aa-android-moat-build.sh
-cd $workspace
-./aa-android-mopub-build.sh
-cd $workspace
-./aa-android-admob-build.sh
-cd $workspace
-./aa-ios-build-static.sh
-cd $workspace
-./aa-ios-build-framework.sh
-cd $workspace
-./aa-ios-mopub-build.sh
-cd $workspace
-./aa-ios-admob-build.sh
+# cd $workspace
+# ./aa-android-moat-build.sh
+# cd $workspace
+# ./aa-android-mopub-build.sh
+# cd $workspace
+# ./aa-android-admob-build.sh
+# cd $workspace
+# ./aa-ios-build-static.sh
+# cd $workspace
+# ./aa-ios-build-static-moat.sh
+# cd $workspace
+# ./aa-ios-build-framework.sh
+# cd $workspace
+# ./aa-ios-mopub-build.sh
+# cd $workspace
+# ./aa-ios-admob-build.sh
 # cd $workspace
 # ./aa-flash-build.sh
 # cd $workspace
@@ -99,40 +101,41 @@ cd $workspace
 # ./kws-android-parent-build.sh
 
 # packaging
-cd $workspace
+# cd $workspace
 
 # create new versions
-mkdir -p package/aa_ios/$aa_version_ios
-mkdir -p package/aa_android/$aa_version_android
-mkdir -p package/aa_flash/$aa_version_flash
-mkdir -p package/aa_air/$aa_version_air
-mkdir -p package/aa_unity/$aa_version_unity
-
-mkdir -p package/adv_ios/$adv_version_ios
-mkdir -p package/adv_android/$adv_version_android
-mkdir -p package/adv_unity/$adv_version_unity
-mkdir -p package/adv_air/$adv_version_air
-
-mkdir -p package/ag_ios/$ag_version_ios
-mkdir -p package/ag_android/$ag_version_android
-mkdir -p package/ag_unity/$ag_version_unity
-mkdir -p package/ag_air/$ag_version_air
-
-mkdir -p package/kws_ios/$kws_version_ios
-mkdir -p package/kws_android/$kws_version_android
-mkdir -p package/kws_parent_ios/$kws_version_parent_ios
-mkdir -p package/kws_parent_android/$kws_version_parent_android
+# mkdir -p package/aa_ios/$aa_version_ios
+# mkdir -p package/aa_android/$aa_version_android
+# mkdir -p package/aa_flash/$aa_version_flash
+# mkdir -p package/aa_air/$aa_version_air
+# mkdir -p package/aa_unity/$aa_version_unity
+#
+# mkdir -p package/adv_ios/$adv_version_ios
+# mkdir -p package/adv_android/$adv_version_android
+# mkdir -p package/adv_unity/$adv_version_unity
+# mkdir -p package/adv_air/$adv_version_air
+#
+# mkdir -p package/ag_ios/$ag_version_ios
+# mkdir -p package/ag_android/$ag_version_android
+# mkdir -p package/ag_unity/$ag_version_unity
+# mkdir -p package/ag_air/$ag_version_air
+#
+# mkdir -p package/kws_ios/$kws_version_ios
+# mkdir -p package/kws_android/$kws_version_android
+# mkdir -p package/kws_parent_ios/$kws_version_parent_ios
+# mkdir -p package/kws_parent_android/$kws_version_parent_android
 
 # copy sources
-cp aa-ios-build-static/$aa_project.iOS.lib.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.lib.zip
-cp aa-ios-build-framework/$aa_project.iOS.framework.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.framework.zip
-cp aa-ios-mopub-build/$aa_project.iOS.MoPubPlugin.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.MoPubPlugin.zip
-cp aa-ios-admob-build/$aa_project.iOS.AdMobPlugin.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.AdMobPlugin.zip
-
-cp aa-android-build/$aa_project.Android.base.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.base.jars.zip
-cp aa-android-moat-build/$aa_project.Android.full.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.full.jars.zip
-cp aa-android-mopub-build/$aa_project.Android.MoPubPlugin.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.MoPubPlugin.jars.zip
-cp aa-android-admob-build/$aa_project.Android.AdMobPlugin.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.AdMobPlugin.jars.zip
+# cp aa-ios-build-static/$aa_project.iOS.base.lib.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.base.lib.zip
+# cp aa-ios-build-static-moat/$aa_project.iOS.full.lib.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.full.lib.zip
+# cp aa-ios-build-framework/$aa_project.iOS.base.framework.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.base.framework.zip
+# cp aa-ios-mopub-build/$aa_project.iOS.MoPubPlugin.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.MoPubPlugin.zip
+# cp aa-ios-admob-build/$aa_project.iOS.AdMobPlugin.zip package/aa_ios/$aa_version_ios/$aa_project-$aa_version_ios.iOS.AdMobPlugin.zip
+#
+# cp aa-android-build/$aa_project.Android.base.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.base.jars.zip
+# cp aa-android-moat-build/$aa_project.Android.full.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.full.jars.zip
+# cp aa-android-mopub-build/$aa_project.Android.MoPubPlugin.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.MoPubPlugin.jars.zip
+# cp aa-android-admob-build/$aa_project.Android.AdMobPlugin.jars.zip package/aa_android/$aa_version_android/$aa_project-$aa_version_android.Android.AdMobPlugin.jars.zip
 #
 # cp aa-flash-build/$aa_project.AdobeFlash.swc package/aa_flash/$aa_version_flash/$aa_project-$aa_version_flash.AdobeFlash.swc
 #
