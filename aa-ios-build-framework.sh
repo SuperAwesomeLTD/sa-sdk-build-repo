@@ -66,9 +66,8 @@ done
 cmakelists=framework/"CMakeLists.txt"
 echo "cmake_minimum_required(VERSION 2.8.6)" > $cmakelists
 echo "project($project)" >> $cmakelists
-echo "set(SDKVER \"10.0\")" >> $cmakelists
 echo "set(DEVROOT \"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer\")" >> $cmakelists
-echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS\${SDKVER}.sdk\")" >> $cmakelists
+echo "set(SDKROOT \"\${DEVROOT}/SDKs/iPhoneOS.sdk\")" >> $cmakelists
 echo "if(EXISTS \${SDKROOT})" >> $cmakelists
 echo "set(CMAKE_OSX_SYSROOT \"\${SDKROOT}\")" >> $cmakelists
 echo "else()" >> $cmakelists
@@ -164,8 +163,8 @@ find framework/src/ -iname '*.h' -exec cp \{\} $project.framework/Headers/ \;
 zip -r $project.iOS.base.framework.zip $project.framework
 
 # delete
-#rm -rf framework
-#rm -rf $project.framework
+rm -rf framework
+rm -rf $project.framework
 
 # exit
 cd

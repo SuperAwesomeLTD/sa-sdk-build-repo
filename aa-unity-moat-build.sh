@@ -151,7 +151,6 @@ echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAVideoAd\" android
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAInterstitialAd\" android:label=\"SAInterstitialAd\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.sdk.publisher.SAAppWall\" android:screenOrientation=\"portrait\" android:label=\"SAAppWall\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\" android:configChanges=\"keyboardHidden|orientation|screenSize\"/>" >> $androidManifest
 echo "<activity android:name=\"tv.superawesome.lib.sabumperpage.SABumperPage\" android:label=\"SABumperPage\" android:configChanges=\"keyboardHidden|orientation|screenSize\" android:theme=\"@android:style/Theme.Holo.Dialog.NoActionBar\" android:excludeFromRecents=\"true\"/>" >> $androidManifest
-echo "<service android:name=\"tv.superawesome.lib.sanetwork.asynctask.SAAsyncTask\$SAAsync\" android:exported=\"false\" android:permission=\"tv.superawesome.sdk.SuperAwesomeSDK\"/>" >> $androidManifest
 echo "</application>" >> $androidManifest
 echo "</manifest>" >> $androidManifest
 
