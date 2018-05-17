@@ -38,10 +38,10 @@ this=$(pwd)
 cd /Applications/Adobe\ Flash\ Builder\ 4.7/sdks/21.0.0/bin
 ./acompc \
 	-swf-version=13 \
-	-source-path $this/$source/src \
+	-source-path $this/$source/sdk/src \
 	-debug=false \
 	-output $this/$build/$project.AIR.swc \
-	-include-sources=$this/$source/src
+	-include-sources=$this/$source/sdk/src
 
 # cleanup
 cd $this
@@ -65,7 +65,8 @@ cd ../
 ################################################################################
 
 sources=(
-		"sa-mobile-sdk-android"
+    "sa-gdprk-is-minor-android"
+    "sa-mobile-sdk-android"
     "sa-mobile-lib-android-adloader"
     "sa-mobile-lib-android-events"
 		"sa-mobile-lib-android-events"
@@ -82,6 +83,7 @@ sources=(
 )
 
 destinations=(
+	  "sagdprisminorsdk"
 		"superawesome-base"
 		"saadloader"
 		"saevents"
@@ -98,7 +100,7 @@ destinations=(
 		"sabumperpage"
 )
 
-for i in {0..13}
+for i in {0..14}
 do
 	# form vars for each library
 	source=${sources[$i]}
@@ -169,7 +171,7 @@ cd $build
 androidPlatformFile="android_platform.xml"
 echo "<platform xmlns=\"http://ns.adobe.com/air/extension/21.0\">" > $androidPlatformFile
 echo "<packagedDependencies>" >> $androidPlatformFile
-for i in {0..13}
+for i in {0..14}
 do echo "<packagedDependency>${destinations[$i]}.jar</packagedDependency>" >> $androidPlatformFile
 done
 echo "<packagedDependency>moatlib.jar</packagedDependency>" >> $androidPlatformFile
@@ -206,6 +208,7 @@ mkdir $build/static
 mkdir $build/static/src
 
 sources=(
+    "sa-gdprk-is-minor-ios"
     "sa-mobile-lib-ios-adloader"
     "sa-mobile-lib-ios-events"
     "sa-mobile-lib-ios-jsonparser"
@@ -221,7 +224,7 @@ sources=(
 		"sa-mobile-sdk-ios"
 )
 
-for i in {0..12}
+for i in {0..13}
 do
 	# get source & repository
 	source=${sources[$i]}
@@ -256,7 +259,7 @@ do
 		# copy plugin headers to Adobe AIR build/ios folder
 		find "$source/Pod/Plugin/Moat/" -iname '*.h' -exec cp \{\} $build/ios/ \;
 		# copy library
-		cp -r $source/Pod/Libraries/* $build/ios/
+		cp -r $source/Pod/Libraries/libSUPMoatMobileAppKit.a $build/ios/
 	fi
 
 	# remove the source
